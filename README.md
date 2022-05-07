@@ -1,22 +1,65 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 06-05-2022 - 22:16)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 07-05-2022 - 22:22)
 
 
 ## WooCommerce Pages 
 
 
-+ https://www.cartoonchris.co.uk/shop/ - Products/Archive Page
-+ https://www.cartoonchris.co.uk/my-account/  - My Account
-+ https://www.cartoonchris.co.uk/homepage/ - Shop Homepage
-+ https://www.cartoonchris.co.uk/basket/ - Basket
-+ https://www.cartoonchris.co.uk/checkout/ - Checkout
-+ https://www.cartoonchris.co.uk/privacy-policy/ - Privacy Link
++ https://www.url.com/shop/ - Products/Archive Page
++ https://www.url.com/my-account/  - My Account
++ https://www.url.com/homepage/ - Shop Homepage
++ https://www.url.com/basket/ - Basket
++ https://www.url.com/checkout/ - Checkout
++ https://www.url.com/privacy-policy/ - Privacy Link
+
+Where url.com is the domain and /shop is the page "slug" or identifier.
+
+### Shop Homepage
 
 
-+ https://www.cartoonchris.co.uk/homepage/ (Shop homepage)
+```Look for the loop in your WordPress Template file.```
+
+The loop then brings in content content editor of page assigned by the WooCommerce plugin as the `homepage`. 
+
+You then need to target the different blocks with their HTML Class Selectors.
+
+e.g. 
+
+  + `.wp-block-cover`
+  + `.wp-block-media-text`
+  + `.wc-block-featured-product` 
 
 
+
+  
+```css
+
+.wp-block-cover
+.has-text-align-center
+.wc-block-grid .wp-block-product-new
+    .wc-block-grid__products 
+        .wc-block-grid__product
+            a
+                .wc-block-grid__product-onsale
+                .wc-block-grid__product-price
+                    del
+                        .woocommerce-Price-amount
+                            .woocommerce-Price-currentSymbol
+                    ins
+                        .woocommerce-Price-amount
+                            .woocommerce-Price-currentSymbol  
+                 .woocommerce-Price-amount
+                     .woocommerce-Price-currentSymbol
+                        
+
+.wc-block-featured-product__wrapper
+    .wc-block-featured-product__title
+    .wc-block-featured-product__description
+    .wc-block-featured-product__price
+    .wc-block-featured-product__link
+
+  ```
 
 + https://www.cartoonchris.co.uk/shop/ (Product Archive Page)
 
@@ -54,7 +97,7 @@ Example
 
 ## Selectors
 
-```scss
+```css
 
 #page {
 
@@ -190,6 +233,15 @@ Example
 
 
 + https://www.cartoonchris.co.uk/basket/ (Shop Basket/Cart)
+
+
+```scss
+
+.woocommerce {
+
+}
+
+```
 
 + https://www.cartoonchris.co.uk/my-account/ (My Account Page)
 
