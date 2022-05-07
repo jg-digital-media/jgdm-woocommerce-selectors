@@ -18,6 +18,8 @@
 
 
 
++ https://www.cartoonchris.co.uk/shop/ (Product Archive Page)
+
 As far as the shop archive page goes, the page is divided into 4 main structures.
 
 + header  ```(#header)```
@@ -99,6 +101,9 @@ Example
 
                 .page-description {
 
+                    p {
+
+                    }
                 }
 
             }
@@ -115,6 +120,10 @@ Example
 
                 .orderby {
 
+                    option {
+
+                    } 
+
                 }
 
             }
@@ -130,6 +139,47 @@ Example
 
     #sidebar {
 
+        ul {
+
+            li {
+
+                #searchform {
+
+                    div {
+
+                        .screen-reader-text {
+
+                        }
+
+                        #s {
+
+                        }
+
+                        #searchsubmit {
+
+                        }
+
+                    }
+
+                }
+
+
+
+            }
+
+            li.pagenav {
+
+                h2 {
+
+                }
+
+            }
+
+            li.categories {
+
+            }
+        }
+
     }
 
     #footer {
@@ -138,7 +188,6 @@ Example
 }
 ```
 
-+ https://www.cartoonchris.co.uk/shop/ (Product Archive Page)
 
 + https://www.cartoonchris.co.uk/basket/ (Shop Basket/Cart)
 
