@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 07-05-2022 - 22:22)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 10-05-2022 - 16:59)
 
 
 ## WooCommerce Pages 
@@ -33,31 +33,107 @@ e.g.
 
 
   
-```css
+```scss
 
-.wp-block-cover
-.has-text-align-center
-.wc-block-grid .wp-block-product-new
-    .wc-block-grid__products 
-        .wc-block-grid__product
-            a
-                .wc-block-grid__product-onsale
-                .wc-block-grid__product-price
-                    del
-                        .woocommerce-Price-amount
-                            .woocommerce-Price-currentSymbol
-                    ins
-                        .woocommerce-Price-amount
-                            .woocommerce-Price-currentSymbol  
-                 .woocommerce-Price-amount
-                     .woocommerce-Price-currentSymbol
+.wp-block-cover {
+
+    .wp-block-cover__gradient-background {
+
+    }
+
+    .wp-block-cover__image-background {
+
+    }
+
+    .wp-block-cover__inner-container{
+
+        .wp-block-button {
+
+            .wp-block-button__link {
+
+            }
+
+        }
+
+    }
+
+}
+
+.has-text-align-center {
+
+}
+
+
+/* Media Text Block classes */
+.wp-block-media-text {
+
+    .wp-block-media-text__media {
+
+        .size-full {
+
+        }
+
+    }
+
+    .wp-block-media-text__content {
+
+    }
+
+}
+
+
+/* New products */
+
+.wc-block-grid 
+.wp-block-product-new {
+
+    .wc-block-grid__products { 
+        .wc-block-grid__product {
+            a.wc-block-grid__product-link {
+                .wc-block-grid__product-onsale {
+
+                }
+
+                .wc-block-grid__product-price {
+                    del {
+                        .woocommerce-Price-amount {
+                            .woocommerce-Price-currentSymbol {
+                            }
+                        }
+                    }
+
+                    ins {
+                        .woocommerce-Price-amount {
+                            .woocommerce-Price-currentSymbol {
+
+                            }  
+                        }
+                    }
+                }
+
+                .woocommerce-Price-amount {
+
+                    .woocommerce-Price-currentSymbol {
+                    }
+                }
+            }
+        }
+    }
                         
+/*  Featured product wrapper */
+.wc-block-featured-product {
 
-.wc-block-featured-product__wrapper
-    .wc-block-featured-product__title
-    .wc-block-featured-product__description
-    .wc-block-featured-product__price
-    .wc-block-featured-product__link
+    .wc-block-featured-product__wrapper {
+
+        .wc-block-featured-product__title {}
+        
+        .wc-block-featured-product__description {}
+        
+        .wc-block-featured-product__price {}
+        
+        .wc-block-featured-product__link {}
+    }
+}
 
   ```
 
@@ -93,6 +169,7 @@ Example
 
 
 </div>
+
 ```
 
 ## Selectors
