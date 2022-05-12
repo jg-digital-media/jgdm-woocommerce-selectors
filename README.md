@@ -15,6 +15,9 @@
 
 Where url.com is the domain and /shop is the page "slug" or identifier.
 
+
++ https://www.url.com/homepage  
+
 ### Shop Homepage
 
 
@@ -83,7 +86,6 @@ e.g.
 
 
 /* New products */
-
 .wc-block-grid 
 .wp-block-product-new {
 
@@ -119,6 +121,63 @@ e.g.
             }
         }
     }
+}
+
+// wc-block-grid
+.wc-block-grid {
+
+	.wc-block-grid__products {
+        
+		.wc-block-grid__product {
+			.wc-block-grid__product-link {
+				.wc-block-grid__product-image {
+					.attachment-woocommerce_thumbnail {
+
+						
+					}
+				}
+
+				.wc-block-grid__product-title {
+				}
+			}
+			
+			.wc-block-grid__product-onsale {
+				span {
+					
+				}
+				.screen-reader-text {
+					
+				}
+			}
+
+			.wc-block-grid__product-price {
+				
+			}
+		}
+	}
+
+}
+
+
+/* Block Media Text: WooCommerce */
+.wc-block-media-text {
+
+    .wp-block-media-text__media {
+
+        img {
+
+        }
+
+        .wp-block-media-text__content {
+
+            p {
+
+            }
+
+        }
+        
+    }
+}
                         
 /*  Featured product wrapper */
 .wc-block-featured-product {
@@ -135,7 +194,9 @@ e.g.
     }
 }
 
-  ```
+
+
+```
 
 + https://www.cartoonchris.co.uk/shop/ (Product Archive Page)
 
@@ -321,6 +382,10 @@ Example
 ```
 
 + https://www.cartoonchris.co.uk/my-account/ (My Account Page)
+
+## MyAccount Page
+
+
 
 + https://www.cartoonchris.co.uk/checkout/ (Checkout Page)
 
