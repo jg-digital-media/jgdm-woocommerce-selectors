@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 12-05-2022 - 20:49)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 12-05-2022 - 20:59)
 
 
 ## WooCommerce Pages 
@@ -16,7 +16,7 @@ Each page in WordPress has a user defined `slug`, an identifier for the page tha
 + `/privacy/` - WooCommerce Privacy Page
 
 
-<a id="#nav"></a>
+<a id="#document-navigation"></a>
 ## Document Navigation
 
 [Home](#shop-homepage) | [Shop Archive](#productarchive) | [Basket](#woocommerce-basket-page) | [MyAccount](#woocommerce-myaccount-page) | [Checkout](#woocommerce-checkout-page) | [Single Product Page](#woocommerce-product-single)
