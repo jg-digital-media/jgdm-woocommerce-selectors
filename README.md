@@ -15,9 +15,13 @@
 
 Where url.com is the domain and /shop is the page "slug" or identifier.
 
+## Nav 
+
+[Home](#home) | [Shop Archive](#productarchive) | Basket | MyAccount | Checkout | Single Product Page
 
 + https://www.url.com/homepage  
 
+<a name="#home"></a>
 ### Shop Homepage
 
 
@@ -175,7 +179,7 @@ e.g.
             }
 
         }
-        
+
     }
 }
                         
@@ -197,7 +201,7 @@ e.g.
 
 
 ```
-
+<a name="#productarchive"></a>
 + https://www.cartoonchris.co.uk/shop/ (Product Archive Page)
 
 As far as the shop archive page goes, the page is divided into 4 main structures.
@@ -385,10 +389,32 @@ Example
 
 ## MyAccount Page
 
+```scss
+.woocommerce {
+
+
+}
+```
 
 
 + https://www.cartoonchris.co.uk/checkout/ (Checkout Page)
 
+```scss
+.woocomerce {
+
+
+
+}
+```
+
 + https://www.cartoonchris.co.uk/product/ (Product Page)
 
+
+```scss
+
+.woocommerce {
+
+
+}
+```
 
