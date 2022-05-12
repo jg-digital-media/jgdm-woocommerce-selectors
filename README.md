@@ -17,11 +17,11 @@ Where url.com is the domain and /shop is the page "slug" or identifier.
 
 ## Nav 
 
-[Home](#home) | [Shop Archive](#productarchive) | Basket | MyAccount | Checkout | Single Product Page
+[Home](#shop-homepage) | [Shop Archive](#productarchive) | Basket | MyAccount | Checkout | Single Product Page
 
 + https://www.url.com/homepage
 
-<a id="#home">link</a>
+<a id="shop-homepage"></a>
 ### Shop Homepage
 
 
