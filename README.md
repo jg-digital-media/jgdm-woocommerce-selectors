@@ -19,13 +19,13 @@ Where url.com is the domain and /shop is the page "slug" or identifier.
 
 [Home](#home) | [Shop Archive](#productarchive) | Basket | MyAccount | Checkout | Single Product Page
 
-+ https://www.url.com/homepage  
++ https://www.url.com/homepage
 
-<a name="#home"></a>
+<a id="#home"></a>
 ### Shop Homepage
 
 
-```Look for the loop in your WordPress Template file.```
+```First, Look for the loop in your WordPress Template file.```
 
 The loop then brings in content content editor of page assigned by the WooCommerce plugin as the `homepage`. 
 
@@ -201,7 +201,8 @@ e.g.
 
 
 ```
-<a name="#productarchive"></a>
+
+<a id="#productarchive"></a>
 + https://www.cartoonchris.co.uk/shop/ (Product Archive Page)
 
 As far as the shop archive page goes, the page is divided into 4 main structures.
