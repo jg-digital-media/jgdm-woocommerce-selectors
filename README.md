@@ -1,28 +1,30 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 10-05-2022 - 16:59)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 12-05-2022 - 20:49)
 
 
 ## WooCommerce Pages 
 
+Each page in WordPress has a user defined `slug`, an identifier for the page that defines the URL for a WooCommerce page. Examples below...
 
-+ https://www.url.com/shop/ - Products/Archive Page
-+ https://www.url.com/my-account/  - My Account
-+ https://www.url.com/homepage/ - Shop Homepage
-+ https://www.url.com/basket/ - Basket
-+ https://www.url.com/checkout/ - Checkout
-+ https://www.url.com/privacy-policy/ - Privacy Link
 
-Where url.com is the domain and /shop is the page "slug" or identifier.
++ `/homepage/` - WooCommerce Shop Homepage
++ `/shop/` - WooCommerce Products Archive Page
++ `/my-account/` - WooCommerce My Account
++ `/basket/` - WooCommerce Basket
++ `/checkout/` - WooCommerce Checkout
++ `/privacy/` - WooCommerce Privacy Page
 
-## Nav 
 
-[Home](#shop-homepage) | [Shop Archive](#productarchive) | Basket | MyAccount | Checkout | Single Product Page
+<a id="#nav"></a>
+## Document Navigation
 
-+ https://www.url.com/homepage
+[Home](#shop-homepage) | [Shop Archive](#productarchive) | [Basket](#woocommerce-basket-page) | [MyAccount](#woocommerce-myaccount-page) | [Checkout](#woocommerce-checkout-page) | [Single Product Page](#woocommerce-product-single)
+
 
 <a id="shop-homepage"></a>
 ### Shop Homepage
++ https://www.url.com/homepage
 
 
 ```First, Look for the loop in your WordPress Template file.```
@@ -200,9 +202,11 @@ e.g.
 
 
 
+
 ```
 
-<a id="#productarchive"></a>
+<a id="#shop-archive-page"></a>
+### Shop Archive Page
 + https://www.cartoonchris.co.uk/shop/ (Product Archive Page)
 
 As far as the shop archive page goes, the page is divided into 4 main structures.
@@ -375,6 +379,9 @@ Example
 ```
 
 
+
+<a id="woocommerce-basket-page"></a>
+### WooCommerce Basket
 + https://www.cartoonchris.co.uk/basket/ (Shop Basket/Cart)
 
 
@@ -388,15 +395,19 @@ Example
 
 + https://www.cartoonchris.co.uk/my-account/ (My Account Page)
 
-## MyAccount Page
+<a id="woocommewrce-myaccount-page"></a>
+## WooCommerce MyAccount Page
 
 ```scss
 .woocommerce {
 
 
 }
+
 ```
 
+<a id="woocommerce-checkout-page"></a>
+### WooCommerce Checkout Page
 
 + https://www.cartoonchris.co.uk/checkout/ (Checkout Page)
 
@@ -408,6 +419,9 @@ Example
 }
 ```
 
+<a id="woocommerce-product-single"></a>
+### WooCommerce Product Single
+
 + https://www.cartoonchris.co.uk/product/ (Product Page)
 
 
@@ -418,4 +432,7 @@ Example
 
 }
 ```
+
+[Top](#nav)
+
 
