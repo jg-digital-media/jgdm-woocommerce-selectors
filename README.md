@@ -385,6 +385,8 @@ Example
         // <ul> pages list
         // <ul> ????
 
+
+        // Author information and Search Form - Try using a first-child CSS Selector
         ul {
 
             li {
@@ -413,15 +415,58 @@ Example
 
             }
 
+            // ul role navigation - Sidebar pages navigation list
             li.pagenav {
 
                 h2 {
 
                 }
 
+                ul {
+
+                    .page-item {
+
+                        a {
+
+                        }
+                        
+                    }
+                }
+
             }
 
+            // no class ??  - meant for the Sidebar archives list
+            li {
+                
+                ul {
+
+                    li {
+
+                        a {
+
+
+                        }
+                    }
+                }
+            }
+
+            // Sidebar Categories list
             li.categories {
+
+                h2 {
+
+                }
+
+                ul {
+
+                    li.cat-item {
+
+                        a {
+
+                        }
+
+                    }
+                }
 
             }
         }
@@ -430,8 +475,17 @@ Example
 
     #footer {
 
+        p {
+
+            a {
+
+            }
+
+        }
+
     }
 }
+
 ```
 
 
