@@ -19,7 +19,7 @@ Each page in WordPress has a user defined `slug`, an identifier for the page tha
 <a id="#document-navigation"></a>
 ## Document Navigation
 
-[Home](#shop-homepage) | [Shop Archive](#productarchive) | [Basket](#woocommerce-basket-page) | [MyAccount](#woocommerce-myaccount-page) | [Checkout](#woocommerce-checkout-page) | [Single Product Page](#woocommerce-product-single)
+[Home](#shop-homepage) | [Shop Archive](#shop-archive-page) | [Basket](#woocommerce-basket-page) | [MyAccount](#woocommerce-myaccount-page) | [Checkout](#woocommerce-checkout-page) | [Single Product Page](#woocommerce-product-single)
 
 
 <a id="shop-homepage"></a>
@@ -38,8 +38,6 @@ e.g.
   + `.wp-block-cover`
   + `.wp-block-media-text`
   + `.wc-block-featured-product` 
-
-
 
   
 ```scss
