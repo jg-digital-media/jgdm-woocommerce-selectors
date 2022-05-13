@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 13-05-2022 - 19:54)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 13-05-2022 - 20:59)
 
 
 ## WooCommerce Pages 
@@ -498,6 +498,22 @@ Example
 ```scss
 
 .woocommerce {
+
+    a {
+
+        .woocomerce-notices-wrapper {
+
+        }
+
+        .woocommerce-cart-form {
+
+            .shop_table {
+
+                // TODO: 
+                ...
+            }
+        }
+    }
 
 }
 
