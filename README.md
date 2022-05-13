@@ -302,6 +302,8 @@ Example
 
             .woocommerce-result-count {
 
+                // paragraph element - text-align: center
+
             }
 
             .woocommerce-ordering {
@@ -310,6 +312,11 @@ Example
 
                     option {
 
+                        &.selected {
+
+
+                        }
+
                     } 
 
                 }
@@ -317,6 +324,53 @@ Example
             }
 
             .products {
+
+                .type-product {
+
+                    .woocommerce-LoopProduct-link {
+
+                        .attachment-woocommerce_thumbnail {
+
+                        }
+
+                        .woocommerce-loop-product__title {
+
+                        }
+
+                        .price {
+
+                            .woocommerce-Price-amount {
+
+                                bdi {
+                                    .woocommerce-Price-currencySy
+                                }
+
+                                //sale price
+
+                                del {
+
+                                }
+
+                                ins {
+                                    .woocommerce-Price-amount {
+                                        bdi {
+                                            .woocommerce-Price-currencySymbol{
+
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                    .product_type_simple {
+
+                    }
+                }
                 
             }
 
@@ -326,6 +380,10 @@ Example
     }
 
     #sidebar {
+
+        // <ul> Author Information </ul>
+        // <ul> pages list
+        // <ul> ????
 
         ul {
 
