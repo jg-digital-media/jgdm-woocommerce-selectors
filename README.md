@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 12-05-2022 - 21:00)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 13-05-2022 - 19:54)
 
 
 ## WooCommerce Pages 
@@ -244,7 +244,7 @@ Example
 
 ## Selectors
 
-```css
+```scss
 
 #page {
 
@@ -428,6 +428,85 @@ Example
 ```scss
 
 .woocommerce {
+
+    #header {        
+
+        #headerimg {
+
+            h1 {
+
+                a {
+
+                }
+
+            }
+
+            .description {
+
+
+            }
+        }
+
+    }
+
+    hr {
+
+    }
+
+    #primary {
+
+        #main {
+
+            .woocommerce-breadcrumb {
+
+                a {
+
+                }
+
+            }
+
+            .woocommerce-notices-wrapper {
+
+            }
+
+            .type-product {
+
+                .woocommerce-product-gallery {
+
+                    .woocommerce-product-gallery__wrapper {
+
+                        .woocommerce-product-gallery__image {
+
+                            a {
+                                .wp-post-image {
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+        }
+
+    }
+
+    #sidebar {
+
+        // TODO: 
+
+    }
+
+    #footer {
+
+        // TODO: 
+    }
+
+
 
 
 }
