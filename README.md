@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 14-05-2022 - 18:29)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 14-05-2022 - 21:45)
 
 
 ## WooCommerce Pages 
@@ -19,12 +19,14 @@ Each page in WordPress has a user defined `slug`, an identifier for the page tha
 <a id="#document-navigation"></a>
 ## Document Navigation
 
-[Home](#shop-homepage) | [Shop Archive](#shop-archive-page) | [Basket](#woocommerce-basket-page) | [MyAccount](#woocommerce-myaccount-page) | [Checkout](#woocommerce-checkout-page) | [Single Product Page](#woocommerce-product-single)
+Jump to the pages to view the selectors you need.
+
+[Shoo Home](#shop-homepage) | [Shop Archive](#shop-archive-page) | [Basket](#woocommerce-basket-page) | [MyAccount](#woocommerce-myaccount-page) | [Checkout](#woocommerce-checkout-page) | [Single Product Page](#woocommerce-product-single)
 
 
 <a id="shop-homepage"></a>
 ### Shop Homepage
-+ https://www.url.com/homepage
++ https://www.url.com/homepage   [Top](#document-navigation)
 
 
 ```First, Look for the loop in your WordPress Template file.```
@@ -36,10 +38,15 @@ You then need to target the different blocks with their HTML Class Selectors.
 e.g. 
 
   + `.wp-block-cover`
+  + `.has-text-align-center`
   + `.wp-block-media-text`
+  + `.wc-block-product-new`
+  + `.wc-block-grid`
+  + `.wc-block-product-new`
   + `.wc-block-featured-product` 
 
   
+#### **Selectors to use...**  
 ```scss
 
 .wp-block-cover {
@@ -86,6 +93,27 @@ e.g.
 
     }
 
+}
+
+
+/* Block Media Text: WooCommerce */
+.wc-block-media-text {
+
+    .wp-block-media-text__media {
+
+        img {
+
+        }
+
+        .wp-block-media-text__content {
+
+            p {
+
+            }
+
+        }
+
+    }
 }
 
 
@@ -163,25 +191,6 @@ e.g.
 }
 
 
-/* Block Media Text: WooCommerce */
-.wc-block-media-text {
-
-    .wp-block-media-text__media {
-
-        img {
-
-        }
-
-        .wp-block-media-text__content {
-
-            p {
-
-            }
-
-        }
-
-    }
-}
                         
 /*  Featured product wrapper */
 .wc-block-featured-product {
@@ -198,14 +207,11 @@ e.g.
     }
 }
 
-
-
-
 ```
 
 <a id="#shop-archive-page"></a>
 ### Shop Archive Page
-+ https://www.cartoonchris.co.uk/shop/ (Product Archive Page)
++ https://www.cartoonchris.co.uk/shop/ (Product Archive Page)  [Top](#document-navigation)
 
 As far as the shop archive page goes, the page is divided into 4 main structures.
 
@@ -492,7 +498,7 @@ Example
 
 <a id="woocommerce-basket-page"></a>
 ### WooCommerce Basket
-+ https://www.cartoonchris.co.uk/basket/ (Shop Basket/Cart)
++ https://www.cartoonchris.co.uk/basket/ (Shop Basket Page) [Top](#document-navigation)
 
 
 ```scss
@@ -519,10 +525,12 @@ Example
 
 ```
 
-+ https://www.cartoonchris.co.uk/my-account/ (My Account Page)
-
 <a id="woocommewrce-myaccount-page"></a>
-## WooCommerce MyAccount Page
+
+### WooCommerce MyAccount Page
++ https://www.cartoonchris.co.uk/my-account/ My Account Page ([Top](#document-navigation))
+
+
 
 ```scss
 .woocommerce {
@@ -610,7 +618,7 @@ Example
 <a id="woocommerce-checkout-page"></a>
 ### WooCommerce Checkout Page
 
-+ https://www.cartoonchris.co.uk/checkout/ (Checkout Page)
++ https://www.cartoonchris.co.uk/checkout/ - Checkout Page ([Top](#document-navigation))
 
 ```scss
 .woocomerce {
@@ -623,7 +631,7 @@ Example
 <a id="woocommerce-product-single"></a>
 ### WooCommerce Product Single
 
-+ https://www.cartoonchris.co.uk/product/ (Product Page)
++ https://www.cartoonchris.co.uk/product/ - Product Page  ([Top](#document-navigation))
 
 
 ```scss
