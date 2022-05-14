@@ -629,7 +629,7 @@ Example
 ```
 
 <a id="woocommerce-product-single"></a>
-### WooCommerce Product Single
+### WooCommerce Single Product
 
 + https://www.cartoonchris.co.uk/product/ - Product Page  ([Top](#document-navigation))
 
