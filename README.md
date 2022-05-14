@@ -560,6 +560,46 @@ Example
     .woocommerce-MyAccount-content {
 
         // TOOO: Content and tabs for myaccount page
+        .woocommerce-notices-wrapper {
+
+        }
+
+
+        // Dashboard Tab
+        p {
+
+            strong {
+
+            }
+
+            // logout and other links
+            a {
+
+            }
+
+        }
+
+        // Orders Tab
+        .woocommerce-message, .woocommerce-message--info, .woocommerce-Message .woocommerce-Message--info, .woocommerce-info {
+
+        }
+
+        //tick icon
+        ..woocommerce-info::before {
+
+            // Orders tab button - "browse broducts"
+            a.woocommerce-Button button {
+
+            }
+
+        // 
+
+        }
+
+
+        // TODO: More Tabs
+
+        
     }
 
 
