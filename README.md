@@ -527,6 +527,41 @@ Example
 ```scss
 .woocommerce {
 
+    .woocommerce-MyAccount-navigation {
+
+        ul {
+            .woocommerce-MyAccount-navigation-link {
+
+                a {
+
+                }
+
+            /* WooCommerce Navigation Classes */
+
+            .woocommerce-MyAccount-navigation-link--dashboard 
+            .woocommerce-MyAccount-navigation-link--orders
+            .woocommerce-MyAccount-navigation-link--downloads
+            .woocommerce-MyAccount-navigation-link--edit-address
+            .woocommerce-MyAccount-navigation-link--edit-account
+            .woocommerce-MyAccount-navigation-link--customer-logout
+
+            // sass selector for the active tab
+                & .is-active {
+
+
+                }
+            }
+
+        }
+
+
+    }
+
+    .woocommerce-MyAccount-content {
+
+        // TOOO: Content and tabs for myaccount page
+    }
+
 
 }
 
