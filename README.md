@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 13-05-2022 - 20:59)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 14-05-2022 - 18:29)
 
 
 ## WooCommerce Pages 
