@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 14-05-2022 - 22:04)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 15-05-2022 - 19:23)
 
 
 ## WooCommerce Pages 
@@ -621,7 +621,7 @@ Example
 + https://www.cartoonchris.co.uk/checkout/ - Checkout Page ([Top](#document-navigation))
 
 ```scss
-.woocomerce {
+.woocommerce {
 
 
 
