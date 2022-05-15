@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 15-05-2022 - 19:28)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 15-05-2022 - 20:15)
 
 
 ## WooCommerce Pages 
@@ -503,6 +503,7 @@ Example
 
 ```scss
 
+// TODO: double check selectors for this page. 
 .woocommerce {
 
     a {
@@ -514,11 +515,152 @@ Example
         .woocommerce-cart-form {
 
             .shop_table {
+                
+                thead {
 
-                // TODO: 
-                ...
+                    tr {
+
+                        .product-remove {}
+                        .product-thumbnail {}
+                        .product-name {}
+                        .product-price {}
+                        .product-quantity {}
+                        .product-subtotal {} 
+                    }
+                }
+
+                tbody {
+
+                    tr.woocommerce-cart-form__cart-item {
+
+                        td {
+
+                            
+                            .product-remove
+                            .product-thumbnail {
+
+                                a {
+
+                                    .attachment-woocommerce_thumbnail {
+
+                                    }
+
+                                }
+                            }
+
+                            .product-name {
+
+                                a {
+
+                                }
+
+                            }
+
+                            .product-price {
+
+                                .woocommerce-Price-amount {
+
+                                    bdi {
+
+                                        .woocommerce-Price-currencySymbol {
+
+                                        }
+
+                                    }
+
+                                }
+                            }
+
+                            .product-quantity {
+
+                                .quantity {
+
+                                    .screen-reader-text {
+
+                                        .qty {
+                                            
+                                        }
+                                    }
+                                }
+
+                            }
+
+                            .product-subtotal {
+
+                                .woocommerce-Price-amount {
+
+                                    bdi {
+
+                                        .woocommerce-Price-currencySymbol {
+
+                                        }
+
+                                    }
+
+                                }
+
+                            }                        
+
+                        }
+
+                    }
+
+                    // Form Basket Buttons
+                    .actions {
+
+                        .coupon {
+
+                            label {
+
+                            }
+
+                            #coupon_code {
+
+                            }
+
+                            // Update Basket button
+                            .button {
+
+                            }
+
+                        }
+
+                    }
+            
+                }  
+                 
             }
+
+        }   
+
+    }
+
+    .cart-collaterals {
+
+        a {
+
         }
+
+        .cart_totals {
+
+            a {
+
+            }
+
+            .wc-proceed-to-checkout {
+
+                a {
+
+                }
+
+                .checkout-button {
+
+                }
+
+            }
+
+        }
+
     }
 
 }
@@ -654,6 +796,7 @@ Example
 
 
             }
+
         }
 
     }
@@ -700,6 +843,7 @@ Example
                 }
 
             }
+
         }
 
     }
