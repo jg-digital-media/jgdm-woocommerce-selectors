@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 15-05-2022 - 19:23)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 15-05-2022 - 19:28)
 
 
 ## WooCommerce Pages 
@@ -525,7 +525,7 @@ Example
 
 ```
 
-<a id="woocommewrce-myaccount-page"></a>
+<a id="woocommerce-myaccount-page"></a>
 
 ### WooCommerce MyAccount Page
 + https://www.cartoonchris.co.uk/my-account/ My Account Page ([Top](#document-navigation))
