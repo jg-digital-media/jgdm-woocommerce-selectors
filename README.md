@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 17-05-2022 - 15:14)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 17-05-2022 - 15:19)
 
 
 ## WooCommerce Pages 
@@ -10,9 +10,10 @@ Each page in WordPress has a user defined `slug`, an identifier for the page tha
 
 + `/homepage/` - WooCommerce Shop Homepage
 + `/shop/` - WooCommerce Products Archive Page
-+ `/my-account/` - WooCommerce My Account
 + `/basket/` - WooCommerce Basket
++ `/my-account/` - WooCommerce My Account
 + `/checkout/` - WooCommerce Checkout
++ `/product/` - Single Product Page (from archive page) 
 + `/privacy/` - WooCommerce Privacy Page
 
 
