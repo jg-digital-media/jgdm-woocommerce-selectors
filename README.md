@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 17-05-2022 - 14:55)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 17-05-2022 - 15:14)
 
 
 ## WooCommerce Pages 
@@ -114,6 +114,7 @@ e.g.
         }
 
     }
+
 }
 
 
@@ -576,13 +577,12 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 ### WooCommerce Basket
 + https://www.cartoonchris.co.uk/basket/ (Shop Basket Page) [Top](#document-navigation)
 
-The Basket page is the first part of the shopping onboard process where items curretly added to it will appear.
+The Basket page is the first part of the shopping onboard process where items currently added to it will appear.
 
 
 
 ```scss
 
-// TODO: double check selectors for this page. 
 .woocommerce {
 
     a {
@@ -850,11 +850,15 @@ The Basket page is the first part of the shopping onboard process where items cu
 
 
 ```scss
+
+
+// TODO:  choose myaccount page selectors
 .woocommerce {
 
     .woocommerce-MyAccount-navigation {
 
         ul {
+
             .woocommerce-MyAccount-navigation-link {
 
                 a {
@@ -912,7 +916,7 @@ The Basket page is the first part of the shopping onboard process where items cu
         //tick icon
         ..woocommerce-info::before {
 
-            // Orders tab button - "browse broducts"
+            // Orders tab button - "browse products"
             a.woocommerce-Button button {
 
             }
