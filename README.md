@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 17-05-2022 - 13:17)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 17-05-2022 - 13:41)
 
 
 ## WooCommerce Pages 
@@ -452,11 +452,12 @@ As far as the shop archive page goes, the page is divided into 4 main structures
     #sidebar {
 
         // <ul> Author Information </ul>
-        // <ul> pages list
+        // <ul> pages list - role=navigation on ul element
         // <ul> ????
 
 
-        // Author information and Search Form - Try using a first-child CSS Selector
+        // Author information and Search Form - Try using a first-child CSS Selector for 
+        // ul elements that are children for the div element with an ID for #sidebar
         ul {
 
             li {
@@ -481,11 +482,9 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
                 }
 
-
-
             }
 
-            // ul role navigation - Sidebar pages navigation list
+            // ul role navigation -  - Sidebar pages navigation list
             li.pagenav {
 
                 h2 {
@@ -496,17 +495,24 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
                     .page-item {
 
+                        // list item selector that contains an anchor tag for each page
+
                         a {
 
                         }
                         
                     }
+
                 }
 
             }
 
-            // no class ??  - meant for the Sidebar archives list
+            // No class selector for second list item - meant for the Sidebar archives list
             li {
+
+                h2 {
+                    // Heading 2 Element Selector - Archive Title Text
+                }
                 
                 ul {
 
@@ -516,11 +522,14 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
 
                         }
+
                     }
+
                 }
+
             }
 
-            // Sidebar Categories list
+            // Selector: Sidebar Categories list
             li.categories {
 
                 h2 {
@@ -536,9 +545,11 @@ As far as the shop archive page goes, the page is divided into 4 main structures
                         }
 
                     }
+
                 }
 
             }
+
         }
 
     }
@@ -915,6 +926,7 @@ As far as the shop archive page goes, the page is divided into 4 main structures
     #sidebar {
 
         // TODO: 
+
 
     }
 
