@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 17-05-2022 - 14:49)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 17-05-2022 - 14:55)
 
 
 ## WooCommerce Pages 
@@ -605,6 +605,7 @@ The Basket page is the first part of the shopping onboard process where items cu
                         .product-price {}
                         .product-quantity {}
                         .product-subtotal {} 
+
                     }
 
                 }
@@ -613,93 +614,91 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                     tr.woocommerce-cart-form__cart-item {
 
-                        td {
-                            
-                            .product-remove {
+                        
+                        // td table cell classes    
+                        .product-remove {
 
-                                a {
+                            a {
 
-                                    &:hover {
+                                &:hover {
 
-                                        // remove button as an anchor element 
-                                        // use a transition for background on hover state
-                                    }
-
+                                    // remove button as an anchor element 
+                                    // use a transition for background on hover state
                                 }
 
                             }
-
-                            .product-thumbnail {
-
-                                a {
-
-                                    .attachment-woocommerce_thumbnail {
-
-                                        // product thumbnail is an image element
-
-                                    }
-
-                                }
-
-                            }
-
-                            .product-name {
-
-                                a {
-
-                                }
-
-                            }
-
-                            .product-price {
-
-                                .woocommerce-Price-amount {
-
-                                    bdi {
-
-                                        .woocommerce-Price-currencySymbol {
-
-                                        }
-
-                                    }
-
-                                }
-
-                            }
-
-                            .product-quantity {
-
-                                .quantity {
-
-                                    .screen-reader-text {
-
-                                        .qty {
-                                            
-                                        }
-
-                                    }
-
-                                }
-
-                            }
-
-                            .product-subtotal {
-
-                                .woocommerce-Price-amount {
-
-                                    bdi {
-
-                                        .woocommerce-Price-currencySymbol {
-
-                                        }
-
-                                    }
-
-                                }
-
-                            }                        
 
                         }
+
+                        .product-thumbnail {
+
+                            a {
+
+                                .attachment-woocommerce_thumbnail {
+
+                                    // product thumbnail is an image element
+
+                                }
+
+                            }
+
+                        }
+
+                        .product-name {
+
+                            a {
+
+                            }
+
+                        }
+
+                        .product-price {
+
+                            .woocommerce-Price-amount {
+
+                                bdi {
+
+                                    .woocommerce-Price-currencySymbol {
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                        .product-quantity {
+
+                            .quantity {
+
+                                .screen-reader-text {
+
+                                    .qty {
+                                        
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                        .product-subtotal {
+
+                            .woocommerce-Price-amount {
+
+                                bdi {
+
+                                    .woocommerce-Price-currencySymbol {
+
+                                    }
+
+                                }
+
+                            }
+
+                        } 
 
                     }
 
