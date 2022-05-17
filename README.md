@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 17-05-2022 - 13:41)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 17-05-2022 - 14:49)
 
 
 ## WooCommerce Pages 
@@ -457,7 +457,7 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
 
         // Author information and Search Form - Try using a first-child CSS Selector for 
-        // ul elements that are children for the div element with an ID for #sidebar
+        // ul elements that are children for the div element with an ID of #sidebar
         ul {
 
             li {
@@ -565,6 +565,7 @@ As far as the shop archive page goes, the page is divided into 4 main structures
         }
 
     }
+
 }
 
 ```
@@ -575,6 +576,9 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 ### WooCommerce Basket
 + https://www.cartoonchris.co.uk/basket/ (Shop Basket Page) [Top](#document-navigation)
 
+The Basket page is the first part of the shopping onboard process where items curretly added to it will appear.
+
+
 
 ```scss
 
@@ -583,7 +587,7 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
     a {
 
-        .woocomerce-notices-wrapper {
+        .woocommerce-notices-wrapper {
 
         }
 
@@ -602,6 +606,7 @@ As far as the shop archive page goes, the page is divided into 4 main structures
                         .product-quantity {}
                         .product-subtotal {} 
                     }
+
                 }
 
                 tbody {
@@ -609,18 +614,33 @@ As far as the shop archive page goes, the page is divided into 4 main structures
                     tr.woocommerce-cart-form__cart-item {
 
                         td {
-
                             
-                            .product-remove
+                            .product-remove {
+
+                                a {
+
+                                    &:hover {
+
+                                        // remove button as an anchor element 
+                                        // use a transition for background on hover state
+                                    }
+
+                                }
+
+                            }
+
                             .product-thumbnail {
 
                                 a {
 
                                     .attachment-woocommerce_thumbnail {
 
+                                        // product thumbnail is an image element
+
                                     }
 
                                 }
+
                             }
 
                             .product-name {
@@ -644,6 +664,7 @@ As far as the shop archive page goes, the page is divided into 4 main structures
                                     }
 
                                 }
+
                             }
 
                             .product-quantity {
@@ -655,7 +676,9 @@ As far as the shop archive page goes, the page is divided into 4 main structures
                                         .qty {
                                             
                                         }
+
                                     }
+
                                 }
 
                             }
@@ -680,9 +703,10 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
                     }
 
-                    // Form Basket Buttons
+                    // Form Basket Buttons  tr -> td
                     .actions {
 
+                        // coupon text box and button element
                         .coupon {
 
                             label {
@@ -697,6 +721,12 @@ As far as the shop archive page goes, the page is divided into 4 main structures
                             .button {
 
                             }
+
+                        }
+
+                        // Selector for the button that Updates the basket. No class or ID
+                        button[type="submit"] {
+
 
                         }
 
@@ -719,6 +749,77 @@ As far as the shop archive page goes, the page is divided into 4 main structures
         .cart_totals {
 
             a {
+
+                h2 {
+
+                    // Basket Totals
+                }
+
+                .shop_table {
+
+                    // Cart Collaterals Table  - table element
+                    tbody {
+
+
+                        // tr element
+                        // Table Rows for Subtotal and Total Amounts
+                        .cart-subtotal {
+
+                            th {
+
+                                // th subtotal
+                            }
+
+                            td {
+
+                                .woocommerce-Price-amount {
+
+                                    bdi {
+
+                                        .woocommerce-Price-currencySymbol {
+
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                        .order-total {
+
+                            th {
+
+                                // th total
+                            }
+
+                            td {
+
+                                .woocommerce-Price-amount {
+
+                                    strong {
+
+                                        bdi {
+
+                                            .woocommerce-Price-currencySymbol {
+
+                                            }
+
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
 
             }
 
