@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 17-05-2022 - 12:17)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 17-05-2022 - 13:17)
 
 
 ## WooCommerce Pages 
@@ -337,7 +337,7 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
             .woocommerce-result-count {
 
-                // paragraph element - text-align: center
+                //paragraph element - e.g. center text alignment
 
             }
 
@@ -348,6 +348,8 @@ As far as the shop archive page goes, the page is divided into 4 main structures
                     option {
 
                         &.selected {
+
+                            // Add selected class to option element on orderby selection
 
 
                         }
@@ -360,9 +362,16 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
             .products {
 
+                // products archive page - product list container element
+
                 .type-product {
 
                     .woocommerce-LoopProduct-link {
+
+                        // style selector for the sale icon when product has a sale price
+                        .onsale {
+
+                        }
 
                         .attachment-woocommerce_thumbnail {
 
@@ -376,24 +385,47 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
                             .woocommerce-Price-amount {
 
+                                // standard price styling
                                 bdi {
-                                    .woocommerce-Price-currencySy
+
+                                    .woocommerce-Price-currencySymbol {
+                                        
+                                    }
+
                                 }
 
-                                //sale price
-
+                                // full price selectors (sale price)
                                 del {
-
-                                }
-
-                                ins {
+                                    
                                     .woocommerce-Price-amount {
+
                                         bdi {
-                                            .woocommerce-Price-currencySymbol{
+
+                                            .woocommerce-Price-currencySymbol {
 
                                             }
+
                                         }
+
                                     }
+
+                                }
+
+                                // selected for discounted/sale price
+                                ins {
+
+                                    .woocommerce-Price-amount {
+
+                                        bdi {
+
+                                            .woocommerce-Price-currencySymbol {
+
+                                            }
+
+                                        }
+
+                                    }
+
                                 }
 
                             }
@@ -404,11 +436,14 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
                     .product_type_simple {
 
+                        // Add to basket button selector
+
+
                     }
+
                 }
                 
             }
-
 
         }
 
