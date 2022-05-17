@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 17-05-2022 - 12:00)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 17-05-2022 - 12:17)
 
 
 ## WooCommerce Pages 
@@ -209,6 +209,7 @@ e.g.
 
 ```
 
+
 <a id="#shop-archive-page"></a>
 ### Shop Archive Page
 + https://www.cartoonchris.co.uk/shop/ (Product Archive Page)  [Top](#document-navigation)
@@ -221,11 +222,11 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 + footer ```(#footer)```
 
 
-Example
+**HTML** 
 
 ```html
 
-<div id="page">   <!-- (#page) -->
+<div id="page">   
 
     <div id="header"> . . . <div>
 
@@ -246,7 +247,35 @@ Example
 
 ```
 
-## Selectors
+## SASS/CSS Selectors
+
+```scss
+
+#page {
+
+
+    #header {
+
+    }
+
+
+    #primary {
+
+    }
+
+    #sidebar {
+
+    }
+
+    #footer {
+
+    }
+
+}
+
+```
+
+## Shop Product Archive Page Selectors
 
 ```scss
 
