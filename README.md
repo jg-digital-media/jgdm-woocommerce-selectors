@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 18-05-2022 - 15:44)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 18-05-2022 - 16:21)
 
 
 ## WooCommerce Pages 
@@ -989,11 +989,186 @@ The Basket page is the first part of the shopping onboard process where items cu
 
         }
 
+        .woocommerce-checkout {
+
+            #customer_details {
+
+                .col-1 {
+
+                }
+
+                .col-2 {
+
+                }
+
+            }
+
+            #order_review_heading {
+
+
+            }
+
+            .woocommerce-checkout-review-order {
+
+                .woocommerce-checkout-review-order-table {
+
+                    thead {
+
+                        tr {
+
+                            th.product-name {
+
+                            }
+
+                            th.product-total {
+
+                            }
+
+                        }
+
+                    }
+
+                    tbody {
+
+                        .cart_item {
+
+                            .product-name {
+                                
+                                // table cell
+
+                                .product-quantity {
+
+                                }
+
+                            }
+
+                            .product-total {
+                                
+                                // table cell
+                                .woocommerce-Price-amount {
+
+                                    bdi {
+
+                                        // styling for amount
+
+                                        .woocommerce-Price-currencySymbol {
+
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                    tfoot {
+
+                        .cart-subtotal {
+
+                            th {
+
+                                // table header cell
+                            }
+
+                            td {
+
+                                // table cell
+                                .woocommerce-Price-amount {
+
+                                    bdi {
+
+                                        // styling for amount
+                                        .woocommerce-Price-currencySymbol {
+
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                        .order-total {
+
+                            th {
+
+                                // table header cell                                
+                            }
+
+                            td {
+
+                                // strong in place of span for subtotal
+                                strong {
+
+                                    .woocommerce-Price-amount {
+
+                                        bdi {
+
+                                            // styling for amount
+                                            .woocommerce-Price-currencySymbol {
+
+                                            }
+
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+                #payment {
+
+                    .wc_payment_methods {
+
+                    }
+
+                    .place-order {
+
+                        .woocommerce-terms-and-conditions-wrapper {
+
+                            .woocommerce-privacy-policy-text {
+
+                                p {
+
+                                    .woocommerce-privacy-policy-link {
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                        .woocommerce_checkout_place_order {
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
     }
 
-
-
 }
+
 ```
 
 <a id="woocommerce-product-single"></a>
