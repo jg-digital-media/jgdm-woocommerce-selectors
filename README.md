@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 18-05-2022 - 16:21)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 18-05-2022 - 17:00)
 
 
 ## WooCommerce Pages 
@@ -50,6 +50,7 @@ e.g.
 #### **Selectors to use...**  
 ```scss
 
+// Editor Note:  Section Complete
 .wp-block-cover {
 
     .wp-block-cover__gradient-background {
@@ -60,7 +61,11 @@ e.g.
 
     }
 
-    .wp-block-cover__inner-container{
+    .wp-block-cover__inner-container {
+
+        .has-text-color {
+
+        }
 
         .wp-block-button {
 
@@ -74,7 +79,75 @@ e.g.
 
 }
 
+
+/* Section: New Products */
 .has-text-align-center {
+
+}
+
+
+
+/* New Products Section Selectors */
+.wc-block-grid 
+.wp-block-product-new {
+
+    .wc-block-grid__products { 
+
+        .wc-block-grid__product {
+
+            a.wc-block-grid__product-link {
+
+                .wc-block-grid__product-image {
+
+                    .attachment-woocommerce_thumbnail {
+
+                    }
+
+                }
+
+                .wc-block-grid__product-title {
+
+                }
+                
+            }
+
+            
+            // product sale icon
+            .wc-block-grid__product-onsale {
+
+            }
+
+            // product price selectors
+            .wc-block-grid__product-price {
+
+                del {
+
+                    .woocommerce-Price-amount {
+
+                        .woocommerce-Price-currentSymbol {
+
+                        }
+                    }
+
+                }
+
+                ins {
+
+                    .woocommerce-Price-amount {
+
+                        .woocommerce-Price-currentSymbol {
+
+                        }  
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
 
 }
 
@@ -118,95 +191,58 @@ e.g.
 
 }
 
-
-/* New products */
-.wc-block-grid 
-.wp-block-product-new {
-
-    .wc-block-grid__products { 
-        .wc-block-grid__product {
-            a.wc-block-grid__product-link {
-                .wc-block-grid__product-onsale {
-
-                }
-
-                .wc-block-grid__product-price {
-                    del {
-                        .woocommerce-Price-amount {
-                            .woocommerce-Price-currentSymbol {
-                            }
-                        }
-                    }
-
-                    ins {
-                        .woocommerce-Price-amount {
-                            .woocommerce-Price-currentSymbol {
-
-                            }  
-                        }
-                    }
-                }
-
-                .woocommerce-Price-amount {
-
-                    .woocommerce-Price-currentSymbol {
-                    }
-                }
-            }
-        }
-    }
-}
-
-// wc-block-grid
-.wc-block-grid {
-
-	.wc-block-grid__products {
-        
-		.wc-block-grid__product {
-			.wc-block-grid__product-link {
-				.wc-block-grid__product-image {
-					.attachment-woocommerce_thumbnail {
-
-						
-					}
-				}
-
-				.wc-block-grid__product-title {
-				}
-			}
-			
-			.wc-block-grid__product-onsale {
-				span {
-					
-				}
-				.screen-reader-text {
-					
-				}
-			}
-
-			.wc-block-grid__product-price {
-				
-			}
-		}
-	}
-
-}
-
-
                         
-/*  Featured product wrapper */
+/* Featured Product Wrapper */
 .wc-block-featured-product {
 
     .wc-block-featured-product__wrapper {
 
-        .wc-block-featured-product__title {}
+        .wc-block-featured-product__title {
+
+            // h2 element
+
+        }
         
-        .wc-block-featured-product__description {}
+        .wc-block-featured-product__description {
+
+            // p 
+            p {
+
+            }
+
+        }
         
-        .wc-block-featured-product__price {}
+        .wc-block-featured-product__price {
+
+            // price amount
+            .woocommerce-Price-amount {
+
+                .woocommerce-Price-currencySymbol {
+
+
+                }
+
+            }
+
+        }
         
-        .wc-block-featured-product__link {}
+        .wc-block-featured-product__link {
+
+            .wp-block-button, 
+            .aligncenter {
+
+                .wp-block-button__link {
+                    
+
+
+                }
+
+            }
+
+        }
+
     }
+
 }
 
 ```
