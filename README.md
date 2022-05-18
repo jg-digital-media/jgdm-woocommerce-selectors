@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 18-05-2022 - 17:00)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 18-05-2022 - 17:23)
 
 
 ## WooCommerce Pages 
@@ -289,6 +289,7 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
 ```scss
 
+// Editor Note:  op level Selectors for WooCommerce /shop/ page
 #page {
 
 
@@ -365,6 +366,7 @@ As far as the shop archive page goes, the page is divided into 4 main structures
                     p {
 
                     }
+
                 }
 
             }
@@ -375,7 +377,7 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
             .woocommerce-result-count {
 
-                //paragraph element - e.g. center text alignment
+                // paragraph element - e.g. center text alignment
 
             }
 
@@ -421,9 +423,9 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
                         .price {
 
+                            // standard price selectors - no sale/discount price
                             .woocommerce-Price-amount {
 
-                                // standard price styling
                                 bdi {
 
                                     .woocommerce-Price-currencySymbol {
@@ -432,16 +434,16 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
                                 }
 
-                                // full price selectors (sale price)
-                                del {
-                                    
-                                    .woocommerce-Price-amount {
+                            }
 
-                                        bdi {
+                            // full price selectors (sale price)
+                            del {
+                                
+                                .woocommerce-Price-amount {
 
-                                            .woocommerce-Price-currencySymbol {
+                                    bdi {
 
-                                            }
+                                        .woocommerce-Price-currencySymbol {
 
                                         }
 
@@ -449,16 +451,16 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
                                 }
 
-                                // selected for discounted/sale price
-                                ins {
+                            }
 
-                                    .woocommerce-Price-amount {
+                            // selected for discounted/sale price
+                            ins {
 
-                                        bdi {
+                                .woocommerce-Price-amount {
 
-                                            .woocommerce-Price-currencySymbol {
+                                    bdi {
 
-                                            }
+                                        .woocommerce-Price-currencySymbol {
 
                                         }
 
