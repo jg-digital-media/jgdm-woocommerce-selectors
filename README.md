@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 17-05-2022 - 15:19)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 18-05-2022 - 15:44)
 
 
 ## WooCommerce Pages 
@@ -853,7 +853,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 ```scss
 
 
-// TODO:  choose myaccount page selectors
+// TODO: Choose myaccount page selectors
 .woocommerce {
 
     .woocommerce-MyAccount-navigation {
@@ -867,7 +867,6 @@ The Basket page is the first part of the shopping onboard process where items cu
                 }
 
             /* WooCommerce Navigation Classes */
-
             .woocommerce-MyAccount-navigation-link--dashboard 
             .woocommerce-MyAccount-navigation-link--orders
             .woocommerce-MyAccount-navigation-link--downloads
@@ -880,10 +879,10 @@ The Basket page is the first part of the shopping onboard process where items cu
 
 
                 }
+
             }
 
         }
-
 
     }
 
@@ -944,6 +943,53 @@ The Basket page is the first part of the shopping onboard process where items cu
 
 ```scss
 .woocommerce {
+
+    .woocommerce-notices-wrapper {
+
+
+    }
+
+    .woocommerce-form-coupon-toggle {
+
+        .woocommerce-info {
+
+            // coupon toggle link
+            .showcoupon {
+                    
+            }
+
+        }
+
+    }
+
+    .checkout_coupon {
+
+
+        // displayed when coupon toggle is open
+        p {
+
+        }
+
+        .form-row-first {
+
+            // contains coupon code text box
+            .input-text {
+
+            }
+
+        }
+
+        .form-row-seconde {
+
+            // contains coupon button
+            .button,
+            button[type="submit"] {
+
+            }            
+
+        }
+
+    }
 
 
 
