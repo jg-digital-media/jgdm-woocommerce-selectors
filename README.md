@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 19-05-2022 - 15:14)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 19-05-2022 - 15:22)
 
 
 ## WooCommerce Pages 
@@ -297,7 +297,7 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
 ```
 
-## SASS/CSS Selectors
+** SASS/CSS Selectors **
 
 ```scss
 
