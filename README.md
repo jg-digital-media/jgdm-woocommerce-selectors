@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 19-05-2022 - 10:56)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 19-05-2022 - 12:23)
 
 
 ## WooCommerce Pages 
@@ -933,6 +933,84 @@ The Basket page is the first part of the shopping onboard process where items cu
 
     .woocommerce-MyAccount-content {
 
+        .woocommerce-notices-wrapper {
+
+            .woocommerce-message {
+
+                &::before {
+
+
+                }
+
+                &::after {
+
+                }
+
+            }
+
+        }
+
+        p {
+            // The following addresses will be used on the checkout page by default
+        }
+
+
+        // Address Tab - Addresses - /my-account/billing/
+        // Address Tab - Addresses - /my-account/shipping/
+
+        h3 {
+
+                
+        }
+
+        .woocommerce-address-fields {
+
+            .woocommerce-address-fields__field-wrapper {
+
+                p {
+
+                    label {
+
+                        .required {
+
+                        }
+
+                        .optional {
+
+                        }
+
+                    }
+
+                    .woocommerce-input-wrapper {
+
+                        .input-text {
+
+                        }
+
+                        .country_select {
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+            p {
+
+                .button,
+                input[type="submit"] {
+
+                }
+
+
+            }
+
+        }
+
+        // edit-address/shipping
+
         // The content area for WooCommerce MyAccount pages
 
         // TOOO: Content and tabs for MyAccount page
@@ -1031,9 +1109,79 @@ The Basket page is the first part of the shopping onboard process where items cu
         * MyAccount Page Addresses Tab
         */
 
+        // col2-set woocommerce-Addresses
+        .col2-set {
+
+            &::before {
+
+            }
+
+        }
+
         .woocommerce-Addresses {
 
             // TODO:  Addresses Tab
+
+            &::before {
+
+            }
+
+
+            .col-1 {
+
+                .woocommerce-Address-title {
+
+                    h3 {
+
+                    }
+
+                    .edit {
+
+                        // add/edit address
+
+                    }
+
+                }
+
+                address {
+
+                    // 2 States - 
+                      // Address not yet set. "You have not set up this type of address yet"
+                      // lists the address as a series of line breaks when address saved
+
+                }
+
+            }
+            
+
+            .col-2 {
+
+                &::after {
+
+                }
+
+                .woocommerce-Address-title {
+
+                    h3 {
+
+                    }
+
+                    .edit {
+
+                    }
+
+                }
+
+                address {
+
+                    // 2 States - 
+                      // Address not yet set. "You have not set up this type of address yet"
+                      // lists the address as a series of line breaks when address saved
+                      // TODO: billing and shipping addresses
+
+                }
+
+            }
 
         }
         
