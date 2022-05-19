@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 19-05-2022 - 09:07)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 19-05-2022 - 09:16)
 
 
 ## WooCommerce Pages 
@@ -595,6 +595,8 @@ As far as the shop archive page goes, the page is divided into 4 main structures
     }
 
     #footer {
+
+        //div with id of footer - WooCommerce default state
 
         p {
 
@@ -1367,16 +1369,116 @@ div#page {
 
     #sidebar {
 
-        // TODO: 
+        // TODO: #sidebar - as per product archive page - ul containing element
+        ul {
+
+            li {
+
+                #searchform {
+
+                    div {
+
+                        .screen-reader-text {
+
+                        }
+
+                        #s {
+
+                        }
+
+                        #searchsubmit {
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+            // ul role navigation -  - Sidebar pages navigation list
+            li.pagenav {
+
+                h2 {
+
+                }
+
+                ul {
+
+                    .page-item {
+
+                        // list item selector that contains an anchor tag for each page
+
+                        a {
+
+                        }
+                        
+                    }
+
+                }
+
+            }
+
+            // No class selector for second list item - meant for the Sidebar archives list
+            li {
+
+                h2 {
+                    // Heading 2 Element Selector - Archive Title Text
+                }
+                
+                ul {
+
+                    li {
+
+                        a {
+
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+            // Selector: Sidebar Categories list
+            li.categories {
+
+                h2 {
+
+                }
+
+                ul {
+
+                    li.cat-item {
+
+                        a {
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
 
 
     }
 
     #footer {
 
-        // TODO: 
-    }
+        // TODO: as per product archive page
+        p {
 
+            a {
+
+            }
+
+        }
+    
+    }
 
 }
 
