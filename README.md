@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 19-05-2022 - 14:30)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 19-05-2022 - 15:14)
 
 
 ## WooCommerce Pages 
@@ -653,7 +653,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                     tr {
 
-                        // TODO: confirm any child selectors
+                        // Note: TH tables cells.  No child selectors
                         .product-remove {}
                         .product-thumbnail {}
                         .product-name {}
@@ -668,7 +668,6 @@ The Basket page is the first part of the shopping onboard process where items cu
                 tbody {
 
                     tr.woocommerce-cart-form__cart-item {
-
                         
                         // td table cell classes    
                         .product-remove {
@@ -677,8 +676,8 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                                 &:hover {
 
-                                    // remove button as an anchor element 
-                                    // use a transition for background on hover state
+                                    // remove button is used with an anchor <a> element 
+                                    // You can use a transition for background on hover state
                                 }
 
                             }
@@ -691,7 +690,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                                 .attachment-woocommerce_thumbnail {
 
-                                    // product thumbnail is an image element
+                                    // Note: this is an image element
 
                                 }
 
@@ -811,7 +810,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                 .shop_table {
 
-                    // Cart Collaterals Table  - table element
+                    // Note: This element is the cart collaterals Table - table element
                     tbody {
 
 
@@ -821,7 +820,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                             th {
 
-                                // th subtotal
+                                // Note: table cell and row for order subtotals
                             }
 
                             td {
@@ -846,7 +845,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                             th {
 
-                                // th total
+                                // Note: table cell and row for the total order amount
                             }
 
                             td {
@@ -906,7 +905,6 @@ The Basket page is the first part of the shopping onboard process where items cu
 
 ```scss
 
-
 // TODO: Confirm MyAccount Page selectors
 .woocommerce {
 
@@ -928,7 +926,7 @@ The Basket page is the first part of the shopping onboard process where items cu
             .woocommerce-MyAccount-navigation-link--edit-account
             .woocommerce-MyAccount-navigation-link--customer-logout
 
-            // sass selector for the active tab
+            // Note: CSS/Sass selector for the active tab
                 & .is-active {
 
 
@@ -940,6 +938,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
     }
 
+    // Note: This is the content area for WooCommerce MyAccount pages
     .woocommerce-MyAccount-content {
 
         .woocommerce-notices-wrapper {
@@ -972,6 +971,7 @@ The Basket page is the first part of the shopping onboard process where items cu
                 
         }
 
+        // Note: Shipping and Billing Addresses
         .woocommerce-address-fields {
 
             .woocommerce-address-fields__field-wrapper {
@@ -1018,9 +1018,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
         }
 
-        // edit-address/shipping
-
-        // The content area for WooCommerce MyAccount pages
+        // edit-address/shipping/      
 
         // TOOO: Content and tabs for MyAccount page
         .woocommerce-notices-wrapper {
@@ -1044,6 +1042,7 @@ The Basket page is the first part of the shopping onboard process where items cu
             }
 
         }
+
 
         /* 
         * 
@@ -1118,7 +1117,7 @@ The Basket page is the first part of the shopping onboard process where items cu
         * MyAccount Page Addresses Tab
         */
 
-        // TODO: Confirm addresses tab
+        // TODO: Check addresses tab
 
         // col2-set woocommerce-Addresses
         .col2-set {
@@ -1299,7 +1298,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
             }
 
-            // LOGOUT - logs you out directly
+            // Not: The logout su bnavigation logs you out directly
 
         }
         
@@ -1340,8 +1339,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
     .checkout_coupon {
 
-
-        // displayed when coupon toggle is open
+        // NOTE: This element is displayed in the browser when showcoupon toggle class is open
         p {
 
         }
@@ -1555,8 +1553,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
 ```scss
 
-
-// /product/  Selectors sgi ingle product page as clicked from shop archive page
+// /product/  Selectors for single product page as clicked through from shop archive page
 div#page {
 
     #header {        
@@ -1586,7 +1583,7 @@ div#page {
 
     #primary {  
         
-        // TODO: #primary  .content-area
+        // TODO: #primary .content-area
 
         #main {
 
@@ -1631,20 +1628,20 @@ div#page {
 
                 }
 
-                // Use the entry summary classes
+                // Note: Use the entry summary classes
                 .entry-summary {
 
-                    // product details and basket customisations
+                    // Note: product details and basket customisations
 
                     .entry-title {
 
-                        // product title per single product templates
+                        // Note: product title per single product templates
 
                     }
 
-                    .price {
+                    .price {                       
 
-                        // standard price selectors
+                        /* STANDARD PRICE */
                         .woocommerce-Price-amount {
 
                             bdi {
@@ -1705,7 +1702,7 @@ div#page {
 
     #sidebar {
 
-        // TODO: #sidebar - same as per product archive page - ul containing element
+        // TODO: #sidebar - same as the product archive page - ul containing element
 
         ul {
 
@@ -1733,7 +1730,7 @@ div#page {
 
             }
 
-            // ul role navigation -  - Sidebar pages navigation list
+            // Note: ul role navigation - Sidebar pages navigation list
             li.pagenav {
 
                 h2 {
@@ -1744,7 +1741,7 @@ div#page {
 
                     .page-item {
 
-                        // list item selector that contains an anchor tag for each page
+                        // list item class selector that contains an anchor tag for each page
 
                         a {
 
@@ -1756,10 +1753,11 @@ div#page {
 
             }
 
-            // No class selector for second list item - meant for the Sidebar archives list
+            // Note: No class selector for second list item - meant for the Sidebar archives list
             li {
 
                 h2 {
+
                     // Heading 2 Element Selector - Archive Title Text
                 }
                 
@@ -1778,7 +1776,7 @@ div#page {
 
             }
 
-            // Selector: Sidebar Categories list
+            // Note: This list item used for Categories list item
             li.categories {
 
                 h2 {
@@ -1806,7 +1804,7 @@ div#page {
 
     #footer {
 
-        // TODO: #footer same as product archive page
+        // Note: #footer selector markup same as product archive page
         p {
 
             a {
