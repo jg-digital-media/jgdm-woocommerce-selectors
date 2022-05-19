@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 18-05-2022 - 17:23)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 19-05-2022 - 09:07)
 
 
 ## WooCommerce Pages 
@@ -1217,7 +1217,9 @@ The Basket page is the first part of the shopping onboard process where items cu
 
 ```scss
 
-.woocommerce {
+
+// /product/  Single product page as clicked from shop archive page
+div#page {
 
     #header {        
 
@@ -1244,7 +1246,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
     }
 
-    #primary {
+    #primary {  // #primary  .content-area
 
         #main {
 
@@ -1262,7 +1264,16 @@ The Basket page is the first part of the shopping onboard process where items cu
 
             .type-product {
 
+
+                .onsale {
+                    
+                    // onsale span element for inclusion when there is a product sale
+
+                }
+
                 .woocommerce-product-gallery {
+
+                    // div containing element
 
                     .woocommerce-product-gallery__wrapper {
 
@@ -1270,6 +1281,73 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                             a {
                                 .wp-post-image {
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+                // Use the entry summary classes
+                .entry-summary {
+
+                    // product details and basket customisations
+
+                    .entry-title {
+
+                        // product title per single product templates
+
+                    }
+
+                    .price {
+
+                        // standard price selectors
+                        .woocommerce-Price-amount {
+
+                            bdi {
+
+                                .woocommerce-Price-currencySymbol {
+
+                                }
+
+                            }
+
+                        }
+
+                        /* SALE PRICE */
+
+
+                        // strikethrough full price
+                        del {
+                            
+                            .woocommerce-Price-amount {
+
+                                bdi {
+
+                                    .woocommerce-Price-currencySymbol {
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                        // sale/discounted price
+                        ins {
+                            
+                            .woocommerce-Price-amount {
+
+                                bdi {
+
+                                    .woocommerce-Price-currencySymbol {
+
+                                    }
 
                                 }
 
@@ -1300,9 +1378,8 @@ The Basket page is the first part of the shopping onboard process where items cu
     }
 
 
-
-
 }
+
 ```
 
 [Top](#document-navigation)
