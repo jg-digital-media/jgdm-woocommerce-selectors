@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 19-05-2022 - 12:23)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 19-05-2022 - 14:19)
 
 
 ## WooCommerce Pages 
@@ -392,7 +392,6 @@ As far as the shop archive page goes, the page is divided into 4 main structures
                         &.selected {
 
                             // Add selected class to option element on orderby selection
-
 
                         }
 
@@ -1109,6 +1108,8 @@ The Basket page is the first part of the shopping onboard process where items cu
         * MyAccount Page Addresses Tab
         */
 
+        // TODO: Confirm addresses tab
+
         // col2-set woocommerce-Addresses
         .col2-set {
 
@@ -1119,8 +1120,6 @@ The Basket page is the first part of the shopping onboard process where items cu
         }
 
         .woocommerce-Addresses {
-
-            // TODO:  Addresses Tab
 
             &::before {
 
@@ -1158,6 +1157,8 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                 &::after {
 
+                    // clear: both;
+
                 }
 
                 .woocommerce-Address-title {
@@ -1182,6 +1183,113 @@ The Basket page is the first part of the shopping onboard process where items cu
                 }
 
             }
+
+        }
+
+        
+
+        /* 
+        * 
+        * MyAccount Page Account Details Tab
+        */
+
+        .woocommerce-EditAccountForm {
+
+            .form-row {
+
+                &::before {
+
+                }
+
+            }
+
+            .woocommerce-form-row {
+
+                label {
+
+                    .required {
+
+                    }
+
+                }
+
+                .input-text {
+
+                }
+
+                span {
+
+                    em {
+
+                    }
+
+                }
+
+            }
+
+            fieldset {
+
+                legend {
+
+                }
+
+                .woocommerce-form-row {
+
+                    &::before {
+
+                    }
+
+                    .password-input {
+
+                        .input-text,
+                        input[type="password"] {
+
+                        }
+
+                        .show-password-input {
+
+                            &::after {
+
+                            }
+
+                            & .display-password {
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+                .form-row {
+
+                    &::after {
+                        
+                    }
+
+                }
+
+                .form-row-wide {
+
+                }
+
+            }
+
+            .clear {
+
+            }
+
+            p {
+
+                button[type="submit"],
+                .wooCommerce-Button {
+
+                }
+
+            }
+
+            // LOGOUT - logs you out directly
 
         }
         
