@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 19-05-2022 - 09:54)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 19-05-2022 - 10:56)
 
 
 ## WooCommerce Pages 
@@ -26,7 +26,7 @@ If any of these don't work if you notice anything I might have missed let me kno
 
 Jump to the pages to view the selectors you need.
 
-[Shoo Home](#shop-homepage) | [Shop Archive](#shop-archive-page) | [Basket](#woocommerce-basket-page) | [MyAccount](#woocommerce-myaccount-page) | [Checkout](#woocommerce-checkout-page) | [Single Product Page](#woocommerce-product-single)
+[Shop Home](#shop-homepage) | [Shop Archive](#shop-archive-page) | [Basket](#woocommerce-basket-page) | [MyAccount](#woocommerce-myaccount-page) | [Checkout](#woocommerce-checkout-page) | [Single Product Page](#woocommerce-product-single)
 
 
 <a id="shop-homepage"></a>
@@ -898,7 +898,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 ```scss
 
 
-// TODO: Confirm MyAccount page selectors
+// TODO: Confirm MyAccount Page selectors
 .woocommerce {
 
     .woocommerce-MyAccount-navigation {
@@ -933,13 +933,18 @@ The Basket page is the first part of the shopping onboard process where items cu
 
     .woocommerce-MyAccount-content {
 
+        // The content area for WooCommerce MyAccount pages
+
         // TOOO: Content and tabs for MyAccount page
         .woocommerce-notices-wrapper {
 
         }
 
 
-        // Dashboard Tab
+        /* 
+        * 
+        * MyAccount Page Dashboard Tab
+        */
         p {
 
             strong {
@@ -953,26 +958,84 @@ The Basket page is the first part of the shopping onboard process where items cu
 
         }
 
-        // Orders Tab
+        /* 
+        * 
+        * MyAccount Page Orders Tab
+        */
         .woocommerce-message, .woocommerce-message--info, .woocommerce-Message .woocommerce-Message--info, .woocommerce-info {
 
         }
 
         // tick icon - messages container element
-        ..woocommerce-info::before {
+        .woocommerce-info {
 
-            // Orders tab button - "browse products"
-            a.woocommerce-Button button {
+            /* border-top-color: ; */
+        
+        
+            &::before {
+
+                /* color: #e1e85be; */
+                /* content: "\e015\" */
 
             }
 
-        // 
+            // Orders tab button - "browse products"
+            .woocommerce-Button button {
+
+
+
+            }
+
+            // WooCommerce message
+            .woocommerce-message {
+
+                &::after {
+
+                    /* clear: both; */
+
+                }
+
+            }
+             
+
+        }
+
+        // Browse products button
+        .woocommerce-Message--info {
+
+            // Orders tab button - "browse products"
+            .woocommerce-Button button {
+
+                a {
+
+                }
+
+            }
 
         }
 
 
         // TODO: More Tabs
 
+        
+        /* 
+        * 
+        * MyAccount Page Downloads Tab
+        */
+
+        // Same as orders page  ...
+
+
+        /* 
+        * 
+        * MyAccount Page Addresses Tab
+        */
+
+        .woocommerce-Addresses {
+
+            // TODO:  Addresses Tab
+
+        }
         
     }
 
