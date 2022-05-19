@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 19-05-2022 - 15:22)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 19-05-2022 - 15:25)
 
 
 ## WooCommerce Pages 
@@ -19,6 +19,8 @@ Each page in WordPress has a user defined `slug`, an identifier for the page tha
 This document contains the out of the box ID, class and other selectors that I've identified should be used to customise the appearance of your WooCommerce Shop.
 
 If any of these don't work if you notice anything I might have missed let me know via a pull request and I'll look at the problem.  :)
+
+Simply copy the groups of selectors from the specified pages below and add them to your theme.
 
 
 <a id="#document-navigation"></a>
@@ -325,7 +327,7 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
 ```
 
-## All the Shop Product Archive Page Selectors
+** All the Shop Product Archive Page Selectors **
 
 ```scss
 
@@ -350,6 +352,7 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
 
             }
+
         }
 
     }
@@ -631,8 +634,6 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 + **/basket/** (Shop Basket Page) [Top](#document-navigation)
 
 The Basket page is the first part of the shopping onboard process where items currently added to it will appear.
-
-
 
 ```scss
 
