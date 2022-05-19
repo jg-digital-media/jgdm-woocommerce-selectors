@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 19-05-2022 - 09:16)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 19-05-2022 - 09:42)
 
 
 ## WooCommerce Pages 
@@ -27,7 +27,7 @@ Jump to the pages to view the selectors you need.
 
 <a id="shop-homepage"></a>
 ### Shop Homepage
-+ https://www.url.com/homepage   [Top](#document-navigation)
++ https://www.url.com/homepage (Home)  [Top](#document-navigation)
 
 
 ```First, Look for the loop in your WordPress Template file.```
@@ -84,7 +84,6 @@ e.g.
 .has-text-align-center {
 
 }
-
 
 
 /* New Products Section Selectors */
@@ -231,8 +230,7 @@ e.g.
             .wp-block-button, 
             .aligncenter {
 
-                .wp-block-button__link {
-                    
+                .wp-block-button__link {                  
 
 
                 }
@@ -250,7 +248,7 @@ e.g.
 
 <a id="#shop-archive-page"></a>
 ### Shop Archive Page
-+ https://www.cartoonchris.co.uk/shop/ (Product Archive Page)  [Top](#document-navigation)
++ https://www.cartoonchris.co.uk/shop/ (Product Archive Page) [Top](#document-navigation)
 
 As far as the shop archive page goes, the page is divided into 4 main structures.
 
@@ -264,6 +262,7 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
 ```html
 
+<!-- Example HTML for WooCommerce -->
 <div id="page">   
 
     <div id="header"> . . . <div>
@@ -280,7 +279,6 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
     <div id="footer"> . . . </div>
 
-
 </div>
 
 ```
@@ -289,14 +287,13 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
 ```scss
 
-// Editor Note:  op level Selectors for WooCommerce /shop/ page
-#page {
+// Editor Note:  The top level selectors for WooCommerce /shop/ page - included for brevity
 
+#page {
 
     #header {
 
     }
-
 
     #primary {
 
@@ -314,10 +311,11 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
 ```
 
-## Shop Product Archive Page Selectors
+## All the Shop Product Archive Page Selectors
 
 ```scss
 
+// TODO: Confirm product page selectors
 #page {
 
     color: blue;
@@ -478,7 +476,6 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
                         // Add to basket button selector
 
-
                     }
 
                 }
@@ -551,7 +548,9 @@ As far as the shop archive page goes, the page is divided into 4 main structures
             li {
 
                 h2 {
-                    // Heading 2 Element Selector - Archive Title Text
+
+                    // Archive Title Text
+
                 }
                 
                 ul {
@@ -596,7 +595,7 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
     #footer {
 
-        //div with id of footer - WooCommerce default state
+        // div with id of footer - WooCommerce default state
 
         p {
 
@@ -624,6 +623,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
 ```scss
 
+// TODO: Confirm Basket Page Selectors
 .woocommerce {
 
     a {
@@ -640,6 +640,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                     tr {
 
+                        // TODO: confirm any child selectors
                         .product-remove {}
                         .product-thumbnail {}
                         .product-name {}
@@ -893,7 +894,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 ```scss
 
 
-// TODO: Choose myaccount page selectors
+// TODO: Confirm MyAccount page selectors
 .woocommerce {
 
     .woocommerce-MyAccount-navigation {
@@ -928,7 +929,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
     .woocommerce-MyAccount-content {
 
-        // TOOO: Content and tabs for myaccount page
+        // TOOO: Content and tabs for MyAccount page
         .woocommerce-notices-wrapper {
 
         }
@@ -953,7 +954,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
         }
 
-        //tick icon
+        // tick icon - messages container element
         ..woocommerce-info::before {
 
             // Orders tab button - "browse products"
@@ -982,6 +983,8 @@ The Basket page is the first part of the shopping onboard process where items cu
 + https://www.cartoonchris.co.uk/checkout/ - Checkout Page ([Top](#document-navigation))
 
 ```scss
+
+// TODO: Confirm the checkout page selectors
 .woocommerce {
 
     .woocommerce-notices-wrapper {
@@ -1220,7 +1223,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 ```scss
 
 
-// /product/  Single product page as clicked from shop archive page
+// /product/  Selectors sgi ingle product page as clicked from shop archive page
 div#page {
 
     #header {        
@@ -1248,7 +1251,9 @@ div#page {
 
     }
 
-    #primary {  // #primary  .content-area
+    #primary {  
+        
+        // TODO: #primary  .content-area
 
         #main {
 
@@ -1276,7 +1281,6 @@ div#page {
                 .woocommerce-product-gallery {
 
                     // div containing element
-
                     .woocommerce-product-gallery__wrapper {
 
                         .woocommerce-product-gallery__image {
@@ -1321,7 +1325,6 @@ div#page {
                         }
 
                         /* SALE PRICE */
-
 
                         // strikethrough full price
                         del {
@@ -1369,7 +1372,8 @@ div#page {
 
     #sidebar {
 
-        // TODO: #sidebar - as per product archive page - ul containing element
+        // TODO: #sidebar - same as per product archive page - ul containing element
+
         ul {
 
             li {
@@ -1469,7 +1473,7 @@ div#page {
 
     #footer {
 
-        // TODO: as per product archive page
+        // TODO: #footer same as product archive page
         p {
 
             a {
