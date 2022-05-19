@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 19-05-2022 - 09:47)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 19-05-2022 - 09:54)
 
 
 ## WooCommerce Pages 
@@ -31,7 +31,7 @@ Jump to the pages to view the selectors you need.
 
 <a id="shop-homepage"></a>
 ### Shop Homepage
-+ https://www.url.com/homepage (Home)  [Top](#document-navigation)
++ **/homepage/** (Home)  [Top](#document-navigation)
 
 
 ```First, Look for the loop in your WordPress Template file.```
@@ -252,7 +252,7 @@ e.g.
 
 <a id="#shop-archive-page"></a>
 ### Shop Archive Page
-+ https://www.cartoonchris.co.uk/shop/ (Product Archive Page) [Top](#document-navigation)
++ **/shop/** (Product Archive Page) [Top](#document-navigation)
 
 As far as the shop archive page goes, the page is divided into 4 main structures.
 
@@ -619,7 +619,7 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
 <a id="woocommerce-basket-page"></a>
 ### WooCommerce Basket
-+ https://www.cartoonchris.co.uk/basket/ (Shop Basket Page) [Top](#document-navigation)
++ **/basket/** (Shop Basket Page) [Top](#document-navigation)
 
 The Basket page is the first part of the shopping onboard process where items currently added to it will appear.
 
@@ -891,7 +891,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 <a id="woocommerce-myaccount-page"></a>
 
 ### WooCommerce MyAccount Page
-+ https://www.cartoonchris.co.uk/my-account/ My Account Page ([Top](#document-navigation))
++ **/my-account/** My Account Page ([Top](#document-navigation))
 
 
 
@@ -984,7 +984,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 <a id="woocommerce-checkout-page"></a>
 ### WooCommerce Checkout Page
 
-+ https://www.cartoonchris.co.uk/checkout/ - Checkout Page ([Top](#document-navigation))
++ **/checkout/** - Checkout Page ([Top](#document-navigation))
 
 ```scss
 
@@ -1221,7 +1221,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 <a id="woocommerce-product-single"></a>
 ### WooCommerce Single Product
 
-+ https://www.cartoonchris.co.uk/product/ - Product Page  ([Top](#document-navigation))
++ **/product/** - Product Page  ([Top](#document-navigation))
 
 
 ```scss
