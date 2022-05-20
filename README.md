@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 20-05-2022 - 15:00)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 20-05-2022 - 16:20)
 
 ## WooCommerce Pages 
 
@@ -66,7 +66,6 @@ e.g.
 #### **SASS/CSS Selectors to use...**  
 ```scss
 
-// Editor Note: SECTION COMPLETE Homepage
 .wp-block-cover {
 
     .wp-block-cover__gradient-background {
@@ -299,7 +298,7 @@ The 4 above may be contained inside a div with the ID of #page.
 
 ```html
 
-<!-- Example HTML for WooCommerce --> <!-- Editor Note: SECTION COMPLETE -->
+<!-- Example HTML for WooCommerce -->
 <div id="page">   
 
     <div id="header"> . . . <div>
@@ -664,7 +663,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
 ```scss
 
-// TODO: Confirm Basket Page Selectors  <!-- Editor Note: SECTION COMPLETE -->
+// TODO: Confirm Basket Page Selectors 
 .woocommerce {
 
     a {
@@ -949,7 +948,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 <a id="woocommerce-myaccount-page"></a>
 
 ### WooCommerce MyAccount Page
-+ **/my-account/** My Account Page ([Top](#document-navigation))  <!-- SECTION INCOMPLETE -->
++ **/my-account/** My Account Page ([Top](#document-navigation))  
 
 
 ```scss
@@ -958,6 +957,15 @@ The Basket page is the first part of the shopping onboard process where items cu
 .woocommerce {
 
     .woocommerce-MyAccount-navigation {
+        
+            
+
+        // Note: CSS/Sass selector for the active tab
+        & .is-active {
+
+
+        }
+            
 
         ul {
 
@@ -967,19 +975,30 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                 }
 
+            }
+
             /* WooCommerce Navigation Classes */
-            .woocommerce-MyAccount-navigation-link--dashboard 
-            .woocommerce-MyAccount-navigation-link--orders
-            .woocommerce-MyAccount-navigation-link--downloads
-            .woocommerce-MyAccount-navigation-link--edit-address
-            .woocommerce-MyAccount-navigation-link--edit-account
-            .woocommerce-MyAccount-navigation-link--customer-logout
+            .woocommerce-MyAccount-navigation-link--dashboard {
 
-            // Note: CSS/Sass selector for the active tab
-                & .is-active {
+            } 
 
+            .woocommerce-MyAccount-navigation-link--orders {
 
-                }
+            }
+
+            .woocommerce-MyAccount-navigation-link--downloads {
+
+            }
+
+            .woocommerce-MyAccount-navigation-link--edit-address {
+
+            }
+
+            .woocommerce-MyAccount-navigation-link--edit-account {
+
+            }
+
+            .woocommerce-MyAccount-navigation-link--customer-logout {
 
             }
 
@@ -1010,70 +1029,7 @@ The Basket page is the first part of the shopping onboard process where items cu
         p {
             // The following addresses will be used on the checkout page by default
         }
-
-
-        // Address Tab - Addresses - /my-account/billing/
-        // Address Tab - Addresses - /my-account/shipping/
-
-        h3 {
-
-                
-        }
-
-        // Note: Shipping and Billing Addresses
-        .woocommerce-address-fields {
-
-            .woocommerce-address-fields__field-wrapper {
-
-                p {
-
-                    label {
-
-                        .required {
-
-                        }
-
-                        .optional {
-
-                        }
-
-                    }
-
-                    .woocommerce-input-wrapper {
-
-                        .input-text {
-
-                        }
-
-                        .country_select {
-
-                        }
-
-                    }
-
-                }
-
-            }
-
-            p {
-
-                .button,
-                input[type="submit"] {
-
-                }
-
-
-            }
-
-        }
-
-        // edit-address/shipping/      
-
-        // TOOO: Content and tabs for MyAccount page
-        .woocommerce-notices-wrapper {
-
-        }
-
+        
 
         /* 
         * 
@@ -1091,6 +1047,8 @@ The Basket page is the first part of the shopping onboard process where items cu
             }
 
         }
+
+        
 
 
         /* 
@@ -1149,34 +1107,20 @@ The Basket page is the first part of the shopping onboard process where items cu
 
         }
 
-
-        // TODO: More Tabs
-
         
         /* 
         * 
         * MyAccount Page Downloads Tab
         */
 
-        // Same as orders page  ...
+        // ...  Same as orders page  ...
+
 
 
         /* 
         * 
-        * MyAccount Page Addresses Tab
+        * MyAccount Page Addresses Tab  /edit-address/
         */
-
-        // TODO: Check addresses tab
-
-        // col2-set woocommerce-Addresses
-        .col2-set {
-
-            &::before {
-
-            }
-
-        }
-
         .woocommerce-Addresses {
 
             &::before {
@@ -1202,9 +1146,9 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                 address {
 
-                    // 2 States - 
-                      // Address not yet set. "You have not set up this type of address yet"
-                      // lists the address as a series of line breaks when address saved
+                    // 2 page states - 
+                       // Address not yet set. "You have not set up this type of address yet"
+                       // lists the address as a series of line breaks when address saved
 
                 }
 
@@ -1236,7 +1180,6 @@ The Basket page is the first part of the shopping onboard process where items cu
                     // 2 States - 
                       // Address not yet set. "You have not set up this type of address yet"
                       // lists the address as a series of line breaks when address saved
-                      // TODO: billing and shipping addresses
 
                 }
 
@@ -1244,6 +1187,71 @@ The Basket page is the first part of the shopping onboard process where items cu
 
         }
 
+
+        // Address Tab - Addresses - /my-account/billing/
+        // Address Tab - Addresses - /my-account/shipping/
+
+        form {
+
+            h3 {
+
+                    
+            }
+
+            // Note: Shipping and Billing Addresses
+            .woocommerce-address-fields {
+
+                .woocommerce-address-fields__field-wrapper {
+
+                    p {
+
+                        label {
+
+                            .required {
+
+                            }
+
+                            .optional {
+
+                            }
+
+                        }
+
+                        .woocommerce-input-wrapper {
+
+                            .input-text {
+
+                            }
+
+                            .country_select {
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+                p {
+
+                    .button,
+                    input[type="submit"] {
+
+                    }
+
+                }
+
+            }
+
+            // edit-address/shipping/                 
+            .woocommerce-address-fields { 
+
+                // Editor Note:  As Billing Address Selectors - Cut for brevity
+
+            }
+
+        }
         
 
         /* 
@@ -1300,6 +1308,7 @@ The Basket page is the first part of the shopping onboard process where items cu
                     .password-input {
 
                         .input-text,
+                        .woocommerce-Input--password,
                         input[type="password"] {
 
                         }
@@ -1353,13 +1362,12 @@ The Basket page is the first part of the shopping onboard process where items cu
         
     }
 
-
 }
 
 ```
 
 <a id="woocommerce-checkout-page"></a>
-### WooCommerce Checkout Page   <!-- SECTION COMPLETE -->
+### WooCommerce Checkout Page   
 
 + **/checkout/** - Checkout Page ([Top](#document-navigation))
 
@@ -1614,7 +1622,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 <a id="woocommerce-product-single"></a>
 
 ### WooCommerce Single Product
-+ **/product/** - Product Page  ([Top](#document-navigation)) <!-- SECTION COMPLETE-->
++ **/product/** - Product Page  ([Top](#document-navigation)) 
 
 
 ```scss
