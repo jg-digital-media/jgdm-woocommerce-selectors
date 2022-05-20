@@ -1,7 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 20-05-2022 - 11:47)
-
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 20-05-2022 - 13:27)
 
 ## WooCommerce Pages 
 
@@ -1622,7 +1621,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
 ```scss
 
-// /product/  Selectors for single product page as clicked through from shop archive page
+// /product/  Selectors for single product page as clicked through from shop archive page  <!-- SECTION ... -->
 div#page {
 
     #header {        
@@ -1652,11 +1651,17 @@ div#page {
 
     #primary {  
         
-        // TODO: #primary .content-area
-
         #main {
 
             .woocommerce-breadcrumb {
+
+                &::before {
+
+                }
+
+                &::after {
+
+                }
 
                 a {
 
@@ -1670,21 +1675,22 @@ div#page {
 
             .type-product {
 
-
                 .onsale {
                     
-                    // onsale span element for inclusion when there is a product sale
+                    // Note: onsale span element for inclusion when there is a product sale
 
                 }
 
                 .woocommerce-product-gallery {
 
                     // div containing element
+
                     .woocommerce-product-gallery__wrapper {
 
                         .woocommerce-product-gallery__image {
 
                             a {
+
                                 .wp-post-image {
 
                                 }
@@ -1697,7 +1703,7 @@ div#page {
 
                 }
 
-                // Note: Use the entry summary classes
+                // Note: Use the entry summary classes for the Single Product Template
                 .entry-summary {
 
                     // Note: product details and basket customisations
@@ -1725,7 +1731,7 @@ div#page {
 
                         /* SALE PRICE */
 
-                        // strikethrough full price
+                        // strikethrough styling
                         del {
                             
                             .woocommerce-Price-amount {
@@ -1760,6 +1766,368 @@ div#page {
                         }
 
                     }
+
+                    .woocommerce-product-details__short-description {
+
+                        p {
+
+                        }
+
+                    }
+
+                    .cart {
+
+                        .quantity {
+
+                            .screen-reader-text {
+
+                            }
+
+                            .qty {
+
+                            }
+
+                        }
+
+                        .single_add_to_cart_button {
+
+
+                        }
+
+                    }
+
+                    .product_meta {
+
+                        .posted_in {
+
+                            a {
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+                .wc-tabs-wrapper {
+
+                    // TODO: 
+
+                    .tabs {
+
+                        &::before {
+
+                        }
+
+                    }
+
+                    .wc-tabs {
+
+                        li {
+
+                            &.active {
+
+                                // Note: Class attached to the active tab
+
+                            }
+
+                        }
+
+                        .description_tab {
+
+                            a {
+
+                            }
+
+                        }
+
+                        .additional_information_tab {
+
+                            a {
+
+                            }
+
+                        }
+
+                        .reviews_tab {
+
+                            a {
+
+                            }
+
+                        }
+
+                    }
+
+                    // wc-tabs content panel - container class
+                    .woocommerce-Tabs-panel {
+
+
+                        // content panel - description tab
+                        h2 {
+
+                        }
+
+                        p {
+
+                        }
+
+                        //content panel - additional info 
+
+                        h2 {
+
+
+                        }
+
+                        .woocommerce-product-attributes {
+
+                            tbody {
+
+                                tr.woocommerce-product-attributes-item {
+
+                                    th.woocommerce-product-attributes-item__label {
+
+                                    }
+
+                                    td.woocommerce-product-attributes-item__value {
+
+                                        p {
+
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                        // content panel - Reviews Tab
+
+                        .woocommerce-Reviews {
+
+                            #comments {
+
+                                .woocommerce-Reviews-title {
+
+                                    span {
+
+                                    }
+
+                                }
+
+                                // When there is a review list
+                                ol#commentlist {
+
+                                    li {
+
+                                        .comment_container {
+
+                                            .avatar {
+
+                                            }
+
+                                            .comment-text {
+
+                                                .star-rating {
+
+                                                    span {
+
+                                                        .rating {
+
+                                                        }
+                                                    }
+
+                                                }
+
+                                                .meta {
+
+                                                    //Note:  comment meta info selectors
+
+                                                    
+                                                    .woocommerce-review__author {
+
+                                                    }
+
+                                                    .woocommerce-review__dash {
+
+                                                    }
+
+                                                    .woocommerce-review__published-date {
+
+                                                    }
+
+
+                                                }
+
+                                                .description {
+
+                                                    p {
+
+                                                    }
+
+                                                }
+
+                                            }
+
+                                        }
+
+                                    }
+
+                                }
+
+                                .woocommerce-noreviews {
+
+                                    // Note: text "there are no reviews yet"
+                                }
+
+                            }
+                            
+
+                            #review_form_wrapper {
+
+                                // TODO: Review Form Wrapper                                
+                                #review_form {
+
+                                    #respond {
+
+                                        // use ID or class of .comment-respond 
+
+                                        .comment-reply-title {
+
+                                            small {
+
+                                                a {
+
+                                                }
+
+                                            }
+
+                                        }
+
+
+                                        // Comment Form for making new reviews
+                                        .comment-form {
+
+                                            .comment-form-rating {
+
+                                                .stars {
+
+                                                    span {
+
+                                                        .star-1,
+                                                        .star-2,
+                                                        .star-3,
+                                                        .star-4,
+                                                        .star-5 {
+
+                                                            &::before {
+
+                                                            }
+
+                                                        }
+
+                                                    }
+
+                                                }
+
+                                            }
+
+                                            .comment-form-comment {
+
+                                                label {
+
+                                                    .required {
+
+                                                    }
+
+                                                }
+
+                                                #comment {
+
+                                                }
+
+                                            }
+
+                                            .form-submit {
+
+                                                .submit {
+
+                                                }
+
+                                            }
+
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+
+                            .clear {
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+                .related {
+
+                    h2 {
+
+                    }
+
+
+                    ul.products {
+
+                        .product-type-simple {
+
+                            .woocommerce-loop-product__link {
+
+                                .attachment-woocommerce_thumbnail {
+
+                                }
+
+                                .woocommerce-loop-product__title {
+
+                                }
+
+                                .price {
+
+                                    .woocommerce-Price-amount {
+
+                                        bdi {
+
+                                            .woocommerce-Price-currencySymbol {
+
+                                            }
+
+                                        }
+                                    }
+
+                                    // TODO: Single product page onpage styling for related products
+                                    
+
+                                }
+
+                            }
+
+                            .add_to_cart_button {
+
+                                // Note: Add to Basket Button
+
+                            }
+
+                        }
+
+                    }
+
 
                 }
 
