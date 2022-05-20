@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 20-05-2022 - 13:54)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 20-05-2022 - 14:37)
 
 ## WooCommerce Pages 
 
@@ -952,7 +952,6 @@ The Basket page is the first part of the shopping onboard process where items cu
 + **/my-account/** My Account Page ([Top](#document-navigation))  <!-- SECTION INCOMPLETE -->
 
 
-
 ```scss
 
 // TODO: Confirm MyAccount Page selectors
@@ -1608,20 +1607,19 @@ The Basket page is the first part of the shopping onboard process where items cu
 
     }
 
-}
-     
+}     
 
 ```
 
 <a id="woocommerce-product-single"></a>
-### WooCommerce Single Product
 
-+ **/product/** - Product Page  ([Top](#document-navigation))
+### WooCommerce Single Product
++ **/product/** - Product Page  ([Top](#document-navigation)) <!-- SECTION COMPLETE-->
 
 
 ```scss
 
-// /product/  Selectors for single product page as clicked through from shop archive page  <!-- SECTION INCOMPLETE-->
+// /product/  Selectors for single product page as clicked through from shop archive page  
 div#page {
 
     #header {        
@@ -1812,8 +1810,15 @@ div#page {
 
                 .wc-tabs-wrapper {
 
-                    // TODO: 
+                    /* Note:  
 
+                        3 Tabs
+
+                        -> Description 
+                        -> Additional information 
+                        -> Reviews
+
+                    */
                     .tabs {
 
                         &::before {
@@ -1919,7 +1924,7 @@ div#page {
                                 }
 
                                 // When there is a review list
-                                ol#commentlist {
+                                ol.commentlist {
 
                                     li {
 
@@ -2033,6 +2038,14 @@ div#page {
 
                                                 }
 
+                                                #rating {
+
+                                                    option {
+
+                                                    }
+
+                                                }
+
                                             }
 
                                             .comment-form-comment {
@@ -2100,6 +2113,7 @@ div#page {
 
                                 .price {
 
+                                    // Standard Prices
                                     .woocommerce-Price-amount {
 
                                         bdi {
@@ -2112,7 +2126,47 @@ div#page {
                                     }
 
                                     // TODO: Single product page onpage styling for related products
-                                    
+
+                                    // Note: Sale Prices
+                                    del {
+
+                                        span {                                           
+
+                                            .woocommerce-Price-amount {
+
+                                                bdi {
+
+                                                    .woocommerce-Price-currencySymbol {
+
+                                                    }
+
+                                                }
+
+                                            }
+
+                                        }
+
+                                    }
+
+                                    ins {
+
+                                        span {                                            
+
+                                            .woocommerce-Price-amount {
+
+                                                bdi {
+
+                                                    .woocommerce-Price-currencySymbol {
+
+                                                    }
+
+                                                }
+
+                                            }
+
+                                        }
+
+                                    }                                    
 
                                 }
 
