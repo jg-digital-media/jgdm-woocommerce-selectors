@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 20-05-2022 - 10:16)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 20-05-2022 - 11:47)
 
 
 ## WooCommerce Pages 
@@ -842,7 +842,7 @@ The Basket page is the first part of the shopping onboard process where items cu
         }
 
         &::after {
-            
+
         }
 
         a {
@@ -1361,23 +1361,29 @@ The Basket page is the first part of the shopping onboard process where items cu
 ```
 
 <a id="woocommerce-checkout-page"></a>
-### WooCommerce Checkout Page
+### WooCommerce Checkout Page   <!-- SECTION COMPLETE -->
 
 + **/checkout/** - Checkout Page ([Top](#document-navigation))
 
 ```scss
 
-// TODO: Confirm the checkout page selectors
 .woocommerce {
 
     .woocommerce-notices-wrapper {
-
 
     }
 
     .woocommerce-form-coupon-toggle {
 
         .woocommerce-info {
+
+            &::before {
+
+            }
+
+            &::after {
+
+            }
 
             // coupon toggle link
             .showcoupon {
@@ -1390,12 +1396,20 @@ The Basket page is the first part of the shopping onboard process where items cu
 
     .checkout_coupon {
 
-        // NOTE: This element is displayed in the browser when showcoupon toggle class is open
+        // NOTE: <form> This element is displayed in the browser when .showcoupon toggle class is open
         p {
 
         }
 
         .form-row-first {
+
+            label {
+
+                abbr.required {
+
+                }
+                
+            }
 
             // contains coupon code text box
             .input-text {
@@ -1404,7 +1418,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
         }
 
-        .form-row-seconde {
+        .form-row-last {
 
             // contains coupon button
             .button,
@@ -1414,73 +1428,107 @@ The Basket page is the first part of the shopping onboard process where items cu
 
         }
 
-        .woocommerce-checkout {
+        .clear {
 
-            #customer_details {
+        }
 
-                .col-1 {
+    }
 
-                }
+    .woocommerce-checkout {
 
-                .col-2 {
+        #customer_details {
+
+            .col-1 {
+
+            }
+
+            .col-2 {
+
+            }
+
+        }
+    }
+
+    #order_review_heading {
+
+
+    }
+
+    .woocommerce-checkout-review-order {
+
+        .woocommerce-checkout-review-order-table {
+
+            thead {
+
+                tr {
+
+                    th.product-name {
+
+                    }
+
+                    th.product-total {
+
+                    }
 
                 }
 
             }
 
-            #order_review_heading {
+            tbody {
 
+                .cart_item {
+
+                    .product-name {
+                        
+                        // table cell
+
+                        .product-quantity {
+
+                        }
+
+                    }
+
+                    .product-total {
+                        
+                        // table cell
+                        .woocommerce-Price-amount {
+
+                            bdi {
+
+                                // styling for amount
+
+                                .woocommerce-Price-currencySymbol {
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
 
             }
 
-            .woocommerce-checkout-review-order {
+            tfoot {
 
-                .woocommerce-checkout-review-order-table {
+                .cart-subtotal {
 
-                    thead {
+                    th {
 
-                        tr {
-
-                            th.product-name {
-
-                            }
-
-                            th.product-total {
-
-                            }
-
-                        }
-
+                        // table header cell
                     }
 
-                    tbody {
+                    td {
 
-                        .cart_item {
+                        // table cell
+                        .woocommerce-Price-amount {
 
-                            .product-name {
-                                
-                                // table cell
+                            bdi {
 
-                                .product-quantity {
-
-                                }
-
-                            }
-
-                            .product-total {
-                                
-                                // table cell
-                                .woocommerce-Price-amount {
-
-                                    bdi {
-
-                                        // styling for amount
-
-                                        .woocommerce-Price-currencySymbol {
-
-                                        }
-
-                                    }
+                                // styling for amount
+                                .woocommerce-Price-currencySymbol {
 
                                 }
 
@@ -1490,57 +1538,26 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                     }
 
-                    tfoot {
+                }
 
-                        .cart-subtotal {
+                .order-total {
 
-                            th {
+                    th {
 
-                                // table header cell
-                            }
+                        // table header cell                                
+                    }
 
-                            td {
+                    td {
 
-                                // table cell
-                                .woocommerce-Price-amount {
+                        // strong in place of span for subtotal
+                        strong {
 
-                                    bdi {
+                            .woocommerce-Price-amount {
 
-                                        // styling for amount
-                                        .woocommerce-Price-currencySymbol {
+                                bdi {
 
-                                        }
-
-                                    }
-
-                                }
-
-                            }
-
-                        }
-
-                        .order-total {
-
-                            th {
-
-                                // table header cell                                
-                            }
-
-                            td {
-
-                                // strong in place of span for subtotal
-                                strong {
-
-                                    .woocommerce-Price-amount {
-
-                                        bdi {
-
-                                            // styling for amount
-                                            .woocommerce-Price-currencySymbol {
-
-                                            }
-
-                                        }
+                                    // styling for amount
+                                    .woocommerce-Price-currencySymbol {
 
                                     }
 
@@ -1554,35 +1571,35 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                 }
 
-                #payment {
+            }
 
-                    .wc_payment_methods {
+        }
 
-                    }
+        #payment {
 
-                    .place-order {
+            .wc_payment_methods {
 
-                        .woocommerce-terms-and-conditions-wrapper {
+            }
 
-                            .woocommerce-privacy-policy-text {
+            .place-order {
 
-                                p {
+                .woocommerce-terms-and-conditions-wrapper {
 
-                                    .woocommerce-privacy-policy-link {
+                    .woocommerce-privacy-policy-text {
 
-                                    }
+                        p {
 
-                                }
+                            .woocommerce-privacy-policy-link {
 
                             }
 
                         }
 
-                        .woocommerce_checkout_place_order {
-
-                        }
-
                     }
+
+                }
+
+                .woocommerce_checkout_place_order {
 
                 }
 
@@ -1593,6 +1610,7 @@ The Basket page is the first part of the shopping onboard process where items cu
     }
 
 }
+     
 
 ```
 
