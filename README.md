@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 20-05-2022 - 16:20)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 20-05-2022 - 16:23)
 
 ## WooCommerce Pages 
 
@@ -350,7 +350,6 @@ The 4 above may be contained inside a div with the ID of #page.
 
 ```scss
 
-// TODO: Confirm product page selectors
 #page {
 
     color: blue;
@@ -663,7 +662,6 @@ The Basket page is the first part of the shopping onboard process where items cu
 
 ```scss
 
-// TODO: Confirm Basket Page Selectors 
 .woocommerce {
 
     a {
@@ -953,7 +951,6 @@ The Basket page is the first part of the shopping onboard process where items cu
 
 ```scss
 
-// TODO: Confirm MyAccount Page selectors
 .woocommerce {
 
     .woocommerce-MyAccount-navigation {
@@ -2028,8 +2025,7 @@ div#page {
                             
 
                             #review_form_wrapper {
-
-                                // TODO: Review Form Wrapper                                
+                                                           
                                 #review_form {
 
                                     #respond {
@@ -2174,7 +2170,6 @@ div#page {
                                         }
                                     }
 
-                                    // TODO: Single product page onpage styling for related products
 
                                     // Note: Sale Prices
                                     del {
@@ -2242,7 +2237,7 @@ div#page {
 
     #sidebar {
 
-        // TODO: #sidebar - same as the product archive page - ul containing element
+        // #sidebar - same as the product archive page - ul containing element
 
         ul {
 
