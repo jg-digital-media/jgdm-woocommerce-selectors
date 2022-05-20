@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 20-05-2022 - 09:06)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 20-05-2022 - 09:32)
 
 
 ## WooCommerce Pages 
@@ -64,10 +64,10 @@ e.g.
   + `.wc-block-featured-product` 
 
   
-#### **Selectors to use...**  
+#### **SASS/CSS Selectors to use...**  
 ```scss
 
-// Editor Note:  Section Complete
+// Editor Note: SECTION COMPLETE
 .wp-block-cover {
 
     .wp-block-cover__gradient-background {
@@ -81,6 +81,8 @@ e.g.
     .wp-block-cover__inner-container {
 
         .has-text-color {
+
+            //has text colour seems to be the neutral class to target
 
         }
 
@@ -97,13 +99,13 @@ e.g.
 }
 
 
-/* Section: New Products */
+/* Section: New Products  Level 2 Heading Element */
 .has-text-align-center {
 
 }
 
 
-/* New Products Section Selectors */
+/* New Products Section Selectors - wc-block-grid */
 .wc-block-grid 
 .wp-block-product-new {
 
@@ -128,14 +130,29 @@ e.g.
             }
 
             
-            // product sale icon
+            // Note: product sale icon
             .wc-block-grid__product-onsale {
 
             }
 
-            // product price selectors
+            // Note: product price selectors
             .wc-block-grid__product-price {
 
+                // Selectors - standard pricing
+                span {
+
+                    .woocommerce-Price-amount {
+
+                        .woocommerce-Price-currencySymbol {
+
+                        }  
+
+                    }
+
+                }
+
+
+                // Selectors for sale and strikethrough full pricing
                 del {
 
                     .woocommerce-Price-amount {
@@ -193,6 +210,8 @@ e.g.
 
         img {
 
+            // Note: .size-full class is available for this element
+
         }
 
         .wp-block-media-text__content {
@@ -215,13 +234,12 @@ e.g.
 
         .wc-block-featured-product__title {
 
-            // h2 element
+            // Note: Level 2 heading element
 
         }
         
         .wc-block-featured-product__description {
-
-            // p 
+             
             p {
 
             }
@@ -230,7 +248,7 @@ e.g.
         
         .wc-block-featured-product__price {
 
-            // price amount
+            // Note: Selectors for the price and currency symbol
             .woocommerce-Price-amount {
 
                 .woocommerce-Price-currencySymbol {
