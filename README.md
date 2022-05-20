@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 20-05-2022 - 09:32)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 20-05-2022 - 10:16)
 
 
 ## WooCommerce Pages 
@@ -285,19 +285,22 @@ e.g.
 ### Shop Archive Page
 + **/shop/** (Product Archive Page) [Top](#document-navigation)
 
-As far as the shop archive page goes, the page is divided into 4 main structures.
+As far as the shop archive page goes, the page is divided into 4 main structures each with a specific ID.
 
 + header  ```(#header)```
 + primary ```(#primary)```
 + sidebar ```(#sidebar)```
 + footer ```(#footer)```
 
+The 4 above may be contained inside a div with the ID of #page.
+
 
 **HTML** 
 
+
 ```html
 
-<!-- Example HTML for WooCommerce -->
+<!-- Example HTML for WooCommerce --> <!-- Editor Note: SECTION COMPLETE -->
 <div id="page">   
 
     <div id="header"> . . . <div>
@@ -318,12 +321,11 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
 ```
 
-** SASS/CSS Selectors **
+**SASS/CSS Selectors**
 
 ```scss
 
 // Editor Note:  The top level selectors for WooCommerce /shop/ page - included for brevity
-
 #page {
 
     #header {
@@ -423,7 +425,7 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
                         &.selected {
 
-                            // Add selected class to option element on orderby selection
+                            // Note: Adds the selected class to option element on orderby selection
 
                         }
 
@@ -436,12 +438,11 @@ As far as the shop archive page goes, the page is divided into 4 main structures
             .products {
 
                 // products archive page - product list container element
-
                 .type-product {
 
                     .woocommerce-LoopProduct-link {
 
-                        // style selector for the sale icon when product has a sale price
+                        // Note: Style selector for the sale icon when product has a sale price
                         .onsale {
 
                         }
@@ -456,7 +457,7 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
                         .price {
 
-                            // standard price selectors - no sale/discount price
+                            // Selectors for standard pricing - no sale/discount price
                             .woocommerce-Price-amount {
 
                                 bdi {
@@ -469,7 +470,7 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
                             }
 
-                            // full price selectors (sale price)
+                            // Selectors for Full price display
                             del {
                                 
                                 .woocommerce-Price-amount {
@@ -486,7 +487,7 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
                             }
 
-                            // selected for discounted/sale price
+                            // Selectors for discounted/sale price
                             ins {
 
                                 .woocommerce-Price-amount {
@@ -509,7 +510,7 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
                     .product_type_simple {
 
-                        // Add to basket button selector
+                        // Note: Add to basket button selector as an anchor element
 
                     }
 
@@ -523,18 +524,27 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
     #sidebar {
 
-        // <ul> Author Information </ul>
-        // <ul> pages list - role=navigation on ul element
-        // <ul> ????
 
+        /* WooCommerce Sidebar Section 
 
-        // Author information and Search Form - Try using a first-child CSS Selector for 
-        // ul elements that are children for the div element with an ID of #sidebar
+        Three Child <ul> elements
+
+        1. Search Text Box and Button
+        2. Site Pages List - role=navigation
+        3. Third Child - Blank <ul> Element by default
+        */
+
+        
+        // Author information and Search Form - You can also try using a first-child CSS 
+        // selector for ul elements that are children for the div element with an ID of #sidebar        
         ul {
 
             li {
 
+                // 
                 #searchform {
+
+                    // Note: <form> element
 
                     div {
 
@@ -556,7 +566,7 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
             }
 
-            // ul role navigation -  - Sidebar pages navigation list
+            // ul role= navigation - Sidebar pages navigation list
             li.pagenav {
 
                 h2 {
@@ -567,7 +577,7 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
                     .page-item {
 
-                        // list item selector that contains an anchor tag for each page
+                        // Note: list item selector that contains an anchor tag for each page
 
                         a {
 
@@ -579,7 +589,7 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
             }
 
-            // No class selector for second list item - meant for the Sidebar archives list
+            // Note: WooCommerce outputs no class selector for second list item; that is meant for the Sidebar archives list
             li {
 
                 h2 {
@@ -603,7 +613,7 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
             }
 
-            // Selector: Sidebar Categories list
+            // Note: Selector for Sidebar Categories list
             li.categories {
 
                 h2 {
@@ -630,8 +640,7 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 
     #footer {
 
-        // div with id of footer - WooCommerce default state
-
+        // Note: #footer is a div element  with id of footer (WooCommerce default state)
         p {
 
             a {
@@ -652,7 +661,7 @@ As far as the shop archive page goes, the page is divided into 4 main structures
 ### WooCommerce Basket
 + **/basket/** (Shop Basket Page) [Top](#document-navigation)
 
-The Basket page is the first part of the shopping onboard process where items currently added to it will appear.
+The Basket page is the first part of the shopping onboard process where items currently added to the basket will appear.
 
 ```scss
 
