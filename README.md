@@ -665,7 +665,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
 ```scss
 
-// TODO: Confirm Basket Page Selectors
+// TODO: Confirm Basket Page Selectors  <!-- Editor Note: SECTION COMPLETE -->
 .woocommerce {
 
     a {
@@ -709,6 +709,15 @@ The Basket page is the first part of the shopping onboard process where items cu
                                     // You can use a transition for background on hover state
                                 }
 
+
+                            }
+
+                            a.remove {
+
+                                &:hover {
+
+                                }
+
                             }
 
                         }
@@ -719,7 +728,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                                 .attachment-woocommerce_thumbnail {
 
-                                    // Note: this is an image element
+                                    // Note: this is an image <img> element
 
                                 }
 
@@ -757,6 +766,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                                 .screen-reader-text {
 
+                                    .input-text,
                                     .qty {
                                         
                                     }
@@ -782,33 +792,36 @@ The Basket page is the first part of the shopping onboard process where items cu
                             }
 
                         } 
+                        
 
-                    }
+                        // Note: Form Basket Buttons Row  tr ---> td
+                        .actions {
 
-                    // Form Basket Buttons  tr -> td
-                    .actions {
+                            // Note: coupon text box and button element
+                            .coupon {
 
-                        // coupon text box and button element
-                        .coupon {
+                                label {
 
-                            label {
+                                }
+
+                                #coupon_code {
+
+                                }
+
+                                // Selector for the button that applies the coupon
+                                button[type="submit"],
+                                .button {
+
+                                }
 
                             }
 
-                            #coupon_code {
-
-                            }
-
-                            // Update Basket button
+                            // Selector for the button that Updates the basket. No class or ID                            
+                            button[type="submit"],
                             .button {
 
+
                             }
-
-                        }
-
-                        // Selector for the button that Updates the basket. No class or ID
-                        button[type="submit"] {
-
 
                         }
 
@@ -824,6 +837,14 @@ The Basket page is the first part of the shopping onboard process where items cu
 
     .cart-collaterals {
 
+        &::before {
+
+        }
+
+        &::after {
+            
+        }
+
         a {
 
         }
@@ -834,7 +855,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                 h2 {
 
-                    // Basket Totals
+                    // Level 2 Heading: Basket Totals
                 }
 
                 .shop_table {
@@ -880,6 +901,7 @@ The Basket page is the first part of the shopping onboard process where items cu
                             td {
 
                                 .woocommerce-Price-amount {
+                                    // Note: span element
 
                                     strong {
 
