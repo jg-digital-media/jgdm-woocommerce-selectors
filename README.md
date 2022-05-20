@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 20-05-2022 - 09:03)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 20-05-2022 - 09:06)
 
 
 ## WooCommerce Pages 
@@ -45,13 +45,13 @@ Jump to the pages to view the selectors you need.
 
 
 
-```First, Look for the loop in your WordPress Template file.```
+   + First, Look for the loop in your WordPress Template file.```
 
-The loop then brings in content from the content editor of the page that is assigned by the WooCommerce plugin as the `homepage`. 
+   + The loop then brings in content from the content editor of the page that is assigned by the WooCommerce plugin as the `homepage`. 
 
-You then need to target the different blocks with their HTML Class Selectors.
+   + You then need to target the different blocks with their HTML Class Selectors.
 
-The idea is that the selectors should override the ones used in WooCommerce which is shipped into your theme with WordPress
+The idea is that the selectors should override the ones used by the WooCommerce plugin that is shipped into your theme with WordPress
 
 e.g. 
 
