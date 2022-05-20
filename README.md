@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 20-05-2022 - 13:27)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 20-05-2022 - 13:54)
 
 ## WooCommerce Pages 
 
@@ -44,13 +44,13 @@ Jump to the pages to view the selectors you need.
 
 
 
-   + First, Look for the loop in your WordPress Template file.```
+   + First, Look for the loop in your WordPress Template file.
 
    + The loop then brings in content from the content editor of the page that is assigned by the WooCommerce plugin as the `homepage`. 
 
    + You then need to target the different blocks with their HTML Class Selectors.
 
-The idea is that the selectors should override the ones used by the WooCommerce plugin that is shipped into your theme with WordPress
+The idea is that the selectors should override the ones used by the WooCommerce plugin that is shipped into your theme with WordPress.
 
 e.g. 
 
@@ -66,7 +66,7 @@ e.g.
 #### **SASS/CSS Selectors to use...**  
 ```scss
 
-// Editor Note: SECTION COMPLETE
+// Editor Note: SECTION COMPLETE Homepage
 .wp-block-cover {
 
     .wp-block-cover__gradient-background {
@@ -949,7 +949,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 <a id="woocommerce-myaccount-page"></a>
 
 ### WooCommerce MyAccount Page
-+ **/my-account/** My Account Page ([Top](#document-navigation))
++ **/my-account/** My Account Page ([Top](#document-navigation))  <!-- SECTION INCOMPLETE -->
 
 
 
@@ -1348,7 +1348,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
             }
 
-            // Not: The logout su bnavigation logs you out directly
+            // Note: The logout sub navigation logs you out directly
 
         }
         
@@ -1621,7 +1621,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
 ```scss
 
-// /product/  Selectors for single product page as clicked through from shop archive page  <!-- SECTION ... -->
+// /product/  Selectors for single product page as clicked through from shop archive page  <!-- SECTION INCOMPLETE-->
 div#page {
 
     #header {        
