@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 20-05-2022 - 14:58)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 20-05-2022 - 15:00)
 
 ## WooCommerce Pages 
 
@@ -1731,6 +1731,10 @@ div#page {
                         }
                         
                         .woocommerce-review-link {
+
+                            .count {
+
+                            }
 
                         }
                                 
