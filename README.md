@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 20-05-2022 - 14:37)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 20-05-2022 - 14:58)
 
 ## WooCommerce Pages 
 
@@ -1712,6 +1712,30 @@ div#page {
 
                     }
 
+                    .woocommerce-product-rating {
+                        
+                        .star-rating {
+
+                            span {
+
+                                strong {
+
+                                }
+
+                                .rating {
+
+                                }
+
+                            }                            
+
+                        }
+                        
+                        .woocommerce-review-link {
+
+                        }
+                                
+                    }
+
                     .price {                       
 
                         /* STANDARD PRICE */
@@ -2108,6 +2132,19 @@ div#page {
                                 }
 
                                 .woocommerce-loop-product__title {
+
+                                }
+
+                                // Star Rating - single product pages
+                                .star-rating {
+
+                                    span {
+
+                                        .rating {
+
+                                        }
+
+                                    }
 
                                 }
 
