@@ -1,12 +1,11 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 19-05-2022 - 15:25)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 20-05-2022 - 09:03)
 
 
 ## WooCommerce Pages 
 
 Each page in WordPress has a user defined `slug`, an identifier for the page that defines the URL for a WooCommerce page. Examples below...
-
 
 + `/homepage/` - WooCommerce Shop Homepage
 + `/shop/` - WooCommerce Products Archive Page
@@ -16,9 +15,18 @@ Each page in WordPress has a user defined `slug`, an identifier for the page tha
 + `/product/` - Single Product Page (from archive page) 
 + `/privacy/` - WooCommerce Privacy Page
 
-This document contains the out of the box ID, class and other selectors that I've identified should be used to customise the appearance of your WooCommerce Shop.
+This document contains the out of the box ID, Class and other CSS selectors that I've identified should be used to customise the appearance of your WooCommerce Shop.
 
-If any of these don't work if you notice anything I might have missed let me know via a pull request and I'll look at the problem.  :)
+If any of these don't work or if you notice anything I might have missed, let me know via a pull request and I'll look at the problem.  :)
+
+
+### **You will need....**
+
+  + Git installed on your system
+  + Ruby Sass
+  + A WordPress installation and theme
+  + A text editor  (I recommend Visual Studio Code)
+  + A style.css file
 
 Simply copy the groups of selectors from the specified pages below and add them to your theme.
 
@@ -36,13 +44,6 @@ Jump to the pages to view the selectors you need.
 + **/homepage/** (Home)  [Top](#document-navigation)
 
 
-You will need....
-
-    + Git installed on your system
-    + Ruby Sass
-    + A WordPress installation and theme
-    + A text editor  (I recommend Visual Studio Code)
-    + A style.css file
 
 ```First, Look for the loop in your WordPress Template file.```
 
