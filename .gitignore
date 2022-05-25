@@ -1,0 +1,33 @@
+# Gitignore file
+
+# Track the path to the directory 
+# in the wp-content folder for your theme
+# e.g. #!/wp-content/themes/themename
+
+
+#/wp-content/
+#!/wp-content/themes/
+ !/wp-content/themes/jgdm-woocommerce-selectors/
+
+
+/wp-content/plugins/
+
+
+# These folders or ones like them will bundle with 
+# each fresh installation of WordPress
+/wp-content/themes/twentytwenty
+/wp-content/themes/twentytwentyone
+/wp-content/themes/twentytwentytwo
+/wp-content/upgrade/
+/wp-content/uploads/
+/wp-content/languages/
+
+
+# other folders to ignore
+/wp-admin/
+/wp-includes/
+/upgrade/
+*.php
+*.html
+*.txt
+
