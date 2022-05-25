@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 25-05-2022 - 21:03)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 25-05-2022 - 21:08)
 
 ## WooCommerce Pages 
 
@@ -2366,7 +2366,13 @@ div#page {
   + A MySQL Database with a database name and username.  
      + Save these details for every time you switch location
   + Install WooCommerce Plugin by ***Automattic***
+  + Theme files
+     + style.css
+     + functions.php
+     + index.php
+     + screenshot.php 
   + A Web host on the internet or A local hosting server
+  + Visual Studio Code is recommended as your text editor.
 
 ### Paths
 
@@ -2387,6 +2393,12 @@ Every file in the repo is untracked other than the contents of `wp-content/theme
 
 + From this point you can either add your files to the staging area with the ```-f``` flag via git or remove version control altogether.  If you need to, you can also clone a fresh project using `https://github.com/jg-digital-media/jgdm-woocommerce-selectors`.
 
++ If for any reason the following files do not show up on git clone you can add them with touch `style.css` etc. Or add them by your systems GUI in the usual way.
+    + style.css
+    + functions.php
+    + index.php
+    + screenshot.php
 
 
+[Top](#document-navigation)
 
