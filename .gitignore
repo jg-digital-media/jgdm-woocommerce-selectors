@@ -8,6 +8,9 @@
 #/wp-content/
 #!/wp-content/themes/
  !/wp-content/themes/jgdm-woocommerce-selectors/
+ !/wp-content/themes/jgdm-woocommerce-selectors/functions.php
+ !/wp-content/themes/jgdm-woocommerce-selectors/index.php
+ !/wp-content/themes/jgdm-woocommerce-selectors/style.css
 
 
 /wp-content/plugins/
@@ -18,16 +21,20 @@
 /wp-content/themes/twentytwenty
 /wp-content/themes/twentytwentyone
 /wp-content/themes/twentytwentytwo
+
+# ignore other folders and files
 /wp-content/upgrade/
 /wp-content/uploads/
 /wp-content/languages/
+/wp-content/index.php
+/wp-content/themes/index.php
 
 
 # other folders to ignore
 /wp-admin/
 /wp-includes/
 /upgrade/
-*.php
-*.html
-*.txt
+/*.php
+/*.html
+/*.txt
 
