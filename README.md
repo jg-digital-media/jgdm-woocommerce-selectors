@@ -35,7 +35,7 @@ Simply copy the groups of selectors from the specified pages below and add them 
 
 Jump to the pages to view the selectors you need.
 
-[Shop Home](#shop-homepage) | [Shop Archive](#shop-archive-page) | [Basket](#woocommerce-basket-page) | [MyAccount](#woocommerce-myaccount-page) | [Checkout](#woocommerce-checkout-page) | [Single Product Page](#woocommerce-product-single)
+[Shop Home](#shop-homepage) | [Shop Archive](#shop-archive-page) | [Basket](#woocommerce-basket-page) | [MyAccount](#woocommerce-myaccount-page) | [Checkout](#woocommerce-checkout-page) | [Single Product Page](#woocommerce-product-single) | [Setup](#setup)
 
 
 <a id="shop-homepage"></a>
@@ -2355,5 +2355,38 @@ div#page {
 ```
 
 [Top](#document-navigation)
+
+<a name="setup"></a>
+## Setup
+
+**Instructions**
+
++ Required:  
+  + A WordPress installation; 
+  + A MySQL Database with a database name and username.  
+     + Save these details for every time you switch location
+  + Install WooCommerce Plugin by ***Automattic***
+  + A Web host on the internet or A local hosting server
+
+### Paths
+
+`wp-content/themes/themename/` my example starts with `jgdm-woocommerce-selectors` as the theme directory.
+
+`wp-content/plugins/woocommerce` - The woocommerce plugin files go here
+
+Every file in the repo is untracked other than the contents of `wp-content/themes/jgdm-woocommerce-selectors`.   Obviously you can choose rename the theme directory and make your own theme customisations.
+
+
++ First, find a local server space such as DesktopServer of XAMPP
+
++ Go to the root folder and clone the directory.  `https://github.com/jg-digital-media/jgdm-woocommerce-selectors`.
+
++ Download the latest version of WordPress and add files to the root folder. 
+
++ When you have entered your WordPress and Database credentials add and activate the WooCommerce plugin.
+
++ From this point you can either add your files to the staging area with the ```-f``` flag via git or remove version control altogether.  If you need to, you can also clone a fresh project using `https://github.com/jg-digital-media/jgdm-woocommerce-selectors`.
+
+
 
 
