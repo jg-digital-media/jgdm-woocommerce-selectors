@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 25-05-2022 - 21:08)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 25-05-2022 - 21:29)
 
 ## WooCommerce Pages 
 
@@ -2393,8 +2393,11 @@ Every file in the repo is untracked other than the contents of `wp-content/theme
 
 + From this point you can either add your files to the staging area with the ```-f``` flag via git or remove version control altogether.  If you need to, you can also clone a fresh project using `https://github.com/jg-digital-media/jgdm-woocommerce-selectors`.
 
++ Since I use SASS to generate the CSS Selectors this is where you'll need to write your CSS.  Use a RubySass to precompile CSS in the theme directory of your project.  ```sass --watch style.scss:style.css`` 
+
 + If for any reason the following files do not show up on git clone you can add them with touch `style.css` etc. Or add them by your systems GUI in the usual way.
     + style.css
+    + style.scss
     + functions.php
     + index.php
     + screenshot.php
