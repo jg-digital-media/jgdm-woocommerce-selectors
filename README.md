@@ -13,7 +13,7 @@ Each page in WordPress has a user defined `slug`, an identifier for the page tha
 + `/checkout/` - WooCommerce Checkout
 + `/product/` - Single Product Page (from archive page) 
 + `/privacy/` - WooCommerce Privacy Page
-+ `/refund_returns`/ - Refund and Returns Page.
++ `/refund_returns/` - Refund and Returns Page.
 
 This document contains the out of the box ID, Class and other CSS selectors that I've identified should be used to customise the appearance of your WooCommerce Shop.  Unfortunately for the moment they're not theme agnostic which means right now they work only for a customised theme. More work is required.
 
@@ -24,7 +24,7 @@ So for now, If any of these selectors don't work or if you notice anything I mig
 <a id="#document-navigation"></a>
 ## Document Navigation
 
-Jump to the pages to view the selectors you need.
+Jump to the pages to view the selectors you need for that page.
 
  [Setup](#setup) | [Shop Home](#shop-homepage) | [Shop Archive](#shop-archive-page) | [Basket](#woocommerce-basket-page) | [MyAccount](#woocommerce-myaccount-page) | [Checkout](#woocommerce-checkout-page) | [Single Product Page](#woocommerce-product-single)
 
