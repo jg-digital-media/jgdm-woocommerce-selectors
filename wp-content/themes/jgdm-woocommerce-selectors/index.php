@@ -7,6 +7,7 @@
     $page_description = "";
     $page_keywords = "";
     $page_image = "";
+    $twitter_card = "jgdm_woocommerce-selectors";
 
     $page_url = "https://www.jonniegrieve.co.uk";
 
