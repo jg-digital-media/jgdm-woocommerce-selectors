@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 26-05-2022 - 21:55)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 26-05-2022 - 22:16)
 
 ## WooCommerce Pages 
 
@@ -79,7 +79,7 @@ Simply copy the groups of selectors from the specified pages below and add them 
 
 + In Settings, in the Admin area, set the *Permalinks* to `post-name`. This allows you to set page slugs for all the pages, including WooCommerce pages to your sites
 
-+ set a product base slug for your shops products  e.g. a slug called "shop"
++ Set a product base slug for your shops products  e.g. a slug called "shop"
 
 + Since I use SASS to generate the CSS Selectors this is where you'll need to write your CSS.  Use a RubySass watch command to precompile CSS in the theme directory of your project.  ```sass --watch style.scss:style.css`` 
 
