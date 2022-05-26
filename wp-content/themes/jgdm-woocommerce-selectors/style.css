@@ -15,8 +15,14 @@ Text Domain: jgdm_woocommerce
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+/*
 
+Note:  
+
+Path to Theme:  wp-content/themes/jgdm-woocommerce-selectors/
+
+*/
 * {
+  /* CSS Selectors to go here! */ }
 
-    /* CSS Selectors to go here! */
-}
+/*# sourceMappingURL=style.css.map */
