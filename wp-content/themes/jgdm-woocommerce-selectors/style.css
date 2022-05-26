@@ -25,4 +25,7 @@ Path to Theme:  wp-content/themes/jgdm-woocommerce-selectors/
 * {
   /* CSS Selectors to go here! */ }
 
+body {
+  background: #72a2fb; }
+
 /*# sourceMappingURL=style.css.map */
