@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 26-05-2022 - 21:34)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 26-05-2022 - 21:55)
 
 ## WooCommerce Pages 
 
@@ -32,12 +32,9 @@ Jump to the pages to view the selectors you need.
 <a name="setup"></a>
 ## Setup
 
-### **You will need....**
-Simply copy the groups of selectors from the specified pages below and add them to your theme.
-
-
 ### **Instructions and Requirements**
 
+You will need
   + A WordPress installation
   + A MySQL Database with a database name, a database username and password. (Save these details for every time you switch location)
   + Install and activate the WooCommerce plugin by ***Automattic***
@@ -64,6 +61,8 @@ Simply copy the groups of selectors from the specified pages below and add them 
 ### How it Works
 
 Every file in the repo is untracked other than the contents of `wp-content/themes/jgdm-woocommerce-selectors`. Obviously you can choose to rename the theme directory and make your own theme customisations.
+
+Simply copy the groups of selectors from the specified pages below and add them to your theme.
 
 + First, find a local server space such as DesktopServer or XAMPP for Windows. 
 
