@@ -1,1 +1,7 @@
-<p> footer </p>
+
+
+
+<p> footer <?php date("Y"); ?> </p>
+    
+</body>
+</html>
