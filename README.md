@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 25-05-2022 - 22:11)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 26-05-2022 - 08:01)
 
 ## WooCommerce Pages 
 
@@ -14,7 +14,7 @@ Each page in WordPress has a user defined `slug`, an identifier for the page tha
 + `/product/` - Single Product Page (from archive page) 
 + `/privacy/` - WooCommerce Privacy Page
 
-This document contains the out of the box ID, Class and other CSS selectors that I've identified should be used to customise the appearance of your WooCommerce Shop.  Ufortunately for the moment they're not theme agnostic which means right now they work only for a customised theme. This is for the ___ theme. More work required.
+This document contains the out of the box ID, Class and other CSS selectors that I've identified should be used to customise the appearance of your WooCommerce Shop.  Unfortunately for the moment they're not theme agnostic which means right now they work only for a customised theme. More work is required.
 
 So for now, If any of these don't work or if you notice anything I might have missed, let me know via a pull request and I'll look at the problem.  :)
 
