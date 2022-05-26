@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 26-05-2022 - 09:35)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 26-05-2022 - 20:20)
 
 ## WooCommerce Pages 
 
@@ -13,21 +13,12 @@ Each page in WordPress has a user defined `slug`, an identifier for the page tha
 + `/checkout/` - WooCommerce Checkout
 + `/product/` - Single Product Page (from archive page) 
 + `/privacy/` - WooCommerce Privacy Page
++ `/refund_returns`/ - Refund and Returns Page.
 
 This document contains the out of the box ID, Class and other CSS selectors that I've identified should be used to customise the appearance of your WooCommerce Shop.  Unfortunately for the moment they're not theme agnostic which means right now they work only for a customised theme. More work is required.
 
-So for now, If any of these don't work or if you notice anything I might have missed, let me know via a pull request and I'll look at the problem.  :)
+So for now, If any of these selectors don't work or if you notice anything I might have missed, let me know via a pull request and I'll look at the problem.  :)
 
-
-### **You will need....**
-
-  + Git installed on your system
-  + Ruby Sass
-  + A WordPress installation and theme
-  + A text editor  (I recommend Visual Studio Code)
-  + A style.css file
-
-Simply copy the groups of selectors from the specified pages below and add them to your theme.
 
 
 <a id="#document-navigation"></a>
@@ -35,7 +26,72 @@ Simply copy the groups of selectors from the specified pages below and add them 
 
 Jump to the pages to view the selectors you need.
 
-[Shop Home](#shop-homepage) | [Shop Archive](#shop-archive-page) | [Basket](#woocommerce-basket-page) | [MyAccount](#woocommerce-myaccount-page) | [Checkout](#woocommerce-checkout-page) | [Single Product Page](#woocommerce-product-single) | [Setup](#setup)
+ [Setup](#setup) | [Shop Home](#shop-homepage) | [Shop Archive](#shop-archive-page) | [Basket](#woocommerce-basket-page) | [MyAccount](#woocommerce-myaccount-page) | [Checkout](#woocommerce-checkout-page) | [Single Product Page](#woocommerce-product-single)
+
+
+<a name="setup"></a>
+## Setup
+
+### **You will need....**
+Simply copy the groups of selectors from the specified pages below and add them to your theme.
+
+
+### **Instructions and Requirements**
+
+  + A WordPress installation
+  + A MySQL Database with a database name, a database username and password. (Save these details for every time you switch location)
+  + Install and activate the WooCommerce plugin by ***Automattic***
+  + WordPress Theme Files
+     + style.css
+     + functions.php
+     + index.php
+     + screenshot.php 
+  + A Web host on the internet or A local hosting server
+  + Visual Studio Code is recommended as your text editor.
+  + Git VCS installed on your system
+  + Ruby Sass to precompile the CSS for your theme.
+
+
+### Paths
+
++ `wp-content/themes/themename/` my example starts with `jgdm-woocommerce-selectors` as the theme directory. So this would be `wp-content/themes/jgdm-wordpress-selectors`. 
+
++ `wp-content/plugins/woocommerce` - The WooCommerce plugin files go here
+
++ On localhost, you can access the URL for the project using [http://localhost/jgdm-woocommerce-selectors](http://localhost/jgdm-woocommerce-selectors) <br /> **or** [http://localhost/jgdm-woocommerce-selectors/wp-admin](http://localhost/jgdm-woocommerce-selectors/wp-admin)  to go to the login screen.
+
+
+### How it Works
+
+Every file in the repo is untracked other than the contents of `wp-content/themes/jgdm-woocommerce-selectors`. Obviously you can choose to rename the theme directory and make your own theme customisations.
+
++ First, find a local server space such as DesktopServer or XAMPP for Windows. 
+
++ Go to the root folder and clone the directory.  `https://github.com/jg-digital-media/jgdm-woocommerce-selectors`.
+
++ Download the latest version of WordPress and add files to the root folder. `jgdm-woocommerce-selectors`.
+
++ When you have entered your WordPress and Database credentials, you can add and activate the WooCommerce plugin.
+
++ From this point you can either add your files to the staging area with the ```-f``` flag via git or remove version control altogether.  If you need to, you can also clone a fresh project using `https://github.com/jg-digital-media/jgdm-woocommerce-selectors`.
+
++ dvd
+  + d
+  + d
+
+
++ Since I use SASS to generate the CSS Selectors this is where you'll need to write your CSS.  Use a RubySass watch command to precompile CSS in the theme directory of your project.  ```sass --watch style.scss:style.css`` 
+
++ If for any reason the following files do not show up on git clone you can add them with touch `style.css` etc. Or add them by your systems GUI in the usual way.
+    + style.css
+    + style.scss
+    + functions.php
+    + index.php
+    + screenshot.php
+
+
+[Top](#document-navigation)
+
 
 
 <a id="shop-homepage"></a>
@@ -2356,52 +2412,4 @@ div#page {
 
 [Top](#document-navigation)
 
-<a name="setup"></a>
-## Setup
-
-**Instructions**
-
-+ Required:  
-  + A WordPress installation; 
-  + A MySQL Database with a database name and username.  
-     + Save these details for every time you switch location
-  + Install WooCommerce Plugin by ***Automattic***
-  + Theme files
-     + style.css
-     + functions.php
-     + index.php
-     + screenshot.php 
-  + A Web host on the internet or A local hosting server
-  + Visual Studio Code is recommended as your text editor.
-
-### Paths
-
-`wp-content/themes/themename/` my example starts with `jgdm-woocommerce-selectors` as the theme directory.
-
-`wp-content/plugins/woocommerce` - The woocommerce plugin files go here
-
-Every file in the repo is untracked other than the contents of `wp-content/themes/jgdm-woocommerce-selectors`.   Obviously you can choose rename the theme directory and make your own theme customisations.
-
-
-+ First, find a local server space such as DesktopServer of XAMPP
-
-+ Go to the root folder and clone the directory.  `https://github.com/jg-digital-media/jgdm-woocommerce-selectors`.
-
-+ Download the latest version of WordPress and add files to the root folder. 
-
-+ When you have entered your WordPress and Database credentials add and activate the WooCommerce plugin.
-
-+ From this point you can either add your files to the staging area with the ```-f``` flag via git or remove version control altogether.  If you need to, you can also clone a fresh project using `https://github.com/jg-digital-media/jgdm-woocommerce-selectors`.
-
-+ Since I use SASS to generate the CSS Selectors this is where you'll need to write your CSS.  Use a RubySass to precompile CSS in the theme directory of your project.  ```sass --watch style.scss:style.css`` 
-
-+ If for any reason the following files do not show up on git clone you can add them with touch `style.css` etc. Or add them by your systems GUI in the usual way.
-    + style.css
-    + style.scss
-    + functions.php
-    + index.php
-    + screenshot.php
-
-
-[Top](#document-navigation)
 
