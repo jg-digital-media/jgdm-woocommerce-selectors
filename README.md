@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 26-05-2022 - 20:20)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 26-05-2022 - 21:34)
 
 ## WooCommerce Pages 
 
@@ -75,10 +75,12 @@ Every file in the repo is untracked other than the contents of `wp-content/theme
 
 + From this point you can either add your files to the staging area with the ```-f``` flag via git or remove version control altogether.  If you need to, you can also clone a fresh project using `https://github.com/jg-digital-media/jgdm-woocommerce-selectors`.
 
-+ dvd
-  + d
-  + d
 
+
+
++ In Settings, in the Admin area, set the *Permalinks* to `post-name`. This allows you to set page slugs for all the pages, including WooCommerce pages to your sites
+
++ set a product base slug for your shops products  e.g. a slug called "shop"
 
 + Since I use SASS to generate the CSS Selectors this is where you'll need to write your CSS.  Use a RubySass watch command to precompile CSS in the theme directory of your project.  ```sass --watch style.scss:style.css`` 
 
