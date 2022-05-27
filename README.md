@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 26-05-2022 - 22:41)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 27-05-2022 - 17:08)
 
 ## WooCommerce Pages 
 
@@ -99,8 +99,6 @@ Simply copy the groups of selectors from the specified pages below and add them 
 ### Shop Homepage
 + **/homepage/** (Home)  [Top](#document-navigation)
 
-
-
    + First, Look for the loop in your WordPress Template file.
 
    + The loop then brings in content from the content editor of the page that is assigned by the WooCommerce plugin as the `homepage`. 
@@ -137,7 +135,7 @@ e.g.
 
         .has-text-color {
 
-            //has text colour seems to be the neutral class to target
+            // has text colour seems to be the neutral class to target
 
         }
 
