@@ -1,0 +1,18 @@
+
+
+footer {
+
+    p {
+        text-align: center;
+
+        a {
+            color: blue;
+            transition: color .3s;
+
+            &:hover {
+                
+                color: red;
+            }
+        }
+    }
+}

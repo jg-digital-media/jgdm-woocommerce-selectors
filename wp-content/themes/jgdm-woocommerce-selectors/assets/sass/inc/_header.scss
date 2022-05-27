@@ -1,0 +1,41 @@
+* {
+
+    /* CSS Selectors to go here! */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background: #79a4f3;
+    font-size: 16px;
+    font-family: arial;
+
+
+}
+
+// index.php
+h1 {
+
+    text-align: center;
+    font-size: 30pt;
+}
+
+
+a.shop_title {
+
+    display: inline-block;
+    color: red;
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+
+
+    transition: color .3s;
+
+    &:hover {
+
+        color: blue;
+    }
+
+}
