@@ -3,7 +3,7 @@
 
 .content_container {
 
-    background: lightblue;
+    background: $content_container;
     border-radius: 10px;
     padding: 10px;
     margin: 5px auto;
@@ -11,13 +11,37 @@
 
     h2 {
 
+        color: $complement-contentbg;
+        color: black;
         padding: 10px 0;
-
     }
 
     p {
 
+        color: $complement-contentbg;
+        color: black;
     }
+
+    em, i {
+        color: yellow;
+    }
+
+    strong, b {
+
+        color: #fa9406;
+    }
+
+    h3, h4, h5, h6 {
+
+        color: red;
+
+    }
+
+    a {
+        color: blue;
+    }
+
+    //TODO: BLOCK styles
 
 }
 
