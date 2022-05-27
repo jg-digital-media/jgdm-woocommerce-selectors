@@ -2,11 +2,14 @@
 
 // config
 
-@import "assets/sass/inc/header";
 
 @import "assets/sass/config/colours";
 @import "assets/sass/config/fonts";
 
+@import "assets/sass/inc/header";
+
+
+@import "assets/sass/main";
+
 
 @import "assets/sass/inc/footer";
-@import "assets/sass/main";
