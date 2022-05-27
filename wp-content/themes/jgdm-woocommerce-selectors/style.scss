@@ -1,13 +1,7 @@
 @import "assets/sass/head";
 
+// config
+@import "assets/sass/config/colours.scss";
+@import "assets/sass/config/fonts.scss";
+
 @import "assets/sass/main";
-
-* {
-
-    /* CSS Selectors to go here! */
-}
-
-body {
-
-    background: #79a4f3;
-}
