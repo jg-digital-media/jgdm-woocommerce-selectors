@@ -1,7 +1,12 @@
 @import "assets/sass/head";
 
 // config
-@import "assets/sass/config/colours.scss";
-@import "assets/sass/config/fonts.scss";
 
+@import "assets/sass/inc/header";
+
+@import "assets/sass/config/colours";
+@import "assets/sass/config/fonts";
+
+
+@import "assets/sass/inc/footer";
 @import "assets/sass/main";
