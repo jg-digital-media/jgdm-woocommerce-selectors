@@ -41,7 +41,7 @@
         <h2> <?php the_title();  ?> </h2>
 
         <p> <?php the_content(); ?> </p>
-        
+
     </div>
 
     <?php endwhile; else: ?>
@@ -53,6 +53,6 @@
 
 <?php include "template-parts/inc/footer.php" ?> 
 
-<?php echo "index.php"; ?>
+<?php echo "<p class=\"filestamp\">index.php</p>" ?>
 
 
