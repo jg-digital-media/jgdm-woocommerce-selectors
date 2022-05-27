@@ -1,4 +1,10 @@
 /*
+*
+* Note:
+* Path to Theme:  wp-content/themes/jgdm-woocommerce-selectors/*
+* Last Update: 27-05-2022: 17:04
+*/
+/*
 Theme Name: JGDM WooCommerce Selectors
 Theme URI: https://wordpress.org/themes/jgdm-woocommerce-selectors/
 Author: @jg_digitalMedia
@@ -15,19 +21,74 @@ Text Domain: jgdm_woocommerce
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-/*
-
-Note:  
-
-Path to Theme:  wp-content/themes/jgdm-woocommerce-selectors/
-
-Last Update: 26-05-2022: 21:38
-
-*/
 * {
-  /* CSS Selectors to go here! */ }
+  /* CSS Selectors to go here! */
+  margin: 0;
+  padding: 0; }
 
 body {
-  background: #79a4f3; }
+  background: #79a4f3;
+  font-size: 16px;
+  font-family: arial; }
+
+h1 {
+  text-align: center;
+  font-size: 30pt;
+  color: #f3c879; }
+
+a.shop_title {
+  display: inline-block;
+  color: red;
+  text-align: center;
+  width: 100%;
+  margin: 10px 0;
+  transition: color .3s; }
+  a.shop_title:hover {
+    color: blue; }
+
+.content_container {
+  background: lightblue;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px auto;
+  width: 90%; }
+  .content_container h2 {
+    color: #e6bbad;
+    color: black;
+    padding: 10px 0; }
+  .content_container p {
+    color: #e6bbad;
+    color: black; }
+  .content_container em, .content_container i {
+    color: yellow; }
+  .content_container strong, .content_container b {
+    color: #fa9406; }
+  .content_container h3, .content_container h4, .content_container h5, .content_container h6 {
+    color: red; }
+  .content_container a {
+    color: blue; }
+
+footer p {
+  text-align: center;
+  margin-top: 5pt; }
+  footer p a {
+    color: blue;
+    transition: color .3s; }
+    footer p a:hover {
+      color: red; }
+
+p.filestamp {
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 10pt; }
+
+#page #header {
+  background: yellow; }
+  #page #header #headerimg h1 {
+    color: green; }
+    #page #header #headerimg h1 a {
+      color: red; }
 
 /*# sourceMappingURL=style.css.map */
