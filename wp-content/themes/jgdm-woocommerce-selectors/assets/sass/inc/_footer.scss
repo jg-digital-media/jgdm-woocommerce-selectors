@@ -3,9 +3,12 @@
 footer {
 
     p {
+
         text-align: center;
+        margin-top: 5pt;
 
         a {
+
             color: blue;
             transition: color .3s;
 
@@ -13,6 +16,18 @@ footer {
                 
                 color: red;
             }
+
         }
+
     }
+    
+}
+
+p.filestamp {
+
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 10pt;
 }
