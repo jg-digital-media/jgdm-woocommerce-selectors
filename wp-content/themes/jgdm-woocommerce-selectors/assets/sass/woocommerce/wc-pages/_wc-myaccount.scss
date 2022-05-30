@@ -1,0 +1,410 @@
+
+.woocommerce {
+
+    .woocommerce-MyAccount-navigation {
+        
+            
+
+        // Note: CSS/Sass selector for the active tab
+        & .is-active {
+
+
+        }
+            
+
+        ul {
+
+            .woocommerce-MyAccount-navigation-link {
+
+                a {
+
+                }
+
+            }
+
+            /* WooCommerce Navigation Classes */
+            .woocommerce-MyAccount-navigation-link--dashboard {
+
+            } 
+
+            .woocommerce-MyAccount-navigation-link--orders {
+
+            }
+
+            .woocommerce-MyAccount-navigation-link--downloads {
+
+            }
+
+            .woocommerce-MyAccount-navigation-link--edit-address {
+
+            }
+
+            .woocommerce-MyAccount-navigation-link--edit-account {
+
+            }
+
+            .woocommerce-MyAccount-navigation-link--customer-logout {
+
+            }
+
+        }
+
+    }
+
+    // Note: This is the content area for WooCommerce MyAccount pages
+    .woocommerce-MyAccount-content {
+
+        .woocommerce-notices-wrapper {
+
+            .woocommerce-message {
+
+                &::before {
+
+
+                }
+
+                &::after {
+
+                }
+
+            }
+
+        }
+
+        p {
+            // The following addresses will be used on the checkout page by default
+        }
+        
+
+        /* 
+        * 
+        * MyAccount Page Dashboard Tab
+        */
+        p {
+
+            strong {
+
+            }
+
+            // logout and other links
+            a {
+
+            }
+
+        }
+
+        
+
+
+        /* 
+        * 
+        * MyAccount Page Orders Tab
+        */
+        .woocommerce-message, .woocommerce-message--info, .woocommerce-Message .woocommerce-Message--info, .woocommerce-info {
+
+        }
+
+        // tick icon - messages container element
+        .woocommerce-info {
+
+            /* border-top-color: ; */
+        
+        
+            &::before {
+
+                /* color: #e1e85be; */
+                /* content: "\e015\" */
+
+            }
+
+            // Orders tab button - "browse products"
+            .woocommerce-Button button {
+
+
+
+            }
+
+            // WooCommerce message
+            .woocommerce-message {
+
+                &::after {
+
+                    /* clear: both; */
+
+                }
+
+            }
+             
+
+        }
+
+        // Browse products button
+        .woocommerce-Message--info {
+
+            // Orders tab button - "browse products"
+            .woocommerce-Button button {
+
+                a {
+
+                }
+
+            }
+
+        }
+
+        
+        /* 
+        * 
+        * MyAccount Page Downloads Tab
+        */
+
+        // ...  Same as orders page  ...
+
+
+
+        /* 
+        * 
+        * MyAccount Page Addresses Tab  /edit-address/
+        */
+        .woocommerce-Addresses {
+
+            &::before {
+
+            }
+
+
+            .col-1 {
+
+                .woocommerce-Address-title {
+
+                    h3 {
+
+                    }
+
+                    .edit {
+
+                        // add/edit address
+
+                    }
+
+                }
+
+                address {
+
+                    // 2 page states - 
+                       // Address not yet set. "You have not set up this type of address yet"
+                       // lists the address as a series of line breaks when address saved
+
+                }
+
+            }
+            
+
+            .col-2 {
+
+                &::after {
+
+                    // clear: both;
+
+                }
+
+                .woocommerce-Address-title {
+
+                    h3 {
+
+                    }
+
+                    .edit {
+
+                    }
+
+                }
+
+                address {
+
+                    // 2 States - 
+                      // Address not yet set. "You have not set up this type of address yet"
+                      // lists the address as a series of line breaks when address saved
+
+                }
+
+            }
+
+        }
+
+
+        // Address Tab - Addresses - /my-account/billing/
+        // Address Tab - Addresses - /my-account/shipping/
+
+        form {
+
+            h3 {
+
+                    
+            }
+
+            // Note: Shipping and Billing Addresses
+            .woocommerce-address-fields {
+
+                .woocommerce-address-fields__field-wrapper {
+
+                    p {
+
+                        label {
+
+                            .required {
+
+                            }
+
+                            .optional {
+
+                            }
+
+                        }
+
+                        .woocommerce-input-wrapper {
+
+                            .input-text {
+
+                            }
+
+                            .country_select {
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+                p {
+
+                    .button,
+                    input[type="submit"] {
+
+                    }
+
+                }
+
+            }
+
+            // edit-address/shipping/                 
+            .woocommerce-address-fields { 
+
+                // Editor Note:  As Billing Address Selectors - Cut for brevity
+
+            }
+
+        }
+        
+
+        /* 
+        * 
+        * MyAccount Page Account Details Tab
+        */
+
+        .woocommerce-EditAccountForm {
+
+            .form-row {
+
+                &::before {
+
+                }
+
+            }
+
+            .woocommerce-form-row {
+
+                label {
+
+                    .required {
+
+                    }
+
+                }
+
+                .input-text {
+
+                }
+
+                span {
+
+                    em {
+
+                    }
+
+                }
+
+            }
+
+            fieldset {
+
+                legend {
+
+                }
+
+                .woocommerce-form-row {
+
+                    &::before {
+
+                    }
+
+                    .password-input {
+
+                        .input-text,
+                        .woocommerce-Input--password,
+                        input[type="password"] {
+
+                        }
+
+                        .show-password-input {
+
+                            &::after {
+
+                            }
+
+                            & .display-password {
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+                .form-row {
+
+                    &::after {
+                        
+                    }
+
+                }
+
+                .form-row-wide {
+
+                }
+
+            }
+
+            .clear {
+
+            }
+
+            p {
+
+                button[type="submit"],
+                .wooCommerce-Button {
+
+                }
+
+            }
+
+            // Note: The logout sub navigation logs you out directly
+
+        }
+        
+    }
+
+}
