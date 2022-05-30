@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 27-05-2022 - 17:08)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 30-05-2022 - 14:39)
 
 ## WooCommerce Pages 
 
@@ -47,6 +47,17 @@ You will need
   + Visual Studio Code is recommended as your text editor.
   + Git VCS installed on your system
   + Ruby Sass to precompile the CSS for your theme.
+
+
+### Repository Setup
+
++ `assets/sass` - Sass partials for the custom WordPress theme and WooCommerce Shop
++ `assets/selectors`- Ready made Sass Partial for WooCommerce Selectors - As it stands this is for a custom theme rather than one provided by WooCommerce
++ `template-parts/`- Ready made Sass Partial for WooCommerce Selectors
++ `woocommerce/`- WooCommerce Shop Template Files
++ `functions.php`
++ `index.php`
++ `screenshot.png` - The Theme directory image
 
 
 ### Paths
