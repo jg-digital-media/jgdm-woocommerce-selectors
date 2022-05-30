@@ -1,0 +1,175 @@
+#primary {
+
+    #main {            
+
+        .woocommerce-breadcrumb {
+
+            margin: 10px 0;
+            width: 100%;
+            text-align: center;
+
+            color: $color-primary;
+
+            a {
+                
+                color: $wc-link-color;
+            }
+
+        }
+
+        .woocommerce-products-header {
+
+            .woocommerce-products-header__title, 
+            .page-title {
+
+                color: $color-primary;
+
+            }
+
+            .page-description {
+
+                p {
+
+                }
+
+            }
+
+        }
+
+        .woocommerce-notices-wrapper {
+
+        }
+
+        .woocommerce-result-count {
+
+            // paragraph element - e.g. center text alignment
+            color: $color-primary;
+
+        }
+
+        .woocommerce-ordering {
+
+            
+
+            .orderby {
+
+                background: yellow;
+                padding: 10px 0;
+
+
+                // TODO: Default Sort
+
+                option {
+
+                    background: #ed9141;
+
+                    outline: green;
+
+                    &.selected {
+
+                        // Note: Adds the selected class to option element on orderby selection
+                        background: yellow;
+
+                    }
+
+                  
+
+                } 
+
+            }
+
+        }
+
+        .products {
+
+            // products archive page - product list container element
+            .type-product {
+
+                .woocommerce-LoopProduct-link {
+
+                    // Note: Style selector for the sale icon when product has a sale price
+                    .onsale {
+
+                        margin: -10px 0 0 0;
+                        border: white solid 3px;
+
+                    }
+
+                    .attachment-woocommerce_thumbnail {
+
+                    }
+
+                    .woocommerce-loop-product__title {
+                        color: red
+
+                    }
+
+                    .price {
+
+                        // Selectors for standard pricing - no sale/discount price
+                        .woocommerce-Price-amount {
+
+                            bdi {
+
+                                .woocommerce-Price-currencySymbol {
+                                    
+                                }
+
+                            }
+
+                        }
+
+                        // Selectors for Full price display
+                        del {
+                            
+                            .woocommerce-Price-amount {
+
+                                bdi {
+
+                                    .woocommerce-Price-currencySymbol {
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                        // Selectors for discounted/sale price
+                        ins {
+
+                            .woocommerce-Price-amount {
+
+                                bdi {
+
+                                    .woocommerce-Price-currencySymbol {
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+                .product_type_simple {
+
+                    // Note: Add to basket button selector as an anchor element
+                    background: lightyellow;
+
+                }
+
+            }
+            
+        }
+
+    }
+
+}
+
+    
