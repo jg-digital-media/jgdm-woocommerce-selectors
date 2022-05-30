@@ -6,6 +6,8 @@
 
         #headerimg {
 
+            height: 100px;
+
             h1 {
 
                 color: green;
@@ -13,7 +15,154 @@
                 a {
 
                     color: red;
+                    text-decoration: none;
                 }
+
+            }
+
+            .description {
+
+                text-align: center;
+                margin-top: 10px;
+                font-weight: bold;
+            }
+
+        }
+
+    }
+
+    #sidebar {
+
+
+        /* WooCommerce Sidebar Section 
+
+        Three Child <ul> elements
+
+        1. Search Text Box and Button
+        2. Site Pages List - role=navigation
+        3. Third Child - Blank <ul> Element by default
+        */
+
+        
+        // Author information and Search Form - You can also try using a first-child CSS 
+        // selector for ul elements that are children for the div element with an ID of #sidebar        
+        ul {
+
+            li {
+
+                // 
+                #searchform {
+
+                    // Note: <form> element
+
+                    div {
+
+                        .screen-reader-text {
+
+                        }
+
+                        #s {
+
+                        }
+
+                        #searchsubmit {
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+            // ul role= navigation - Sidebar pages navigation list
+            li.pagenav {
+
+                h2 {
+
+                }
+
+                ul {
+
+                    .page-item {
+
+                        // Note: list item selector that contains an anchor tag for each page
+
+                        a {
+
+                        }
+                        
+                    }
+
+                }
+
+            }
+
+            // Note: WooCommerce outputs no class selector for second list item; that is meant for the Sidebar archives list
+            li {
+
+                h2 {
+
+                    // Archive Title Text
+
+                }
+                
+                ul {
+
+                    li {
+
+                        a {
+
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+            // Note: Selector for Sidebar Categories list
+            li.categories {
+
+                h2 {
+
+                }
+
+                ul {
+
+                    li.cat-item {
+
+                        a {
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    #footer {
+
+        background: #e64040;
+        height: 100px;
+        
+
+        // Note: #footer is a div element  with id of footer (WooCommerce default state)
+        p {
+
+            margin-top: 10px;
+            text-align: center;
+            display: block;
+
+            a {
+
+                color: yellow;
 
             }
 
