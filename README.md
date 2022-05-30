@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 30-05-2022 - 14:05)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 30-05-2022 - 15:16)
 
 ## WooCommerce Pages 
 
@@ -18,7 +18,6 @@ Each page in WordPress has a user defined `slug`, an identifier for the page tha
 This document contains the out of the box ID, Class and other CSS selectors that I've identified should be used to customise the appearance of your WooCommerce Shop.  Unfortunately for the moment they're not theme agnostic which means right now they work only for a customised theme. More work is required.
 
 So for now, If any of these selectors don't work or if you notice anything I might have missed, let me know via a pull request and I'll look at the problem.  :)
-
 
 
 <a id="#document-navigation"></a>
@@ -48,7 +47,6 @@ You will need
   + Git VCS installed on your system
   + Ruby Sass to precompile the CSS for your theme.
 
-
 ### Repository Setup
 
 + `assets/sass` - Sass partials for the custom WordPress theme and WooCommerce Shop
@@ -58,7 +56,6 @@ You will need
 + `functions.php`
 + `index.php`
 + `screenshot.png` - The Theme directory image
-
 
 ### Paths
 
