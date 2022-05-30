@@ -112,6 +112,56 @@ p.filestamp {
 #primary #main .products .type-product .product_type_simple {
   background: lightyellow; }
 
+/* Section: New Products  Level 2 Heading Element */
+/* New Products Section Selectors - wc-block-grid */
+/* Media Text Block classes */
+/* Block Media Text: WooCommerce */
+/* Featured Product Wrapper */
+div#page #primary #main .type-product .entry-summary .price {
+  /* STANDARD PRICE */
+  /* SALE PRICE */ }
+div#page #primary #main .type-product .wc-tabs-wrapper {
+                    /* Note:  
+
+                        3 Tabs
+
+                        -> Description 
+                        -> Additional information 
+                        -> Reviews
+
+                    */ }
+
+.woocommerce .woocommerce-MyAccount-navigation ul {
+  /* WooCommerce Navigation Classes */ }
+.woocommerce .woocommerce-MyAccount-content {
+  /* 
+  * 
+  * MyAccount Page Dashboard Tab
+  */
+  /* 
+  * 
+  * MyAccount Page Orders Tab
+  */
+  /* 
+  * 
+  * MyAccount Page Downloads Tab
+  */
+  /* 
+  * 
+  * MyAccount Page Addresses Tab  /edit-address/
+  */
+  /* 
+  * 
+  * MyAccount Page Account Details Tab
+  */ }
+  .woocommerce .woocommerce-MyAccount-content .woocommerce-info {
+    /* border-top-color: ; */ }
+    .woocommerce .woocommerce-MyAccount-content .woocommerce-info::before {
+      /* color: #e1e85be; */
+      /* content: "\e015\" */ }
+    .woocommerce .woocommerce-MyAccount-content .woocommerce-info .woocommerce-message::after {
+      /* clear: both; */ }
+
 #page #header {
   background: yellow; }
   #page #header #headerimg {
