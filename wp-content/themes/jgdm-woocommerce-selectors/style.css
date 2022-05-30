@@ -2,7 +2,7 @@
 *
 * Note:
 * Path to Theme:  wp-content/themes/jgdm-woocommerce-selectors/*
-* Last Update: 27-05-2022: 17:04
+* Last Update: 30-05-2022: 20:52
 */
 /*
 Theme Name: JGDM WooCommerce Selectors
@@ -84,11 +84,64 @@ p.filestamp {
   font-weight: bold;
   margin-top: 10pt; }
 
+#primary #main .woocommerce-breadcrumb {
+  margin: 10px 0;
+  width: 100%;
+  text-align: center;
+  color: black; }
+  #primary #main .woocommerce-breadcrumb a {
+    color: green; }
+#primary #main .woocommerce-products-header .woocommerce-products-header__title,
+#primary #main .woocommerce-products-header .page-title {
+  color: black; }
+#primary #main .woocommerce-result-count {
+  color: black; }
+#primary #main .woocommerce-ordering .orderby {
+  background: yellow;
+  padding: 10px 0; }
+  #primary #main .woocommerce-ordering .orderby option {
+    background: #ed9141;
+    outline: green; }
+    #primary #main .woocommerce-ordering .orderby option.selected {
+      background: yellow; }
+#primary #main .products .type-product .woocommerce-LoopProduct-link .onsale {
+  margin: -10px 0 0 0;
+  border: white solid 3px; }
+#primary #main .products .type-product .woocommerce-LoopProduct-link .woocommerce-loop-product__title {
+  color: red; }
+#primary #main .products .type-product .product_type_simple {
+  background: lightyellow; }
+
 #page #header {
   background: yellow; }
-  #page #header #headerimg h1 {
-    color: green; }
-    #page #header #headerimg h1 a {
-      color: red; }
+  #page #header #headerimg {
+    height: 100px; }
+    #page #header #headerimg h1 {
+      color: green; }
+      #page #header #headerimg h1 a {
+        color: red;
+        text-decoration: none; }
+    #page #header #headerimg .description {
+      text-align: center;
+      margin-top: 10px;
+      font-weight: bold; }
+#page #sidebar {
+        /* WooCommerce Sidebar Section 
+
+        Three Child <ul> elements
+
+        1. Search Text Box and Button
+        2. Site Pages List - role=navigation
+        3. Third Child - Blank <ul> Element by default
+        */ }
+#page #footer {
+  background: yellow;
+  height: 100px; }
+  #page #footer p {
+    margin-top: 10px;
+    text-align: center;
+    display: block; }
+    #page #footer p a {
+      color: yellow; }
 
 /*# sourceMappingURL=style.css.map */
