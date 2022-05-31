@@ -2,7 +2,7 @@
 *
 * Note:
 * Path to Theme:  wp-content/themes/jgdm-woocommerce-selectors/*
-* Last Update: 30-05-2022: 20:52
+* Last Update: 31-05-2022: 20:32
 */
 /*
 Theme Name: JGDM WooCommerce Selectors
@@ -84,33 +84,25 @@ p.filestamp {
   font-weight: bold;
   margin-top: 10pt; }
 
-#primary #main .woocommerce-breadcrumb {
-  margin: 10px 0;
-  width: 100%;
-  text-align: center;
+#page #primary #main .woocommerce-result-count {
   color: black; }
-  #primary #main .woocommerce-breadcrumb a {
-    color: green; }
-#primary #main .woocommerce-products-header .woocommerce-products-header__title,
-#primary #main .woocommerce-products-header .page-title {
-  color: black; }
-#primary #main .woocommerce-result-count {
-  color: black; }
-#primary #main .woocommerce-ordering .orderby {
+#page #primary #main .woocommerce-ordering .orderby {
   background: yellow;
   padding: 10px 0; }
-  #primary #main .woocommerce-ordering .orderby option {
+  #page #primary #main .woocommerce-ordering .orderby option {
     background: #ed9141;
     outline: green; }
-    #primary #main .woocommerce-ordering .orderby option.selected {
+    #page #primary #main .woocommerce-ordering .orderby option.selected {
       background: yellow; }
-#primary #main .products .type-product .woocommerce-LoopProduct-link .onsale {
-  margin: -10px 0 0 0;
-  border: white solid 3px; }
-#primary #main .products .type-product .woocommerce-LoopProduct-link .woocommerce-loop-product__title {
-  color: red; }
-#primary #main .products .type-product .product_type_simple {
-  background: lightyellow; }
+#page #sidebar {
+            /* WooCommerce Sidebar Section 
+
+            Three Child <ul> elements
+
+            1. Search Text Box and Button
+            2. Site Pages List - role=navigation
+            3. Third Child - Blank <ul> Element by default
+            */ }
 
 /* Section: New Products  Level 2 Heading Element */
 /* New Products Section Selectors - wc-block-grid */
@@ -175,6 +167,45 @@ div#page #primary #main .type-product .wc-tabs-wrapper {
       text-align: center;
       margin-top: 10px;
       font-weight: bold; }
+#page #primary #main .woocommerce-breadcrumb {
+  margin: 10px 0;
+  width: 100%;
+  text-align: center;
+  color: black; }
+  #page #primary #main .woocommerce-breadcrumb a {
+    color: green; }
+#page #primary #main .woocommerce-products-header .woocommerce-products-header__title,
+#page #primary #main .woocommerce-products-header .page-title {
+  color: black; }
+#page #primary #main .woocommerce-result-count {
+  color: black; }
+#page #primary #main .woocommerce-ordering .orderby {
+  background: yellow;
+  padding: 10px 0; }
+  #page #primary #main .woocommerce-ordering .orderby option {
+    background: #ed9141;
+    outline: green; }
+    #page #primary #main .woocommerce-ordering .orderby option.selected {
+      background: yellow; }
+#page #primary #main .products .type-product .woocommerce-LoopProduct-link .onsale {
+  margin: -10px 0 0 0;
+  border: white solid 3px; }
+#page #primary #main .products .type-product .woocommerce-LoopProduct-link .woocommerce-loop-product__title {
+  color: red; }
+#page #primary #main .products .type-product .woocommerce-LoopProduct-link .price .woocommerce-Price-amount bdi {
+  color: black; }
+  #page #primary #main .products .type-product .woocommerce-LoopProduct-link .price .woocommerce-Price-amount bdi .woocommerce-Price-currencySymbol {
+    color: black; }
+#page #primary #main .products .type-product .woocommerce-LoopProduct-link .price del .woocommerce-Price-amount bdi {
+  color: red; }
+  #page #primary #main .products .type-product .woocommerce-LoopProduct-link .price del .woocommerce-Price-amount bdi .woocommerce-Price-currencySymbol {
+    color: red; }
+#page #primary #main .products .type-product .woocommerce-LoopProduct-link .price ins .woocommerce-Price-amount bdi {
+  color: black; }
+  #page #primary #main .products .type-product .woocommerce-LoopProduct-link .price ins .woocommerce-Price-amount bdi .woocommerce-Price-currencySymbol {
+    color: black; }
+#page #primary #main .products .type-product .product_type_simple {
+  background: lightyellow; }
 #page #sidebar {
         /* WooCommerce Sidebar Section 
 
@@ -183,15 +214,50 @@ div#page #primary #main .type-product .wc-tabs-wrapper {
         1. Search Text Box and Button
         2. Site Pages List - role=navigation
         3. Third Child - Blank <ul> Element by default
-        */ }
+        */
+  background: yellow; }
+  #page #sidebar ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    text-align: center; }
+    #page #sidebar ul li {
+      list-style: none; }
+      #page #sidebar ul li #searchform div #s {
+        padding: 5px;
+        background: lightyellow; }
+      #page #sidebar ul li #searchform div #searchsubmit {
+        background: lightblue;
+        margin: 20px 0; }
+    #page #sidebar ul li.pagenav ul {
+      text-align: left; }
+      #page #sidebar ul li.pagenav ul .page-item a {
+        color: red; }
+        #page #sidebar ul li.pagenav ul .page-item a:hover {
+          text-decoration: none; }
+    #page #sidebar ul li {
+      padding: 2px 0; }
+      #page #sidebar ul li ul li {
+        text-align: left; }
+        #page #sidebar ul li ul li a {
+          color: red; }
+          #page #sidebar ul li ul li a:hover {
+            text-decoration: none; }
+    #page #sidebar ul li.categories ul li.cat-item {
+      text-align: left; }
+      #page #sidebar ul li.categories ul li.cat-item a {
+        color: red; }
+        #page #sidebar ul li.categories ul li.cat-item a:hover {
+          text-decoration: none; }
 #page #footer {
   background: yellow;
-  height: 100px; }
+  height: 75px; }
   #page #footer p {
-    margin-top: 10px;
     text-align: center;
-    display: block; }
+    padding-top: 20px; }
     #page #footer p a {
-      color: yellow; }
+      color: blue; }
+      #page #footer p a:hover {
+        text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
