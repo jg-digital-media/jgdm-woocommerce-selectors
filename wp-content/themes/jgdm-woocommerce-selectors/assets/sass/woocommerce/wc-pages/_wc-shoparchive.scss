@@ -27,15 +27,8 @@
 
         .woocommerce-breadcrumb {
 
-            margin: 10px 0;
-            width: 100%;
-            text-align: center;
-
-            color: $color-primary;
-
             a {
                 
-                color: $wc-link-color;
             }
 
         }
@@ -44,8 +37,7 @@
 
             .woocommerce-products-header__title, 
             .page-title {
-
-                color: $color-primary;
+                
 
             }
 
@@ -112,9 +104,7 @@
 
                     // Note: Style selector for the sale icon when product has a sale price
                     .onsale {
-
-                        margin: -10px 0 0 0;
-                        border: white solid 3px;
+                        
 
                     }
 
@@ -123,7 +113,7 @@
                     }
 
                     .woocommerce-loop-product__title {
-                        color: red
+                        
 
                     }
 
@@ -133,13 +123,11 @@
                         // Selectors for standard pricing - no sale/discount price
                         .woocommerce-Price-amount {
 
-                            bdi {                               
-
-                                color: $price-amount;
+                            bdi {              
+                                
 
                                 .woocommerce-Price-currencySymbol {
                                     
-                                    color: $price-amount-currency;
                                     
                                 }
 
@@ -153,12 +141,10 @@
                             .woocommerce-Price-amount {
 
                                 bdi {
-
-                                    color: $delprice;
+                                    
 
                                     .woocommerce-Price-currencySymbol {
-
-                                        color: $delprice-currency;
+                                        
 
                                     }
 
@@ -173,13 +159,11 @@
 
                             .woocommerce-Price-amount {
 
-                                bdi {                                    
-
-                                    color: $strike-price;
+                                bdi {           
+                                    
 
                                     .woocommerce-Price-currencySymbol {
-
-                                        color: $strike-price-currency;
+                                        
 
                                     }
 
@@ -196,7 +180,7 @@
                 .product_type_simple {
 
                     // Note: Add to basket button selector as an anchor element
-                    background: lightyellow;
+                    
 
                 }
 
@@ -207,7 +191,7 @@
     }
 }   
 
-    #sidebar {
+#sidebar {
 
 
         /* WooCommerce Sidebar Section 
@@ -321,27 +305,24 @@
 
         }
 
-    }
+}
 
-    #footer {
+#footer {
 
-        // Note: #footer is a div element  with id of footer (WooCommerce default state)
-        p {
+    // Note: #footer is a div element  with id of footer (WooCommerce default state)
+    p {
 
-            a {
+        a {
+            
+            &:hover {
                 
-                color: blue;
-
-                &:hover {
-                    
-                    text-decoration: none;
-                }
-
             }
 
         }
 
     }
+
+}
 
 
 

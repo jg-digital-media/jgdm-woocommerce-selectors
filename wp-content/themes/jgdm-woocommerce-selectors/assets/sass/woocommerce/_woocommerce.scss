@@ -30,6 +30,191 @@
         }
 
     }
+    #primary {
+
+        #main {            
+    
+            .woocommerce-breadcrumb {
+    
+                margin: 10px 0;
+                width: 100%;
+                text-align: center;
+    
+                color: $color-primary;
+    
+                a {
+                    
+                    color: $wc-link-color;
+                }
+    
+            }
+    
+            .woocommerce-products-header {
+    
+                .woocommerce-products-header__title, 
+                .page-title {
+    
+                    color: $color-primary;
+    
+                }
+    
+                .page-description {
+    
+                    p {
+    
+                    }
+    
+                }
+    
+            }
+    
+            .woocommerce-notices-wrapper {
+    
+            }
+    
+            .woocommerce-result-count {
+    
+                // paragraph element - e.g. center text alignment
+                color: $color-primary;
+    
+            }
+    
+            .woocommerce-ordering {
+    
+                
+    
+                .orderby {
+    
+                    background: yellow;
+                    padding: 10px 0;
+    
+    
+                    // TODO: Default Sort
+    
+                    option {
+    
+                        background: #ed9141;
+    
+                        outline: green;
+    
+                        &.selected {
+    
+                            // Note: Adds the selected class to option element on orderby selection
+                            background: yellow;
+    
+                        }
+    
+                      
+    
+                    } 
+    
+                }
+    
+            }
+    
+            .products {
+    
+                // products archive page - product list container element
+                .type-product {
+    
+                    .woocommerce-LoopProduct-link {
+    
+                        // Note: Style selector for the sale icon when product has a sale price
+                        .onsale {
+    
+                            margin: -10px 0 0 0;
+                            border: white solid 3px;
+    
+                        }
+    
+                        .attachment-woocommerce_thumbnail {
+    
+                        }
+    
+                        .woocommerce-loop-product__title {
+                            color: red
+    
+                        }
+    
+                        .price {
+                            
+    
+                            // Selectors for standard pricing - no sale/discount price
+                            .woocommerce-Price-amount {
+    
+                                bdi {                               
+    
+                                    color: $price-amount;
+    
+                                    .woocommerce-Price-currencySymbol {
+                                        
+                                        color: $price-amount-currency;
+                                        
+                                    }
+    
+                                }
+    
+                            }
+    
+                            // Selectors for Full price display
+                            del {
+                                
+                                .woocommerce-Price-amount {
+    
+                                    bdi {
+    
+                                        color: $delprice;
+    
+                                        .woocommerce-Price-currencySymbol {
+    
+                                            color: $delprice-currency;
+    
+                                        }
+    
+                                    }
+    
+                                }
+    
+                            }
+    
+                            // Selectors for discounted/sale price
+                            ins {                           
+    
+                                .woocommerce-Price-amount {
+    
+                                    bdi {                                    
+    
+                                        color: $strike-price;
+    
+                                        .woocommerce-Price-currencySymbol {
+    
+                                            color: $strike-price-currency;
+    
+                                        }
+    
+                                    }
+    
+                                }
+    
+                            }
+    
+                        }
+    
+                    }
+    
+                    .product_type_simple {
+    
+                        // Note: Add to basket button selector as an anchor element
+                        background: lightyellow;
+    
+                    }
+    
+                }
+                
+            }
+    
+        }
+    } 
 
     #sidebar {
 
@@ -45,10 +230,20 @@
 
         
         // Author information and Search Form - You can also try using a first-child CSS 
-        // selector for ul elements that are children for the div element with an ID of #sidebar        
+        // selector for ul elements that are children for the div element with an ID of #sidebar   
+        
+        background: $wc-background;
+
         ul {
 
+            display: inline-block;
+            vertical-align: top;
+            width: 45%;
+            text-align: center;
+
             li {
+
+                list-style: none;
 
                 // 
                 #searchform {
@@ -63,9 +258,15 @@
 
                         #s {
 
+                            padding: 5px;
+                            background: lightyellow;
+
                         }
 
                         #searchsubmit {
+
+                            background: lightblue;
+                            margin: 20px 0;
 
                         }
 
@@ -82,13 +283,22 @@
 
                 }
 
-                ul {
+                ul {                    
+
+                    text-align: left;
 
                     .page-item {
 
                         // Note: list item selector that contains an anchor tag for each page
 
                         a {
+
+                            color: $wc-link-color-secondary;
+
+                            &:hover {
+
+                                text-decoration: none;
+                            }
 
                         }
                         
@@ -101,6 +311,8 @@
             // Note: WooCommerce outputs no class selector for second list item; that is meant for the Sidebar archives list
             li {
 
+                padding: 2px 0;
+
                 h2 {
 
                     // Archive Title Text
@@ -111,7 +323,16 @@
 
                     li {
 
+                        text-align: left;
+
                         a {
+
+                            color: $wc-link-color-secondary;
+
+                            &:hover {
+
+                                text-decoration: none;
+                            }
 
 
                         }
@@ -133,7 +354,16 @@
 
                     li.cat-item {
 
+                        text-align: left;
+
                         a {
+
+                            color: $wc-link-color-secondary;
+
+                            &:hover {
+
+                                text-decoration: none;
+                            }
 
                         }
 
@@ -147,27 +377,31 @@
 
     }
 
+
     #footer {
 
-        background: yellow;
-        height: 100px;
-        
-
         // Note: #footer is a div element  with id of footer (WooCommerce default state)
-        p {
+        background: $wc-background;
+        height: 75px;
 
-            margin-top: 10px;
+        p {
+    
             text-align: center;
-            display: block;
+            padding-top: 20px;
 
             a {
-
-                color: $wc-background;
-
+                
+                color: blue;
+    
+                &:hover {
+    
+                    text-decoration: none;
+                }
+    
             }
-
+    
         }
-
+    
     }
 
 }
