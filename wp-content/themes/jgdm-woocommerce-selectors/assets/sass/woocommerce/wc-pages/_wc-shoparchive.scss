@@ -1,3 +1,26 @@
+
+#header {
+    
+
+    #headerimg {
+
+        h1 {
+
+            a {
+
+            }
+
+        }
+
+        .description {
+
+
+        }
+
+    }
+
+}
+
 #primary {
 
     #main {            
@@ -105,13 +128,18 @@
                     }
 
                     .price {
+                        
 
                         // Selectors for standard pricing - no sale/discount price
                         .woocommerce-Price-amount {
 
-                            bdi {
+                            bdi {                               
+
+                                color: $price-amount;
 
                                 .woocommerce-Price-currencySymbol {
+                                    
+                                    color: $price-amount-currency;
                                     
                                 }
 
@@ -126,7 +154,11 @@
 
                                 bdi {
 
+                                    color: $delprice;
+
                                     .woocommerce-Price-currencySymbol {
+
+                                        color: $delprice-currency;
 
                                     }
 
@@ -137,13 +169,17 @@
                         }
 
                         // Selectors for discounted/sale price
-                        ins {
+                        ins {                           
 
                             .woocommerce-Price-amount {
 
-                                bdi {
+                                bdi {                                    
+
+                                    color: $strike-price;
 
                                     .woocommerce-Price-currencySymbol {
+
+                                        color: $strike-price-currency;
 
                                     }
 
@@ -169,7 +205,144 @@
         }
 
     }
+}   
 
-}
+    #sidebar {
+
+
+        /* WooCommerce Sidebar Section 
+
+        Three Child <ul> elements
+
+        1. Search Text Box and Button
+        2. Site Pages List - role=navigation
+        3. Third Child - Blank <ul> Element by default
+        */
+
+        
+        // Author information and Search Form - You can also try using a first-child CSS 
+        // selector for ul elements that are children for the div element with an ID of #sidebar        
+        ul {
+
+            li {
+
+                // 
+                #searchform {
+
+                    // Note: <form> element
+
+                    div {
+
+                        .screen-reader-text {
+
+                        }
+
+                        #s {
+
+                        }
+
+                        #searchsubmit {
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+            // ul role= navigation - Sidebar pages navigation list
+            li.pagenav {
+
+                h2 {
+
+                }
+
+                ul {
+
+                    .page-item {
+
+                        // Note: list item selector that contains an anchor tag for each page
+
+                        a {
+
+                        }
+                        
+                    }
+
+                }
+
+            }
+
+            // Note: WooCommerce outputs no class selector for second list item; that is meant for the Sidebar archives list
+            li {
+
+                h2 {
+
+                    // Archive Title Text
+
+                }
+                
+                ul {
+
+                    li {
+
+                        a {
+
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+            // Note: Selector for Sidebar Categories list
+            li.categories {
+
+                h2 {
+
+                }
+
+                ul {
+
+                    li.cat-item {
+
+                        a {
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    #footer {
+
+        // Note: #footer is a div element  with id of footer (WooCommerce default state)
+        p {
+
+            a {
+                
+                color: blue;
+
+                &:hover {
+                    
+                    text-decoration: none;
+                }
+
+            }
+
+        }
+
+    }
+
+
 
     
