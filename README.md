@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 30-05-2022 - 21:03)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 31-05-2022 - 20:30)
 
 ## WooCommerce Pages 
 
@@ -454,16 +454,8 @@ The 4 above may be contained inside a div with the ID of #page.
 
                 .woocommerce-products-header__title, 
                 .page-title {
-
                 }
-
-                .page-description {
-
-                    p {
-
-                    }
-
-                }
+                
 
             }
 
@@ -704,6 +696,10 @@ The 4 above may be contained inside a div with the ID of #page.
         p {
 
             a {
+
+                &:hover {
+
+                }
 
             }
 
