@@ -1,4 +1,6 @@
 
+
+/* Selectors from .wp-block-cover to ... */
 .wp-block-cover {
 
     .wp-block-cover__gradient-background {
@@ -44,7 +46,7 @@
 
         .wc-block-grid__product {
 
-            a.wc-block-grid__product-link {
+            .wc-block-grid__product-link {
 
                 .wc-block-grid__product-image {
 
@@ -69,16 +71,11 @@
             // Note: product price selectors
             .wc-block-grid__product-price {
 
-                // Selectors - standard pricing
-                span {
+                .woocommerce-Price-amount {
 
-                    .woocommerce-Price-amount {
+                    .woocommerce-Price-currencySymbol {
 
-                        .woocommerce-Price-currencySymbol {
-
-                        }  
-
-                    }
+                    }  
 
                 }
 
@@ -139,7 +136,8 @@
 
     .wp-block-media-text__media {
 
-        img {
+        img,
+        .size-full {
 
             // Note: .size-full class is available for this element
 
@@ -148,6 +146,8 @@
         .wp-block-media-text__content {
 
             p {
+
+                // uses an element selector rather than any of the supplied classes
 
             }
 

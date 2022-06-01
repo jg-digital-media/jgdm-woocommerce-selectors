@@ -7,6 +7,215 @@
 /* WooCommerce Shop Homepage */
 
 
+// Selectors Checked: 01-06-2022 - 11:44
+.wp-block-cover {
+
+    .wp-block-cover__gradient-background {
+
+    }
+
+    .wp-block-cover__image-background {
+
+    }
+
+    .wp-block-cover__inner-container {
+
+        .has-text-color {
+
+            // has text colour seems to be the neutral class to target
+
+        }
+
+        .wp-block-button {
+
+            .wp-block-button__link {
+
+            }
+
+        }
+
+    }
+
+}
+
+
+/* Section: New Products  Level 2 Heading Element */
+.has-text-align-center {
+
+}
+
+
+/* New Products Section Selectors - wc-block-grid */
+.wc-block-grid 
+.wp-block-product-new {
+
+    .wc-block-grid__products { 
+
+        .wc-block-grid__product {
+
+            .wc-block-grid__product-link {
+
+                .wc-block-grid__product-image {
+
+                    .attachment-woocommerce_thumbnail {
+
+                    }
+
+                }
+
+                .wc-block-grid__product-title {
+
+                }
+                
+            }
+
+            
+            // Note: product sale icon
+            .wc-block-grid__product-onsale {
+
+            }
+
+            // Note: product price selectors
+            .wc-block-grid__product-price {
+
+                .woocommerce-Price-amount {
+
+                    .woocommerce-Price-currencySymbol {
+
+                    }  
+
+                }
+
+
+                // Selectors for sale and strikethrough full pricing
+                del {
+
+                    .woocommerce-Price-amount {
+
+                        .woocommerce-Price-currentSymbol {
+
+                        }
+                    }
+
+                }
+
+                ins {
+
+                    .woocommerce-Price-amount {
+
+                        .woocommerce-Price-currentSymbol {
+
+                        }  
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+
+/* Media Text Block classes */
+.wp-block-media-text {
+
+    .wp-block-media-text__media {
+
+        .size-full {
+
+        }
+
+    }
+
+    .wp-block-media-text__content {
+
+    }
+
+}
+
+
+/* Block Media Text: WooCommerce */
+.wc-block-media-text {
+
+    .wp-block-media-text__media {
+
+        img,
+        .size-full {
+
+            // Note: .size-full class is available for this element
+
+        }
+
+        .wp-block-media-text__content {
+
+            p {
+
+                // uses an element selector rather than any of the supplied classes
+
+            }
+
+        }
+
+    }
+
+}
+
+                        
+/* Featured Product Wrapper */
+.wc-block-featured-product {
+
+    .wc-block-featured-product__wrapper {
+
+        .wc-block-featured-product__title {
+
+            // Note: Level 2 heading element
+
+        }
+        
+        .wc-block-featured-product__description {
+             
+            p {
+
+            }
+
+        }
+        
+        .wc-block-featured-product__price {
+
+            // Note: Selectors for the price and currency symbol
+            .woocommerce-Price-amount {
+
+                .woocommerce-Price-currencySymbol {
+
+
+                }
+
+            }
+
+        }
+        
+        .wc-block-featured-product__link {
+
+            .wp-block-button, 
+            .aligncenter {
+
+                .wp-block-button__link {                  
+
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
 
 /* WooCommerce Shop Archive Page */
 

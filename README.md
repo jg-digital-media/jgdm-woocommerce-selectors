@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 31-05-2022 - 20:30)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 01-06-2022 - 11:44)
 
 ## WooCommerce Pages 
 
@@ -105,7 +105,7 @@ Simply copy the groups of selectors from the specified pages below and add them 
 
 <a id="shop-homepage"></a>
 ### Shop Homepage
-+ **/homepage/** (Home)  [Top](#document-navigation)
++ **/homepage/** (Home)  [Top](#document-navigation)  **Selectors last checked:** 01-06-2022 - 11:33
 
    + First, Look for the loop in your WordPress Template file.
 
@@ -174,7 +174,7 @@ e.g.
 
         .wc-block-grid__product {
 
-            a.wc-block-grid__product-link {
+            .wc-block-grid__product-link {
 
                 .wc-block-grid__product-image {
 
@@ -200,17 +200,13 @@ e.g.
             .wc-block-grid__product-price {
 
                 // Selectors - standard pricing
-                span {
+                .woocommerce-Price-amount {
 
-                    .woocommerce-Price-amount {
+                    .woocommerce-Price-currencySymbol {
 
-                        .woocommerce-Price-currencySymbol {
+                    }  
 
-                        }  
-
-                    }
-
-                }
+                }            
 
 
                 // Selectors for sale and strikethrough full pricing
@@ -225,6 +221,7 @@ e.g.
 
                 }
 
+                // Selectors for sale and strikethrough full pricing
                 ins {
 
                     .woocommerce-Price-amount {
@@ -251,6 +248,7 @@ e.g.
 
     .wp-block-media-text__media {
 
+        img,
         .size-full {
 
         }
@@ -258,6 +256,10 @@ e.g.
     }
 
     .wp-block-media-text__content {
+
+        p {
+
+        }
 
     }
 
@@ -344,7 +346,7 @@ e.g.
 
 <a id="#shop-archive-page"></a>
 ### Shop Archive Page
-+ **/shop/** (Product Archive Page) [Top](#document-navigation)
++ **/shop/** (Product Archive Page) [Top](#document-navigation) - **Selectors last checked:** 31-05-2022 - 20:30
 
 As far as the shop archive page goes, the page is divided into 4 main structures each with a specific ID.
 
