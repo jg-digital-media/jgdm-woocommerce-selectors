@@ -36,12 +36,10 @@
 
 }
 
-
 // Section: New Products (Level 2 Heading Element) 
 .has-text-align-center {
 
 }
-
 
 // New Products Section Selectors - wc-block-grid 
 .wc-block-grid 
@@ -117,7 +115,6 @@
 
 }
 
-
 // Media Text Block classes
 .wp-block-media-text {
 
@@ -134,7 +131,6 @@
     }
 
 }
-
 
 // Block Media Text: WooCommerce 
 .wc-block-media-text {
@@ -161,7 +157,6 @@
     }
 
 }
-
                         
 // Featured Product Wrapper 
 .wc-block-featured-product {
@@ -217,6 +212,7 @@
 
 /* WooCommerce Shop Archive Page - Selectors Checked: 31-05-2022 - 20:30 */
 
+// Containing element
 #page {
 
     #header {
@@ -546,10 +542,9 @@
 
 
 
-/* Single Product Page - Check began 01-06-2022 - 21:07
-(as clicked through from the Shop Archive page) */
+/* Single Product Page - Selectors Check began 01-06-2022 - 21:07 */
 
-
+// Containing element - as clicked through from the Shop Archive page
 #page {
 
     #header {
@@ -617,7 +612,7 @@
 }
 
 
-/* WooCommerce Basket Page */
+/* WooCommerce Basket Page - Selectors Check */
 
 // Containing element
 .woocommerce {
@@ -969,7 +964,7 @@
 
 
 
-/* WooCommerce My Account Page */
+/* WooCommerce My Account Page - Selectors Check */
 
 // Containing element
 .woocommerce {
@@ -978,13 +973,18 @@
 
 
 
-/* WooCommerce Privacy Policy Page */
+/* WooCommerce Privacy Policy Page - Selectors Check */
 
-
+// Containing element
 .side-one > article {
 
 }
 
 
-/* Refund and Returns Page. */
+/* Refund and Returns Page - Selectors Check  */
+
+// Containing element
+.side-one > article {
+
+}
 
