@@ -1,8 +1,8 @@
 /*
 *
 * Note:
-* Path to Theme:  wp-content/themes/jgdm-woocommerce-selectors/*
-* Last Update: 31-05-2022: 20:32
+* Path to Theme:  wp-content/themes/jgdm-woocommerce-selectors 
+* Last Update: 04-06-2022: 15:06
 */
 /*
 Theme Name: JGDM WooCommerce Selectors
@@ -84,6 +84,7 @@ p.filestamp {
   font-weight: bold;
   margin-top: 10pt; }
 
+/* Shop Archive Page Sass Partial */
 #page #primary #main .woocommerce-result-count {
   color: black; }
 #page #primary #main .woocommerce-ordering .orderby {
@@ -104,6 +105,9 @@ p.filestamp {
             3. Third Child - Blank <ul> Element by default
             */ }
 
+/* Shop Homepage Sass Partial
+
+Selectors from .wp-block-cover to ... */
 /* Section: New Products  Level 2 Heading Element */
 /* New Products Section Selectors - wc-block-grid */
 /* Media Text Block classes */
@@ -123,6 +127,8 @@ div#page #primary #main .type-product .wc-tabs-wrapper {
 
                     */ }
 
+/* Basket Page Sass Partial */
+/* Checkout Page Sass Partial */
 .woocommerce .woocommerce-MyAccount-navigation ul {
   /* WooCommerce Navigation Classes */ }
 .woocommerce .woocommerce-MyAccount-content {
@@ -154,6 +160,7 @@ div#page #primary #main .type-product .wc-tabs-wrapper {
     .woocommerce .woocommerce-MyAccount-content .woocommerce-info .woocommerce-message::after {
       /* clear: both; */ }
 
+/* Privacy Page Sass Partial */
 #page #header {
   background: yellow; }
   #page #header #headerimg {
