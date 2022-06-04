@@ -1,5 +1,5 @@
 <?php 
 /*
 
-    Template Name: WooCommerce Basket
+    Template Name: WooCommerce Basket Page
 */

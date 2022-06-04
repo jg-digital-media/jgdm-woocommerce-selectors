@@ -1,5 +1,5 @@
 <?php 
 /*
 
-    Template Name: WooCommerce Checkout
+    Template Name: WooCommerce Checkout Page
 */

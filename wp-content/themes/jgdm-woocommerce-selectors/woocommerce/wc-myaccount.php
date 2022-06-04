@@ -1,5 +1,5 @@
 <?php 
 /*
 
-    Template Name: WooCommerce MyAccount 
+    Template Name: WooCommerce MyAccount Page
 */
