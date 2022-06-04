@@ -1504,18 +1504,114 @@ The Basket page is the first part of the shopping onboard process where items cu
 
             .col-1 {
 
+                .woocommerce-billing-fields {
+
+                    // 
+
+                    h3 {
+
+                    }
+
+                    .woocommerce-billing-fields__field-wrapper {
+
+                        .form-row {
+
+                            label {
+
+                            }
+
+                            .woocommerce-input-wrapper {
+
+                                .input-text {
+
+                                }
+
+                                .country_to_state {
+
+                                    option {
+
+                                    }
+
+                                }
+
+                                // select2  select1? select3?
+                                .select2-container {
+
+                                    .selection {
+
+                                        .select2-selection {
+
+                                            .select2-selection__rendered {
+
+                                            }
+
+                                            .select2-selection__arrow {
+
+                                                b {
+
+                                                }
+                                                
+                                            }
+
+                                        }
+
+                                    }
+
+                                } 
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
             }
 
             .col-2 {
 
+                .woocommerce-shipping-fields {
+
+                }
+
+                .woocommerce-additional-fields {
+
+                    h3 {
+
+                    }
+
+                    .woocommerce-additional-fields__field-wrapper {
+
+                        .notes {
+
+                            label#order_comments {
+
+                            }
+
+                            .woocommerce-input-wrapper {
+
+                                #order_comments {
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
             }
 
         }
+
     }
 
     #order_review_heading {
 
-
+        
     }
 
     .woocommerce-checkout-review-order {
