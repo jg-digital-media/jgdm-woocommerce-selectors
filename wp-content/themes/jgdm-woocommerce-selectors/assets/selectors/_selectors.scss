@@ -626,10 +626,344 @@
 
 
 
-/* WooCommerce Checkout Page */
+/* WooCommerce Checkout Page  - Check begins: 04-06-2022 - 16:11 */
 
 // Containing element
 .woocommerce {
+
+    .woocommerce-notices-wrapper {
+
+    }
+
+    .woocommerce-form-coupon-toggle {
+
+        .woocommerce-info {
+
+            &::before {
+
+            }
+
+            &::after {
+
+            }
+
+            // coupon toggle link
+            .showcoupon {
+                    
+            }
+
+        }
+
+    }
+
+    .checkout_coupon {
+
+        // NOTE: <form> This element is displayed in the browser when .showcoupon toggle class is open
+        p {
+
+        }
+
+        .form-row-first {
+
+            label {
+
+                abbr.required {
+
+                }
+                
+            }
+
+            // contains coupon code text box
+            .input-text {
+
+            }
+
+        }
+
+        .form-row-last {
+
+            // contains coupon button
+            .button,
+            button[type="submit"] {
+
+            }            
+
+        }
+
+        .clear {
+
+        }
+
+    }
+
+    .woocommerce-checkout {
+
+        #customer_details {
+
+            .col-1 {
+
+                .woocommerce-billing-fields {
+
+                    // 
+
+                    h3 {
+
+                    }
+
+                    .woocommerce-billing-fields__field-wrapper {
+
+                        .form-row {
+
+                            label {
+
+                            }
+
+                            .woocommerce-input-wrapper {
+
+                                .input-text {
+
+                                }
+
+                                .country_to_state {
+
+                                    option {
+
+                                    }
+
+                                }
+
+                                // select2  select1? select3?
+                                .select2-container {
+
+                                    .selection {
+
+                                        .select2-selection {
+
+                                            .select2-selection__rendered {
+
+                                            }
+
+                                            .select2-selection__arrow {
+
+                                                b {
+
+                                                }
+                                                
+                                            }
+
+                                        }
+
+                                    }
+
+                                } 
+
+                            }
+
+                        }
+
+                    }
+                }
+
+            }
+
+            .col-2 {
+
+                .woocommerce-shipping-fields {
+
+                }
+
+                .woocommerce-additional-fields {
+
+                    h3 {
+
+                    }
+
+                    .woocommerce-additional-fields__field-wrapper {
+
+                        .notes {
+
+                            label#order_comments {
+
+                            }
+
+                            .woocommerce-input-wrapper {
+
+                                #order_comments {
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .order_review_heading {
+
+    }
+
+    .woocommerce-checkout-review-order {
+
+        .woocommerce-checkout-review-order-table {
+
+            thead {
+
+                tr {
+
+                    th.product-name {
+
+                    }
+
+                    th.product-total {
+
+                    }
+
+                }
+
+            }
+
+            tbody {
+
+                .cart_item {
+
+                    .product-name {
+                        
+                        // table cell
+
+                        .product-quantity {
+
+                        }
+
+                    }
+
+                    .product-total {
+                        
+                        // table cell
+                        .woocommerce-Price-amount {
+
+                            bdi {
+
+                                // styling for amount
+
+                                .woocommerce-Price-currencySymbol {
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+            tfoot {
+
+                .cart-subtotal {
+
+                    th {
+
+                        // table header cell
+                    }
+
+                    td {
+
+                        // table cell
+                        .woocommerce-Price-amount {
+
+                            bdi {
+
+                                // styling for amount
+                                .woocommerce-Price-currencySymbol {
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+                .order-total {
+
+                    th {
+
+                        // table header cell                                
+                    }
+
+                    td {
+
+                        // strong in place of span for subtotal
+                        strong {
+
+                            .woocommerce-Price-amount {
+
+                                bdi {
+
+                                    // styling for amount
+                                    .woocommerce-Price-currencySymbol {
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        #payment {
+
+            .wc_payment_methods {
+
+            }
+
+            .place-order {
+
+                .woocommerce-terms-and-conditions-wrapper {
+
+                    .woocommerce-privacy-policy-text {
+
+                        p {
+
+                            .woocommerce-privacy-policy-link {
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+                .woocommerce_checkout_place_order {
+
+                }
+
+            }
+
+        }
+
+    }
 
 }
 
