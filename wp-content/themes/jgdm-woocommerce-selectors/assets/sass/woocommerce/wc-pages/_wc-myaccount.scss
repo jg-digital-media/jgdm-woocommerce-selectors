@@ -1,16 +1,13 @@
 
 .woocommerce {
 
-    .woocommerce-MyAccount-navigation {
-        
-            
+    .woocommerce-MyAccount-navigation {             
 
         // Note: CSS/Sass selector for the active tab
         & .is-active {
 
 
-        }
-            
+        }            
 
         ul {
 
@@ -72,7 +69,7 @@
         }
 
         p {
-            // The following addresses will be used on the checkout page by default
+            // "The following addresses will be used on the checkout page by default"
         }
         
 
@@ -91,9 +88,7 @@
 
             }
 
-        }
-
-        
+        }        
 
 
         /* 
@@ -107,8 +102,7 @@
         // tick icon - messages container element
         .woocommerce-info {
 
-            /* border-top-color: ; */
-        
+            /* border-top-color: ; */        
         
             &::before {
 
@@ -119,7 +113,6 @@
 
             // Orders tab button - "browse products"
             .woocommerce-Button button {
-
 
 
             }
@@ -133,8 +126,7 @@
 
                 }
 
-            }
-             
+            }             
 
         }
 
@@ -158,8 +150,7 @@
         * MyAccount Page Downloads Tab
         */
 
-        // ...  Same as orders page  ...
-
+        // ...  Same selectors as orders page  ...
 
 
         /* 
