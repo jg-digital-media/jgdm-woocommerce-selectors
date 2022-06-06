@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 04-06-2022 14:50)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 06-06-2022 18:14)
 
 ## WooCommerce Pages 
 
@@ -1014,16 +1014,13 @@ The Basket page is the first part of the shopping onboard process where items cu
 
 .woocommerce {
 
-    .woocommerce-MyAccount-navigation {
-        
-            
+    .woocommerce-MyAccount-navigation {               
 
         // Note: CSS/Sass selector for the active tab
         & .is-active {
 
 
-        }
-            
+        }            
 
         ul {
 
@@ -1104,9 +1101,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
             }
 
-        }
-
-        
+        }       
 
 
         /* 
@@ -1146,8 +1141,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                 }
 
-            }
-             
+            }             
 
         }
 
