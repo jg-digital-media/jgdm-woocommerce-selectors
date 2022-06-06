@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 06-06-2022 18:14)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 06-06-2022 19:06)
 
 ## WooCommerce Pages 
 
@@ -1106,7 +1106,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
         /* 
         * 
-        * MyAccount Page Orders Tab
+        * MyAccount Page Orders Tab - selectors for orders list state needed
         */
         .woocommerce-message, .woocommerce-message--info, .woocommerce-Message .woocommerce-Message--info, .woocommerce-info {
 
