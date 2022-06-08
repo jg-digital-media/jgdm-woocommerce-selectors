@@ -542,7 +542,7 @@
 
 
 
-/* Single Product Page - Selectors Check began 01-06-2022 - 21:07 */
+/* Single Product Page - Selectors Check In Progress: 01-06-2022 - 21:07 */
 
 // Containing element - as clicked through from the Shop Archive page
 #page {
@@ -612,10 +612,285 @@
 }
 
 
-/* WooCommerce Basket Page - Selectors Check */
+/* WooCommerce Basket Page - Selectors Check In Progress 08-06-2022 - 19-21 */
 
 // Containing element
-.woocommerce {
+.woocommerce {    
+
+    a {
+
+        .woocommerce-notices-wrapper {
+
+        }
+
+        .woocommerce-cart-form {
+
+            .shop_table {
+
+                thead {
+
+                    tr {
+
+                        // Note: TH tables cells.  No child selectors
+                        .product-remove {}
+                        .product-thumbnail {}
+                        .product-name {}
+                        .product-price {}
+                        .product-quantity {}
+                        .product-subtotal {} 
+
+                    }
+
+                }
+
+                tbody {
+
+                    .tr-woocmmerce-cart-form__cart-item {
+                        
+                        // td table cell classes    
+                        .product-remove {
+
+                            a {
+
+                                &:hover {
+
+                                    // remove button is used with an anchor <a> element 
+                                    // You can use a transition for background on hover state
+                                }
+
+
+                            }
+
+                            a.remove {
+
+                                &:hover {
+
+                                }
+
+                            }
+
+                        }
+
+                        .product-thumbnail {
+
+                            a {
+
+                                .attachment-woocommerce_thumbnail {
+
+                                    // Note: this is an image <img> element
+
+                                }
+
+                            }
+
+                        }
+
+                        .product-name {
+
+                            a {
+
+                            }
+
+                        }
+
+                        .product-price {
+
+                            .woocommerce-Price-amount {
+
+                                bdi {
+
+                                    .woocommerce-Price-currencySymbol {
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                        .product-quantity {
+
+                            .quantity {
+
+                                .screen-reader-text {
+
+                                    .input-text,
+                                    .qty {
+                                        
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                        .product-subtotal {
+
+                            .woocommerce-Price-amount {
+
+                                bdi {
+
+                                    .woocommerce-Price-currencySymbol {
+
+                                    }
+
+                                }
+
+                            }
+
+                        } 
+                        
+
+                        // Note: Form Basket Buttons Row  tr ---> td
+                        .actions {
+
+                            // Note: coupon text box and button element
+                            .coupon {
+
+                                label {
+
+                                }
+
+                                #coupon_code {
+
+                                }
+
+                                // Selector for the button that applies the coupon
+                                button[type="submit"],
+                                .button {
+
+                                }
+
+                            }
+
+                            // Selector for the button that Updates the basket. No class or ID                            
+                            button[type="submit"],
+                            .button {
+
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .cart-collaterals {
+
+        &::before {
+
+        }
+
+        &::after {
+
+        }
+
+        a {
+
+        }
+
+        .cart_totals {
+
+            a {
+
+                h2 {
+
+                    // Level 2 Heading: Basket Totals
+                }
+
+                .shop_table {
+
+                    // Note: This element is the cart collaterals Table - table element
+                    tbody {
+
+
+                        // tr element
+                        // Table Rows for Subtotal and Total Amounts
+                        .cart-subtotal {
+
+                            th {
+
+                                // Note: table cell and row for order subtotals
+                            }
+
+                            td {
+
+                                .woocommerce-Price-amount {
+
+                                    bdi {
+
+                                        .woocommerce-Price-currencySymbol {
+
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                        .order-total {
+
+                            th {
+
+                                // Note: table cell and row for the total order amount
+                            }
+
+                            td {
+
+                                .woocommerce-Price-amount {
+                                    // Note: span element
+
+                                    strong {
+
+                                        bdi {
+
+                                            .woocommerce-Price-currencySymbol {
+
+                                            }
+
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+            .wc-proceed-to-checkout {
+
+                a {
+
+                }
+
+                .checkout-button {
+
+                }
+
+            }
+
+        }
+
+    }
 
 }
 
