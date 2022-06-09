@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 09-06-2022 15:32)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 09-06-2022 16:45)
 
 ## WooCommerce Pages 
 
@@ -1853,11 +1853,11 @@ div#page {
 
                 }
 
-                &::after {
+                a {
 
                 }
 
-                a {
+                &::after {
 
                 }
 
@@ -1871,7 +1871,7 @@ div#page {
 
                 .onsale {
                     
-                    // Note: onsale span element for inclusion when there is a product sale
+                    // Note: onsale span element for inclusion when a product is a sale product
 
                 }
 
@@ -1908,17 +1908,76 @@ div#page {
 
                     }
 
+                    
+                    .price {
+
+                        // Standard product price
+                        .wooCommerce-Price-amount {
+
+                            bdi {
+
+                                .woocommerce-Price-currencySymbol {
+
+                                }
+
+                            }
+
+                        }
+
+                        // Sale product price
+                        del {
+
+                            .woocommerce-Price-amount {
+
+                                bdi {
+
+                                    .woocommerce-Price-currencySymbol {
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                        ins {
+
+                            .woocommerce-Price-amount {
+
+                                bdi {
+
+                                    .woocommerce-Price-currencySymbol {
+                                        
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
                     .woocommerce-product-rating {
                         
                         .star-rating {
 
                             span {
 
+                                ::before {
+
+                                }
+
                                 strong {
 
                                 }
 
-                                .rating {
+                                span {
+
+                                    ::before {
+
+                                    }
 
                                 }
 
@@ -1952,8 +2011,6 @@ div#page {
                         }
 
                         /* SALE PRICE */
-
-                        // strikethrough styling
                         del {
                             
                             .woocommerce-Price-amount {
@@ -2092,7 +2149,6 @@ div#page {
                     // wc-tabs content panel - container class
                     .woocommerce-Tabs-panel {
 
-
                         // content panel - description tab
                         h2 {
 
@@ -2212,8 +2268,7 @@ div#page {
                                     // Note: text "there are no reviews yet"
                                 }
 
-                            }
-                            
+                            }                            
 
                             #review_form_wrapper {
                                                            

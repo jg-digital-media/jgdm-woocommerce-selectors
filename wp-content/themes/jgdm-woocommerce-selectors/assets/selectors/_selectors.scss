@@ -542,13 +542,12 @@
 
 
 
-/* Single Product Page - Selectors Check In Progress: 01-06-2022 - 21:07 */
+/* Single Product Page - Selectors Check In Progress: 01-06-2022 - 16:45 */
 
 // Containing element - as clicked through from the Shop Archive page
 #page {
 
-    #header {
-        
+    #header {        
 
         #headerimg {
 
@@ -561,7 +560,7 @@
             }
 
             .description {
-
+                
 
             }
 
@@ -586,6 +585,7 @@
                 ::after {
 
                 }
+
             }
 
             .woocommerce-notices-wrapper {
@@ -596,16 +596,505 @@
 
                 .onsale {
                     
-                    // Note: onsale span element for inclusion when there is a product sale
+                    // Note: onsale span element for inclusion when a product is a sale product
 
                 }
 
-                //.woocommerce-product-gallery {}
+                .woocommerce-product-gallery {
+
+                    // div containing element]
+
+                    .woocommerce-product-gallery__wrapper {
+
+                        .woocommerce-product-gallery__image {
+
+                            a {
+
+                                .wp-post-image {
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+                // Note: Use the entry summary classes for the Single Product Template
+                .entry-summary {
+
+                    // Note: product details and basket customisations
+
+                    .entry-title {
+
+                        // Note: product title per single product templates
+
+                    }
+
+                    .price {
+
+                        // Standard product price
+                        .wooCommerce-Price-amount {
+
+                            bdi {
+
+                                .woocommerce-Price-currencySymbol {
+
+                                }
+
+                            }
+
+                        }
+
+                        // Sale product price
+                        del {
+
+                            .woocommerce-Price-amount {
+
+                                bdi {
+
+                                    .woocommerce-Price-currencySymbol {
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                        ins {
+
+                            .woocommerce-Price-amount {
+
+                                bdi {
+
+                                    .woocommerce-Price-currencySymbol {
+                                        
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                    // Styles when a product rating is present
+                    .woocommerce-product-rating {
+
+                        .star-rating {
+
+                            span {
+
+                                ::before {
+
+                                }
+
+                                strong {
+
+                                }
+
+                                span {
+
+                                    ::before {
+    
+                                    }
+
+                                }
+
+                            }
+
+                        }
+                        
+                        .woocommerce-review-link {
+
+                            .count {
+
+                            }
+
+                        }
+
+                    }
+
+                    .price {                      
+
+                        /* STANDARD PRICE */
+                        .woocommerce-Price-amount {
+
+                            bdi {
+
+                                .woocommerce-Price-currencySymbol {
+
+                                }
+
+                            }
+
+                        }
+
+                        /* SALE PRICE */
+                        del {
+                            
+                            .woocommerce-Price-amount {
+
+                                bdi {
+
+                                    .woocommerce-Price-currencySymbol {
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                        // sale/discounted price
+                        ins {
+                            
+                            .woocommerce-Price-amount {
+
+                                bdi {
+
+                                    .woocommerce-Price-currencySymbol {
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                    .woocommerce-product-details__short-description {
+
+                        p {
+
+                        }
+
+                    }
+
+                    .cart {
+
+                        .quantity {
+
+                            .screen-reader-text {
+
+                            }
+
+                            .qty {
+
+                            }
+
+                        }
+
+                        .single_add_to_cart_button {
+
+
+                        }
+
+                    }
+
+                    .product_meta {
+
+                        .posted_in {
+
+                            a {
+
+                            }
+
+                        }  
+
+                    }
+
+                }
+
+                .wc-tabs-wrapper {
+
+                    /* Note:  
+
+                        3 Tabs
+
+                        -> Description 
+                        -> Additional information 
+                        -> Reviews
+
+                    */
+                    .tabs {
+
+                        &::before {
+
+                        }
+
+                    }
+
+                    .wc-tabs {
+
+                        li {
+
+                            &.active {
+
+                                // Note: Class attached to the active tab
+
+                            }
+
+                        }
+
+                        .description_tab {
+
+                            a {
+
+                            }
+
+                        }
+
+                        .additional_information_tab {
+
+                            a {
+
+                            }
+
+                        }
+
+                        .reviews_tab {
+
+                            a {
+
+                            }
+
+                        }
+
+                    }
+
+                    .woocommerce-Tabs-panel {
+
+                        // content panel - description tab
+                        h2 {
+
+                        }
+
+                        p {
+
+                        }
+
+                        // content panel - additional info 
+
+                        h2 {
+
+
+                        }
+
+                        .woocommerce-product-attributes {
+
+                            tbody {
+
+                                tr.woocommerce-product-attributes-item {
+
+                                    th.woocommerce-product-attributes-item__label {
+
+                                    }
+
+                                    td.woocommerce-product-attributes-item__value {
+
+                                        p {
+
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                        // content panel - Reviews Tab
+
+                        .woocommerce-Reviews {
+
+                            #comments {
+
+                                .woocommerce-Reviews-title {
+
+                                    span {
+
+                                    }
+
+                                }
+
+                                // When there is a review list
+                                ol.commentlist {
+                                    
+                                    li {
+
+                                        .comment_container {
+
+                                            .avatar {
+
+                                            }
+
+                                            .comment-text {
+
+                                                .star-rating {
+
+                                                    span {
+
+                                                        .rating {
+
+                                                        }
+                                                    }
+
+                                                }
+
+                                                .meta {
+
+                                                    //Note:  comment meta info selectors
+
+                                                    
+                                                    .woocommerce-review__author {
+
+                                                    }
+
+                                                    .woocommerce-review__dash {
+
+                                                    }
+
+                                                    .woocommerce-review__published-date {
+
+                                                    }
+
+
+                                                }
+
+                                                .description {
+
+                                                    p {
+
+                                                    }
+
+                                                }
+
+                                            }
+
+                                        }
+
+                                    }
+                                    
+                                }
+
+                                .woocommerce-noreviews {
+
+                                    // Note: text "there are no reviews yet"
+                                }
+                                
+                            }
+
+                            #review_form_wrapper {
+                                                           
+                                #review_form {
+
+                                    #respond {
+
+                                        // use ID or class of .comment-respond 
+
+                                        .comment-reply-title {
+
+                                            small {
+
+                                                a {
+
+                                                }
+
+                                            }
+
+                                        }
+
+
+                                        // Comment Form for making new reviews
+                                        .comment-form {
+
+                                            .comment-form-rating {
+
+                                                .stars {
+
+                                                    span {
+
+                                                        .star-1,
+                                                        .star-2,
+                                                        .star-3,
+                                                        .star-4,
+                                                        .star-5 {
+
+                                                            &::before {
+
+                                                            }
+
+                                                        }
+
+                                                    }
+
+                                                }
+
+                                                #rating {
+
+                                                    option {
+
+                                                    }
+
+                                                }
+
+                                            }
+
+                                            .comment-form-comment {
+
+                                                label {
+
+                                                    .required {
+
+                                                    }
+
+                                                }
+
+                                                #comment {
+
+                                                }
+
+                                            }
+
+                                            .form-submit {
+
+                                                .submit {
+
+                                                }
+
+                                            }
+
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+
+                            .clear {
+
+                            }                            
+
+                        }
+
+                    }
+
+                }
 
             }
 
         }
-
 
     }
 
