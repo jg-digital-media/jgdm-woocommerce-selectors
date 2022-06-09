@@ -1250,22 +1250,22 @@
 
 
 
-/* WooCommerce My Account Page - Selectors Check In progress 06-06-2022 21-04 */
+/* WooCommerce My Account Page - Selectors Checked 06-06-2022 - 15:32 */
 
 // Containing element
 .woocommerce {
 
-    .woocommerce-MyAccount-navigation {                 
-
-        // Note: CSS/Sass selector for the active tab
-        & .is-active {
-
-
-        }            
+    .woocommerce-MyAccount-navigation { 
 
         ul {
 
-            li {
+            li {                
+
+                // Note: CSS/Sass selector for the active tab
+                & .is-active {
+        
+        
+                }            
 
             }
 
@@ -1277,7 +1277,7 @@
 
             }
 
-            /* WooCommerce Navigation Classes */
+            /* WooCommerce Navigation Tab Classes */
             .woocommerce-MyAccount-navigation-link--dashboard {
 
             } 
@@ -1307,6 +1307,7 @@
     }
 
     // Note: This is the content area for WooCommerce MyAccount pages
+    // according to sub tab clicked
     .woocommerce-MyAccount-content {
 
         .woocommerce-notices-wrapper {
@@ -1482,11 +1483,11 @@
             }
 
         }
-
         
 
         // Address Tab - Addresses Form Fields - /my-account/billing/
         // Address Tab - Addresses Form Fields - /my-account/shipping/
+
         form {
 
             h3 {
@@ -1547,7 +1548,14 @@
 
                 }
 
-            }            
+            }   
+
+            // edit-address/shipping
+            .woocommerce-address-fields {
+
+                // Editor Note:  As Billing Address Selectors - Cut for brevity
+
+            }         
 
         }
         
@@ -1565,9 +1573,19 @@
 
             .form-row {
 
+                // <p>
+
                 &::before {
 
-                }               
+                } 
+                
+            }
+
+            .woocommerce-form-row {
+
+                ::before {
+
+                }
 
                 label {
 
@@ -1608,6 +1626,10 @@
 
                     }
 
+                    label {
+
+                    }
+
                     .password-input {
 
                         .input-text,
@@ -1635,6 +1657,10 @@
 
                     }
 
+                    ::after {
+
+                    }
+
                 }
 
                 .form-row {
@@ -1648,10 +1674,6 @@
                 .form-row-wide {
 
                 }
-
-            }
-
-            .woocommerce-form-row {
 
             }
 

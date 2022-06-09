@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 09-06-2022 14:39)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 09-06-2022 15:32)
 
 ## WooCommerce Pages 
 
@@ -1019,15 +1019,19 @@ The Basket page is the first part of the shopping onboard process where items cu
 
 .woocommerce {
 
-    .woocommerce-MyAccount-navigation {               
-
-        // Note: CSS/Sass selector for the active tab
-        & .is-active {
-
-
-        }            
+    .woocommerce-MyAccount-navigation {     
 
         ul {
+
+            li {          
+
+                // Note: CSS/Sass selector for the active tab
+                & .is-active {
+
+
+                }  
+
+            }
 
             .woocommerce-MyAccount-navigation-link {
 
@@ -1037,7 +1041,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
             }
 
-            /* WooCommerce Navigation Classes */
+            /* WooCommerce Navigation Tab Classes */
             .woocommerce-MyAccount-navigation-link--dashboard {
 
             } 
@@ -1067,6 +1071,7 @@ The Basket page is the first part of the shopping onboard process where items cu
     }
 
     // Note: This is the content area for WooCommerce MyAccount pages
+    // according to the sub tab clicked
     .woocommerce-MyAccount-content {
 
         .woocommerce-notices-wrapper {
@@ -1120,8 +1125,7 @@ The Basket page is the first part of the shopping onboard process where items cu
         // tick icon - messages container element
         .woocommerce-info {
 
-            /* border-top-color: ; */
-        
+            /* border-top-color: ; */        
         
             &::before {
 
@@ -1132,7 +1136,6 @@ The Basket page is the first part of the shopping onboard process where items cu
 
             // Orders tab button - "browse products"
             .woocommerce-Button button {
-
 
 
             }
@@ -1170,20 +1173,21 @@ The Basket page is the first part of the shopping onboard process where items cu
         * MyAccount Page Downloads Tab
         */
 
-        // ...  Same as orders page  ...
-
+        // ...  Same selectors as orders page  ...
 
 
         /* 
         * 
         * MyAccount Page Addresses Tab  /edit-address/
         */
-        .woocommerce-Addresses {
+        .woocommerce-Addresses {     
+
+            // Address Tab - Addresses - /my-account/edit-address/billing/
+            // Address Tab - Addresses - /my-account/edit-address/shipping/
 
             &::before {
 
             }
-
 
             .col-1 {
 
@@ -1195,7 +1199,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                     .edit {
 
-                        // add/edit address
+                        // add/edit address <a> hyperlink
 
                     }
 
@@ -1205,7 +1209,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                     // 2 page states - 
                        // Address not yet set. "You have not set up this type of address yet"
-                       // lists the address as a series of line breaks when address saved
+                       // lists the address as a series of line breaks when address is saved
 
                 }
 
@@ -1255,11 +1259,20 @@ The Basket page is the first part of the shopping onboard process where items cu
                     
             }
 
-            // Note: Shipping and Billing Addresses
+            // Note: Shipping and Billing Addresses have the same selectors
             .woocommerce-address-fields {
 
                 .woocommerce-address-fields__field-wrapper {
 
+                    p.form-row-last {
+
+                    }
+
+                    .form-row-first {
+
+                    }
+
+                    // general containing paragraph selector
                     p {
 
                         label {
@@ -1318,7 +1331,13 @@ The Basket page is the first part of the shopping onboard process where items cu
 
         .woocommerce-EditAccountForm {
 
+            // woocommerce-form-row
+            // form-row-first
+            // form-row-last
+
             .form-row {
+
+                // <p>
 
                 &::before {
 
@@ -1327,6 +1346,10 @@ The Basket page is the first part of the shopping onboard process where items cu
             }
 
             .woocommerce-form-row {
+
+                ::before {
+
+                }
 
                 label {
 
@@ -1348,6 +1371,10 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                 }
 
+                &::after {
+
+                }
+
             }
 
             fieldset {
@@ -1359,6 +1386,10 @@ The Basket page is the first part of the shopping onboard process where items cu
                 .woocommerce-form-row {
 
                     &::before {
+
+                    }
+
+                    label {
 
                     }
 
@@ -1381,6 +1412,10 @@ The Basket page is the first part of the shopping onboard process where items cu
                             }
 
                         }
+
+                    }
+
+                    ::after {
 
                     }
 
