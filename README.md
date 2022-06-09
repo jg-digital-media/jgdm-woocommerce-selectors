@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 08-06-2022 19:49)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 09-06-2022 14:39)
 
 ## WooCommerce Pages 
 
@@ -81,9 +81,6 @@ Simply copy the groups of selectors from the specified pages below and add them 
 + When you have entered your WordPress and Database credentials, you can add and activate the WooCommerce plugin.
 
 + From this point you can either add your files to the staging area with the ```-f``` flag via git or remove version control altogether.  If you need to, you can also clone a fresh project using `https://github.com/jg-digital-media/jgdm-woocommerce-selectors`.
-
-
-
 
 + In Settings, in the Admin area, set the *Permalinks* to `post-name`. This allows you to set page slugs for all the pages, including WooCommerce pages to your sites
 
@@ -739,7 +736,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                     tr {
 
-                        // Note: TH tables cells.  No child selectors
+                        // Note: TH tables cells. No child selectors
                         .product-remove {}
                         .product-thumbnail {}
                         .product-name {}
@@ -823,11 +820,11 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                                 .screen-reader-text {
 
-                                    .input-text,
-                                    .qty {
-                                        
-                                    }
+                                }                                
 
+                                .input-text,
+                                .qty {
+                                    
                                 }
 
                             }
@@ -892,6 +889,10 @@ The Basket page is the first part of the shopping onboard process where items cu
 
     }
 
+    p {
+
+    }
+
     .cart-collaterals {
 
         &::before {
@@ -953,14 +954,16 @@ The Basket page is the first part of the shopping onboard process where items cu
                             th {
 
                                 // Note: table cell and row for the total order amount
+
                             }
 
                             td {
+                                // data-title="Total"
 
-                                .woocommerce-Price-amount {
-                                    // Note: span element
+                                .strong
 
-                                    strong {
+                                    .woocommerce-Price-amount {
+                                        // Note: span element
 
                                         bdi {
 
@@ -968,7 +971,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                                             }
 
-                                        }
+                                        }                                        
 
                                     }
 
@@ -991,6 +994,8 @@ The Basket page is the first part of the shopping onboard process where items cu
                 }
 
                 .checkout-button {
+
+                    // wc-forward
 
                 }
 

@@ -612,7 +612,7 @@
 }
 
 
-/* WooCommerce Basket Page - Selectors Check In Progress 08-06-2022 - 19-21 */
+/* WooCommerce Basket Page - Selectors Checked 09-06-2022 - 14-39 */
 
 // Containing element
 .woocommerce {    
@@ -631,7 +631,7 @@
 
                     tr {
 
-                        // Note: TH tables cells.  No child selectors
+                        // Note: TH tables cells. No child selectors
                         .product-remove {}
                         .product-thumbnail {}
                         .product-name {}
@@ -645,7 +645,7 @@
 
                 tbody {
 
-                    .tr-woocmmerce-cart-form__cart-item {
+                    .tr.woocmmerce-cart-form__cart-item {
                         
                         // td table cell classes    
                         .product-remove {
@@ -715,11 +715,11 @@
 
                                 .screen-reader-text {
 
-                                    .input-text,
-                                    .qty {
-                                        
-                                    }
+                                }
 
+                                .input-text,
+                                .qty {
+                                    
                                 }
 
                             }
@@ -784,6 +784,10 @@
 
     }
 
+    p {
+
+    }
+
     .cart-collaterals {
 
         &::before {
@@ -845,25 +849,30 @@
                             th {
 
                                 // Note: table cell and row for the total order amount
+
                             }
 
                             td {
+                                // data-title="Total"
 
-                                .woocommerce-Price-amount {
-                                    // Note: span element
+                                .strong {
 
-                                    strong {
+                                    .woocommerce-Price-amount {
+                                        // Note: span element
 
-                                        bdi {
+                                        strong {
 
-                                            .woocommerce-Price-currencySymbol {
+                                            bdi {
+
+                                                .woocommerce-Price-currencySymbol {
+
+                                                }
 
                                             }
 
                                         }
 
                                     }
-
                                 }
 
                             }
@@ -883,6 +892,8 @@
                 }
 
                 .checkout-button {
+
+                    // wc-forward
 
                 }
 
