@@ -217,13 +217,12 @@
 }
 
 
-/* WooCommerce Shop Archive Page - Selectors Checked: 31-05-2022 - 20:30 */
+/* WooCommerce Shop Archive Page - Selectors Rechecked: 13-06-2022 - 12:29 */
 
 // Containing element
 #page {
 
-    #header {
-        
+    #header {        
 
         #headerimg {
 
@@ -269,6 +268,14 @@
                 .woocommerce-products-header__title, 
                 .page-title {
                     
+
+                }
+
+                .page-description {
+
+                    p {
+
+                    }
 
                 }
                 
@@ -318,7 +325,7 @@
 
             .products {
 
-                // products archive page - product list container element
+                // individual product listing container
                 .type-product {
 
                     .woocommerce-LoopProduct-link {
@@ -344,8 +351,7 @@
                             // Selectors for standard pricing - no sale/discount price
                             .woocommerce-Price-amount {
 
-                                bdi {              
-                                    
+                                bdi {  
 
                                     .woocommerce-Price-currencySymbol {
                                         
@@ -361,8 +367,7 @@
                                 
                                 .woocommerce-Price-amount {
 
-                                    bdi {
-                                        
+                                    bdi {                                        
 
                                         .woocommerce-Price-currencySymbol {
                                             
@@ -410,113 +415,46 @@
             }
 
         }
+
     }   
 
     #sidebar {
 
+        /*  
+            WooCommerce Sidebar Section 
 
-            /* WooCommerce Sidebar Section 
-
-            Three Child <ul> elements
+            Contains Three Child <ul> elements
 
             1. Search Text Box and Button
             2. Site Pages List - role=navigation
-            3. Third Child - Blank <ul> Element by default
-            */
-
+            3. Third Child - Blank <ul> Element by default            
             
-            // Author information and Search Form - You can also try using a first-child CSS 
-            // selector for ul elements that are children for the div element with an ID of #sidebar        
-            ul {
+            + You can also try using a first-child CSS selector for ul elements
+            + that are children for the div element with an ID of #sidebar       
+        */        
 
-                li {
+        ul:first-child {
+                
+        }
+ 
+        ul {
 
-                    // 
-                    #searchform {
+            li {
 
-                        // Note: <form> element
+                // form conntainer element
+                #searchform {
 
-                        div {
+                    div {
 
-                            .screen-reader-text {
-
-                            }
-
-                            #s {
-
-                            }
-
-                            #searchsubmit {
-
-                            }
+                        .screen-reader-text {
 
                         }
 
-                    }
-
-                }
-
-                // ul role= navigation - Sidebar pages navigation list
-                li.pagenav {
-
-                    h2 {
-
-                    }
-
-                    ul {
-
-                        .page-item {
-
-                            // Note: list item selector that contains an anchor tag for each page
-
-                            a {
-
-                            }
-                            
-                        }
-
-                    }
-
-                }
-
-                // Note: WooCommerce outputs no class selector for second list item; that is meant for the Sidebar archives list
-                li {
-
-                    h2 {
-
-                        // Archive Title Text
-
-                    }
-                    
-                    ul {
-
-                        li {
-
-                            a {
-
-
-                            }
+                        #s {
 
                         }
 
-                    }
-
-                }
-
-                // Note: Selector for Sidebar Categories list
-                li.categories {
-
-                    h2 {
-
-                    }
-
-                    ul {
-
-                        li.cat-item {
-
-                            a {
-
-                            }
+                        #searchsubmit {
 
                         }
 
@@ -526,11 +464,85 @@
 
             }
 
+            // ul role= navigation - Sidebar pages navigation list
+            li.pagenav {
+
+                h2 {
+
+                }
+
+                ul {
+
+                    .page-item {
+
+                        // Note: list item selector that contains an anchor tag for each page
+
+                        a {
+
+                        }
+                        
+                    }
+
+                }
+
+            }
+
+            // Note: WooCommerce outputs no class selector for second list item; that is meant for the Achives list sidebar
+            li {
+
+                h2 {
+
+                    // Archive Title Text
+
+                }
+                
+                ul {
+
+                    li {
+
+                        a {
+
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+            // Note: Selector for Sidebar Categories list
+            li.categories {
+
+                h2 {
+
+                }
+
+                ul {
+
+                    li.cat-item {
+
+                        a {
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
     }
 
-    #footer {
+    hr {
 
-        // Note: #footer is a div element  with id of footer (WooCommerce default state)
+    }
+
+    // #footer is a div element with id of footer (WooCommerce default state)
+    #footer {
+        
         p {
 
             a {
@@ -548,7 +560,7 @@
 }
 
 
-/* Single Product Page - Selectors Checked: 13-06-2022 - 10:30  .wc-tabs */
+/* Single Product Page - Selectors Checked: 13-06-2022 - 10:30 */
 
 // Containing element - as clicked through from the Shop Archive page
 #page {
