@@ -5,8 +5,10 @@
 *  Use this file to as an alternative place to get the CSS Selectors you need. (Written in SASS/CSS)
 */
 
-/* WooCommerce Shop Homepage - Selectors Checked: 01-06-2022 - 11:44  */
 
+/* WooCommerce Shop Homepage - Selectors Rechecked: 13-06-2022 - 11:48 */
+
+// Shop cover block
 .wp-block-cover {
 
     .wp-block-cover__gradient-background {
@@ -19,11 +21,16 @@
 
     .wp-block-cover__inner-container {
 
+       
         .has-text-color {
 
-            // has text colour seems to be the neutral class to target
+            // has text colour seems to be the general class to target
 
         }
+        
+        //.has-text-align-left
+        //.has-text-align-right
+        //.has-text-align-center        
 
         .wp-block-button {
 
@@ -37,7 +44,7 @@
 
 }
 
-// Section: New Products (Level 2 Heading Element) 
+// Section: New Products (Level 2 Heading Element)   .has-text-align-left  .has-text-align-right
 .has-text-align-center {
 
 }
@@ -65,14 +72,13 @@
                 }
                 
             }
-
             
             // Note: product sale icon
             .wc-block-grid__product-onsale {
 
             }
 
-            // Note: product price selectors
+            // Note: "New products" product price selectors
             .wc-block-grid__product-price {
 
                 .woocommerce-Price-amount {
@@ -83,8 +89,7 @@
 
                 }
 
-
-                // Selectors for sale and strikethrough full pricing
+                // Selectors for sale and strikethrough (full) pricing
                 del {
 
                     .woocommerce-Price-amount {
@@ -92,6 +97,7 @@
                         .woocommerce-Price-currentSymbol {
 
                         }
+
                     }
 
                 }
@@ -141,7 +147,7 @@
         img,
         .size-full {
 
-            // Note: .size-full class is available for this element
+            // Note: <figure> .size-full class is available for this element
 
         }
 
