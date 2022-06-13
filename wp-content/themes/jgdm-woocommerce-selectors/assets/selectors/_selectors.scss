@@ -1852,7 +1852,7 @@
 }
 
 
-/* WooCommerce My Account Page - Selectors Rechecked: 06-06-2022 - 15:32 */
+/* WooCommerce My Account Page - Selectors Rechecked: 13-06-2022 - 14:59 */
 
 // Containing element
 .woocommerce {
@@ -1972,8 +1972,8 @@
 
             }
 
-            // Orders tab button - "browse products"
-            .woocommerce-Button button {
+            // Orders Tab Button - "browse products"
+            .woocommerce-Button {
 
 
             }
@@ -2018,78 +2018,78 @@
         * 
         * MyAccount Page Addresses Tab  /edit-address/
         */
-        .woocommerce-Addresses {            
-
-            // Address Tab - Addresses - /my-account/edit-address/billing/
-            // Address Tab - Addresses - /my-account/edit-address/shipping/
+        .woocommerce-Addresses {     
 
             &::before {
 
-            }
+            } 
 
-            .col-1 {
+            .woocommerce-Address {                
 
-                .woocommerce-Address-title {
+                .col-1 {
 
-                    h3 {
+                    .woocommerce-Address-title {
+
+                        h3 {
+
+                        }
+
+                        .edit {
+
+                            // add/edit address <a> hyperlink
+
+                        }
 
                     }
 
-                    .edit {
+                    address {
 
-                        // add/edit address <a> hyperlink
+                        // 2 page states - 
+                        // Address not yet set. "You have not set up this type of address yet"
+                        // lists the address as a series of line breaks when address is saved
 
                     }
 
                 }
+            
 
-                address {
+                .col-2 {
 
-                    // 2 page states - 
-                       // Address not yet set. "You have not set up this type of address yet"
-                       // lists the address as a series of line breaks when address is saved
+                    &::after {
+
+                        // clear: both;
+
+                    }
+
+                    .woocommerce-Address-title {
+
+                        h3 {
+
+                        }
+
+                        .edit {
+
+                        }
+
+                    }
+
+                    address {
+
+                        // 2 States - 
+                        // Address not yet set. "You have not set up this type of address yet"
+                        // lists the address as a series of line breaks when address is saved
+
+                    }
 
                 }
 
             }
             
+        }        
+           
 
-            .col-2 {
-
-                &::after {
-
-                    // clear: both;
-
-                }
-
-                .woocommerce-Address-title {
-
-                    h3 {
-
-                    }
-
-                    .edit {
-
-                    }
-
-                }
-
-                address {
-
-                    // 2 States - 
-                      // Address not yet set. "You have not set up this type of address yet"
-                      // lists the address as a series of line breaks when address is saved
-
-                }
-
-            }
-
-        }
-        
-
-        // Address Tab - Addresses Form Fields - /my-account/billing/
-        // Address Tab - Addresses Form Fields - /my-account/shipping/
-
+        // Address Tab - Addresses - /my-account/edit-address/billing/
+        // Address Tab - Addresses - /my-account/edit-address/shipping/
         form {
 
             h3 {
@@ -2102,11 +2102,18 @@
 
                 .woocommerce-address-fields__field-wrapper {
 
+
+                    // form first name
                     p.form-row-last {
 
                     }
 
+                    // form last name
                     .form-row-first {
+
+                    }
+
+                    .form-row-wide {
 
                     }
 
@@ -2131,7 +2138,64 @@
 
                             }
 
+                            // for the country/region select box
                             .country_select {
+
+                            }
+
+                            // Form field ID's
+                            #billing_first_name,
+                            #shipping_first_name {
+
+                            }
+
+                            #shipping_first_name,
+                            #shipping_first_name {
+
+                            }
+
+                            #billing_country,
+                            #shipping_country {
+
+                            }
+
+                            #billing_country,
+                            #shipping_country {
+
+                            }
+
+                            #billing_address_1,
+                            #shipping_address_1 {
+
+                            }
+
+                            #billing_address_2,
+                            #shipping_address_2 {
+
+                            }
+
+                            #billing_city,
+                            #shipping_city {
+
+                            }
+
+                            #billing_state,
+                            #shipping_state {
+
+                            }
+
+                            #billing_postcode,
+                            #shipping_postcode {
+
+                                //zipcode for US
+
+                            }
+
+                            #billing_phone {
+
+                            }
+
+                            #billing_email {
 
                             }
 
@@ -2141,6 +2205,8 @@
 
                 }
 
+
+                // Save Address Button
                 p {
 
                     .button,
@@ -2153,11 +2219,11 @@
             }   
 
             // edit-address/shipping
-            .woocommerce-address-fields {
+            /* .woocommerce-address-fields {
 
                 // Editor Note:  As Billing Address Selectors - Cut for brevity
 
-            }         
+            }  */        
 
         }
         
@@ -2172,7 +2238,6 @@
             // woocommerce-form-row
             // form-row-first
             // form-row-last
-
             .form-row {
 
                 // <p>
@@ -2222,6 +2287,18 @@
 
                 }
 
+                .form-row {
+
+                    &::after {
+                        
+                    }
+
+                }
+
+                .form-row-wide {
+
+                }
+
                 .woocommerce-form-row {
 
                     &::before {
@@ -2247,6 +2324,7 @@
 
                         .show-password-input {
 
+                            // password toggle class
                             & .display-password {          
 
                             }
@@ -2265,18 +2343,6 @@
 
                 }
 
-                .form-row {
-
-                    &::after {
-                        
-                    }
-
-                }
-
-                .form-row-wide {
-
-                }
-
             }
 
             .clear {
@@ -2286,7 +2352,7 @@
             p {
 
                 button[type="submit"],
-                .wooCommerce-Button {
+                .woocommerce-Button {
 
                 }
 
