@@ -1,15 +1,21 @@
+/* WooCommerce MyAccount Page - slug: /checkout */ */
 
+// Containing element
 .woocommerce {
 
-    .woocommerce-MyAccount-navigation {             
-
-        // Note: CSS/Sass selector for the active tab
-        & .is-active {
-
-
-        }            
+    .woocommerce-MyAccount-navigation { 
 
         ul {
+
+            li {                
+
+                // Note: CSS/Sass selector for the active tab
+                & .is-active {
+        
+        
+                }            
+
+            }
 
             .woocommerce-MyAccount-navigation-link {
 
@@ -19,7 +25,7 @@
 
             }
 
-            /* WooCommerce Navigation Classes */
+            /* WooCommerce Navigation Tab Classes */
             .woocommerce-MyAccount-navigation-link--dashboard {
 
             } 
@@ -49,6 +55,7 @@
     }
 
     // Note: This is the content area for WooCommerce MyAccount pages
+    // according to sub tab clicked
     .woocommerce-MyAccount-content {
 
         .woocommerce-notices-wrapper {
@@ -111,8 +118,8 @@
 
             }
 
-            // Orders tab button - "browse products"
-            .woocommerce-Button button {
+            // Orders Tab Button - "browse products"
+            .woocommerce-Button {
 
 
             }
@@ -157,76 +164,78 @@
         * 
         * MyAccount Page Addresses Tab  /edit-address/
         */
-        .woocommerce-Addresses {
+        .woocommerce-Addresses {     
 
             &::before {
 
-            }
+            } 
 
+            .woocommerce-Address {                
 
-            .col-1 {
+                .col-1 {
 
-                .woocommerce-Address-title {
+                    .woocommerce-Address-title {
 
-                    h3 {
+                        h3 {
+
+                        }
+
+                        .edit {
+
+                            // add/edit address <a> hyperlink
+
+                        }
 
                     }
 
-                    .edit {
+                    address {
 
-                        // add/edit address
+                        // 2 page states - 
+                        // Address not yet set. "You have not set up this type of address yet"
+                        // lists the address as a series of line breaks when address is saved
 
                     }
 
                 }
+            
 
-                address {
+                .col-2 {
 
-                    // 2 page states - 
-                       // Address not yet set. "You have not set up this type of address yet"
-                       // lists the address as a series of line breaks when address saved
+                    &::after {
+
+                        // clear: both;
+
+                    }
+
+                    .woocommerce-Address-title {
+
+                        h3 {
+
+                        }
+
+                        .edit {
+
+                        }
+
+                    }
+
+                    address {
+
+                        // 2 States - 
+                        // Address not yet set. "You have not set up this type of address yet"
+                        // lists the address as a series of line breaks when address is saved
+
+                    }
 
                 }
 
             }
             
+        }        
+           
 
-            .col-2 {
-
-                &::after {
-
-                    // clear: both;
-
-                }
-
-                .woocommerce-Address-title {
-
-                    h3 {
-
-                    }
-
-                    .edit {
-
-                    }
-
-                }
-
-                address {
-
-                    // 2 States - 
-                      // Address not yet set. "You have not set up this type of address yet"
-                      // lists the address as a series of line breaks when address saved
-
-                }
-
-            }
-
-        }
-
-
-        // Address Tab - Addresses - /my-account/billing/
-        // Address Tab - Addresses - /my-account/shipping/
-
+        // Address Tab - Addresses - /my-account/edit-address/billing/
+        // Address Tab - Addresses - /my-account/edit-address/shipping/
         form {
 
             h3 {
@@ -234,11 +243,27 @@
                     
             }
 
-            // Note: Shipping and Billing Addresses
+            // Note: Shipping and Billing Addresses have the same selectors
             .woocommerce-address-fields {
 
                 .woocommerce-address-fields__field-wrapper {
 
+
+                    // form first name
+                    p.form-row-last {
+
+                    }
+
+                    // form last name
+                    .form-row-first {
+
+                    }
+
+                    .form-row-wide {
+
+                    }
+
+                    // general containing paragraph selector
                     p {
 
                         label {
@@ -259,7 +284,64 @@
 
                             }
 
+                            // for the country/region select box
                             .country_select {
+
+                            }
+
+                            // Form field ID's
+                            #billing_first_name,
+                            #shipping_first_name {
+
+                            }
+
+                            #shipping_first_name,
+                            #shipping_first_name {
+
+                            }
+
+                            #billing_country,
+                            #shipping_country {
+
+                            }
+
+                            #billing_country,
+                            #shipping_country {
+
+                            }
+
+                            #billing_address_1,
+                            #shipping_address_1 {
+
+                            }
+
+                            #billing_address_2,
+                            #shipping_address_2 {
+
+                            }
+
+                            #billing_city,
+                            #shipping_city {
+
+                            }
+
+                            #billing_state,
+                            #shipping_state {
+
+                            }
+
+                            #billing_postcode,
+                            #shipping_postcode {
+
+                                //zipcode for US
+
+                            }
+
+                            #billing_phone {
+
+                            }
+
+                            #billing_email {
 
                             }
 
@@ -269,6 +351,8 @@
 
                 }
 
+
+                // Save Address Button
                 p {
 
                     .button,
@@ -278,14 +362,14 @@
 
                 }
 
-            }
+            }   
 
-            // edit-address/shipping/                 
-            .woocommerce-address-fields { 
+            // edit-address/shipping
+            /* .woocommerce-address-fields {
 
                 // Editor Note:  As Billing Address Selectors - Cut for brevity
 
-            }
+            }  */        
 
         }
         
@@ -297,15 +381,24 @@
 
         .woocommerce-EditAccountForm {
 
+            // woocommerce-form-row
+            // form-row-first
+            // form-row-last
             .form-row {
+
+                // <p>
 
                 &::before {
 
-                }
-
+                } 
+                
             }
 
             .woocommerce-form-row {
+
+                ::before {
+
+                }
 
                 label {
 
@@ -319,6 +412,7 @@
 
                 }
 
+                // selector that instructs on display name edit
                 span {
 
                     em {
@@ -327,41 +421,15 @@
 
                 }
 
+                &::after {
+
+                }
+
             }
 
             fieldset {
 
                 legend {
-
-                }
-
-                .woocommerce-form-row {
-
-                    &::before {
-
-                    }
-
-                    .password-input {
-
-                        .input-text,
-                        .woocommerce-Input--password,
-                        input[type="password"] {
-
-                        }
-
-                        .show-password-input {
-
-                            &::after {
-
-                            }
-
-                            & .display-password {
-
-                            }
-
-                        }
-
-                    }
 
                 }
 
@@ -377,6 +445,50 @@
 
                 }
 
+                .woocommerce-form-row {
+
+                    &::before {
+
+                    }
+
+                    label {
+
+                    }
+
+                    .password-input {
+
+                        .input-text,
+                        .woocommerce-Input--password,
+                        input[type="password"] {
+
+                        }                        
+
+                        input[type="text"] {
+                            
+                        }
+
+
+                        .show-password-input {
+
+                            // password toggle class
+                            & .display-password {          
+
+                            }
+
+                            &::after {
+
+                            }
+
+                        }
+
+                    }
+
+                    ::after {
+
+                    }
+
+                }
+
             }
 
             .clear {
@@ -386,7 +498,7 @@
             p {
 
                 button[type="submit"],
-                .wooCommerce-Button {
+                .woocommerce-Button {
 
                 }
 

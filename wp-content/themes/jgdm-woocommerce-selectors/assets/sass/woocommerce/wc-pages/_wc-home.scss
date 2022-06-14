@@ -1,7 +1,9 @@
-/* Shop Homepage Sass Partial
+/* Shop Homepage Sass Partial - slug: /homepage
 
-Selectors from .wp-block-cover to ... */
+Selectors from .wp-block-cover to .wc-block-featured-product via the WordPress Loop */
 
+
+// Shop cover block
 .wp-block-cover {
 
     .wp-block-cover__gradient-background {
@@ -14,11 +16,16 @@ Selectors from .wp-block-cover to ... */
 
     .wp-block-cover__inner-container {
 
+       
         .has-text-color {
 
-            // has text colour seems to be the neutral class to target
+            // has text colour seems to be the general class to target
 
         }
+        
+        //.has-text-align-left
+        //.has-text-align-right
+        //.has-text-align-center        
 
         .wp-block-button {
 
@@ -32,14 +39,12 @@ Selectors from .wp-block-cover to ... */
 
 }
 
-
-/* Section: New Products  Level 2 Heading Element */
+// Section: New Products (Level 2 Heading Element)   .has-text-align-left  .has-text-align-right
 .has-text-align-center {
 
 }
 
-
-/* New Products Section Selectors - wc-block-grid */
+// New Products Section Selectors - wc-block-grid 
 .wc-block-grid 
 .wp-block-product-new {
 
@@ -62,14 +67,13 @@ Selectors from .wp-block-cover to ... */
                 }
                 
             }
-
             
             // Note: product sale icon
             .wc-block-grid__product-onsale {
 
             }
 
-            // Note: product price selectors
+            // Note: "New products" product price selectors
             .wc-block-grid__product-price {
 
                 .woocommerce-Price-amount {
@@ -80,8 +84,7 @@ Selectors from .wp-block-cover to ... */
 
                 }
 
-
-                // Selectors for sale and strikethrough full pricing
+                // Selectors for sale and strikethrough (full) pricing
                 del {
 
                     .woocommerce-Price-amount {
@@ -89,6 +92,7 @@ Selectors from .wp-block-cover to ... */
                         .woocommerce-Price-currentSymbol {
 
                         }
+
                     }
 
                 }
@@ -113,8 +117,7 @@ Selectors from .wp-block-cover to ... */
 
 }
 
-
-/* Media Text Block classes */
+// Media Text Block classes
 .wp-block-media-text {
 
     .wp-block-media-text__media {
@@ -131,8 +134,7 @@ Selectors from .wp-block-cover to ... */
 
 }
 
-
-/* Block Media Text: WooCommerce */
+// Block Media Text: WooCommerce 
 .wc-block-media-text {
 
     .wp-block-media-text__media {
@@ -140,7 +142,7 @@ Selectors from .wp-block-cover to ... */
         img,
         .size-full {
 
-            // Note: .size-full class is available for this element
+            // Note: <figure> .size-full class is available for this element
 
         }
 
@@ -157,9 +159,8 @@ Selectors from .wp-block-cover to ... */
     }
 
 }
-
                         
-/* Featured Product Wrapper */
+// Featured Product Wrapper 
 .wc-block-featured-product {
 
     .wc-block-featured-product__wrapper {

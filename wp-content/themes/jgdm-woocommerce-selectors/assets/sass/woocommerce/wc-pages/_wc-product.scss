@@ -1,6 +1,9 @@
-// /product/  Selectors for single product page as clicked through from shop archive page /shop/ 
+/* Selectors for single product page as clicked through from shop archive page
+   slug:- /product/product_name 
+*/
 
-div#page {
+// Containing element - as clicked through from the Shop Archive page
+#page {
 
     #header {        
 
@@ -15,7 +18,7 @@ div#page {
             }
 
             .description {
-
+                
 
             }
 
@@ -23,25 +26,21 @@ div#page {
 
     }
 
-    hr {
+    #primary {
 
-    }
-
-    #primary {  
-        
         #main {
 
             .woocommerce-breadcrumb {
 
-                &::before {
-
-                }
-
-                &::after {
+                ::before {
 
                 }
 
                 a {
+                    
+                }
+
+                ::after {
 
                 }
 
@@ -53,16 +52,17 @@ div#page {
 
             .type-product {
 
-                .onsale {
-                    
-                    // Note: onsale span element for inclusion when there is a product sale
+                /*                  
+                    Note: onsale span element for inclusion when a product is a sale product
+                */
+                .onsale { 
 
                 }
 
+                /* Side 1 - product gallery image */
                 .woocommerce-product-gallery {
 
                     // div containing element
-
                     .woocommerce-product-gallery__wrapper {
 
                         .woocommerce-product-gallery__image {
@@ -81,32 +81,44 @@ div#page {
 
                 }
 
-                // Note: Use the entry summary classes for the Single Product Template
+                /* Side 2 - Product Entry Summary for the product details 
+                   and basket customisations 
+                */
                 .entry-summary {
-
-                    // Note: product details and basket customisations
-
+                    
                     .entry-title {
 
                         // Note: product title per single product templates
 
-                    }
+                    }                    
 
+                    // Selector included when a product rating is present
                     .woocommerce-product-rating {
-                        
+
                         .star-rating {
 
                             span {
 
+                                ::before {
+
+                                }
+
+
+                                // strong.rating
                                 strong {
 
                                 }
 
-                                .rating {
+                                // span.rating
+                                span {
+
+                                    ::before {
+    
+                                    }
 
                                 }
 
-                            }                            
+                            }
 
                         }
                         
@@ -117,12 +129,12 @@ div#page {
                             }
 
                         }
-                                
+
                     }
 
-                    .price {                       
+                    .price {                      
 
-                        /* STANDARD PRICE */
+                        // Standard Product Price
                         .woocommerce-Price-amount {
 
                             bdi {
@@ -135,9 +147,7 @@ div#page {
 
                         }
 
-                        /* SALE PRICE */
-
-                        // strikethrough styling
+                        // Selector group for the non sale price
                         del {
                             
                             .woocommerce-Price-amount {
@@ -154,7 +164,7 @@ div#page {
 
                         }
 
-                        // sale/discounted price
+                        // Selector group for the sale/discounted price
                         ins {
                             
                             .woocommerce-Price-amount {
@@ -210,23 +220,16 @@ div#page {
 
                             }
 
-                        }
+                        }  
 
                     }
 
                 }
 
+                // .woocommerce-tabs
                 .wc-tabs-wrapper {
 
-                    /* Note:  
-
-                        3 Tabs
-
-                        -> Description 
-                        -> Additional information 
-                        -> Reviews
-
-                    */
+                    // ul
                     .tabs {
 
                         &::before {
@@ -235,6 +238,7 @@ div#page {
 
                     }
 
+                    // The containing element for clickable product tabs
                     .wc-tabs {
 
                         li {
@@ -246,6 +250,14 @@ div#page {
                             }
 
                         }
+
+                        /* Note: 3 Tabs
+
+                        -> Description 
+                        -> Additional information 
+                        -> Reviews
+
+                    */
 
                         .description_tab {
 
@@ -273,11 +285,17 @@ div#page {
 
                     }
 
-                    // wc-tabs content panel - container class
-                    .woocommerce-Tabs-panel {
+                    // Selectors for the Product Content Panel
+                    .woocommerce-Tabs-panel {  
+                       
 
+                    }
 
-                        // content panel - description tab
+                    //.panel { }
+
+                    // content panel - description tab
+                    .woocommerce-Tabs-panel--description {
+                        
                         h2 {
 
                         }
@@ -286,8 +304,12 @@ div#page {
 
                         }
 
-                        //content panel - additional info 
+                    }
 
+                    // content panel - additional information tab
+                    .woocommerce-Tabs-panel--additional_information {
+                        
+                        // content panel - additional info 
                         h2 {
 
 
@@ -317,10 +339,16 @@ div#page {
 
                         }
 
-                        // content panel - Reviews Tab
+                    }
 
+                    // content panel - reviews tab
+                    .woocommerce-Tabs-panel--reviews {
+
+                        // review panel selectors // content panel - Reviews Tab
                         .woocommerce-Reviews {
 
+                            
+                            // Selector used when product reviews are present
                             #comments {
 
                                 .woocommerce-Reviews-title {
@@ -331,10 +359,9 @@ div#page {
 
                                 }
 
-                                // When there is a review list
                                 ol.commentlist {
-
-                                    li {
+                                    
+                                    li.review {
 
                                         .comment_container {
 
@@ -351,15 +378,14 @@ div#page {
                                                         .rating {
 
                                                         }
+
                                                     }
 
                                                 }
 
                                                 .meta {
 
-                                                    //Note:  comment meta info selectors
-
-                                                    
+                                                    // Note: comment meta info selectors                                                    
                                                     .woocommerce-review__author {
 
                                                     }
@@ -388,17 +414,17 @@ div#page {
                                         }
 
                                     }
-
+                                    
                                 }
 
                                 .woocommerce-noreviews {
 
                                     // Note: text "there are no reviews yet"
                                 }
-
+                                
                             }
-                            
 
+                            //"Add a review" form
                             #review_form_wrapper {
                                                            
                                 #review_form {
@@ -424,6 +450,14 @@ div#page {
                                         .comment-form {
 
                                             .comment-form-rating {
+
+                                                label {
+
+                                                    .requireed {
+
+                                                    }
+
+                                                }
 
                                                 .stars {
 
@@ -479,6 +513,8 @@ div#page {
 
                                             }
 
+                                            // <script>
+
                                         }
 
                                     }
@@ -489,7 +525,7 @@ div#page {
 
                             .clear {
 
-                            }
+                            }                            
 
                         }
 
@@ -497,12 +533,8 @@ div#page {
 
                 }
 
+                // Related products */
                 .related {
-
-                    h2 {
-
-                    }
-
 
                     ul.products {
 
@@ -510,7 +542,13 @@ div#page {
 
                             .woocommerce-loop-product__link {
 
+                                // when the related product is a sale product
+                                .onsale {
+
+                                }
+
                                 .attachment-woocommerce_thumbnail {
+
 
                                 }
 
@@ -518,22 +556,28 @@ div#page {
 
                                 }
 
-                                // Star Rating - single product pages
+                                // When a related product is a sale product
                                 .star-rating {
+
+                                    ::before {
+
+                                    }
 
                                     span {
 
                                         .rating {
-
+                                         
+                                            
                                         }
 
                                     }
+
 
                                 }
 
                                 .price {
 
-                                    // Standard Prices
+                                    // Related product - Standard Price Selectors
                                     .woocommerce-Price-amount {
 
                                         bdi {
@@ -543,161 +587,57 @@ div#page {
                                             }
 
                                         }
+
                                     }
 
+                                    // Related product - Sale Price Selectors
 
-                                    // Note: Sale Prices
+                                    // del
                                     del {
 
-                                        span {                                           
+                                        .woocommerce-Price-amount {
 
-                                            .woocommerce-Price-amount {
+                                            bdi {
 
-                                                bdi {
-
-                                                    .woocommerce-Price-currencySymbol {
-
-                                                    }
+                                                .woocommerce-Price-currencySymbol {
 
                                                 }
-
+                                                
                                             }
 
                                         }
 
                                     }
 
+
+                                    // ins 
                                     ins {
 
-                                        span {                                            
+                                        .woocommerce-Price-amount {
 
-                                            .woocommerce-Price-amount {
+                                            bdi {
 
-                                                bdi {
-
-                                                    .woocommerce-Price-currencySymbol {
-
-                                                    }
+                                                .woocommerce-Price-currencySymbol {
 
                                                 }
-
+                                                
                                             }
 
                                         }
 
-                                    }                                    
+                                    }
 
                                 }
 
                             }
 
-                            .add_to_cart_button {
-
-                                // Note: Add to Basket Button
+                            .product-type_simple {
 
                             }
 
                         }
 
-                    }
-
-
-                }
-
-            }
-
-        }
-
-    }
-
-    #sidebar {
-
-        // #sidebar - same as the product archive page - ul containing element
-
-        ul {
-
-            li {
-
-                #searchform {
-
-                    div {
-
-                        .screen-reader-text {
-
-                        }
-
-                        #s {
-
-                        }
-
-                        #searchsubmit {
-
-                        }
-
-                    }
-
-                }
-
-            }
-
-            // Note: ul role navigation - Sidebar pages navigation list
-            li.pagenav {
-
-                h2 {
-
-                }
-
-                ul {
-
-                    .page-item {
-
-                        // list item class selector that contains an anchor tag for each page
-
-                        a {
-
-                        }
-                        
-                    }
-
-                }
-
-            }
-
-            // Note: No class selector for second list item - meant for the Sidebar archives list
-            li {
-
-                h2 {
-
-                    // Heading 2 Element Selector - Archive Title Text
-                }
-                
-                ul {
-
-                    li {
-
-                        a {
-
-
-                        }
-
-                    }
-
-                }
-
-            }
-
-            // Note: This list item used for Categories list item
-            li.categories {
-
-                h2 {
-
-                }
-
-                ul {
-
-                    li.cat-item {
-
-                        a {
+                        .product-type {
 
                         }
 
@@ -709,20 +649,6 @@ div#page {
 
         }
 
-
-    }
-
-    #footer {
-
-        // Note: #footer selector markup same as product archive page
-        p {
-
-            a {
-
-            }
-
-        }
-    
     }
 
 }
