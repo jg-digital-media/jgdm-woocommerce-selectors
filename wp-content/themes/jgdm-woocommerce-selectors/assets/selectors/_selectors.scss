@@ -1013,7 +1013,7 @@
 
                                                 label {
 
-                                                    .requireed {
+                                                    .required {
 
                                                     }
 
@@ -1209,6 +1209,25 @@
 
         }
 
+    }
+
+    #sidebar {
+
+        // As Shop archive page
+
+    }
+
+    #footer {
+
+        // Note: #footer selector markup same as product archive page
+        p {
+
+            a {
+
+            }
+
+        }
+    
     }
 
 }

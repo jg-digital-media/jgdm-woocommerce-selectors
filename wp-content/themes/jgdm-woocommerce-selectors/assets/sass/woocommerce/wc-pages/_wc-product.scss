@@ -2,7 +2,7 @@
    slug:- /product/product_name 
 */
 
-// Containing element - as clicked through from the Shop Archive page
+// Containing element - As clicked through from the Shop Archive page
 #page {
 
     #header {        
@@ -453,7 +453,7 @@
 
                                                 label {
 
-                                                    .requireed {
+                                                    .required {
 
                                                     }
 
@@ -649,6 +649,25 @@
 
         }
 
+    }    
+
+    #sidebar {        
+
+        // As Shop archive page
+        
+    }
+
+    #footer {
+
+        // Note: #footer selector markup same as product archive page
+        p {
+
+            a {
+
+            }
+
+        }
+    
     }
 
 }

@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 14-06-2022 14:58)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 14-06-2022 15:15)
 
 ## WooCommerce Pages 
 
@@ -102,7 +102,7 @@ Simply copy the groups of selectors from the specified pages below and add them 
 
 <a id="shop-homepage"></a>
 ### Shop Homepage
-+ **/homepage/** (Home)  [Top](#document-navigation)  **Selectors last checked:** 01-06-2022 - 11:33
++ **/homepage/** (Home)  [Top](#document-navigation)  **Selectors last checked:** 13-06-2022 - 11:48
 
    + First, Look for the loop in your WordPress Template file.
 
@@ -124,8 +124,10 @@ e.g.
 
   
 #### **SASS/CSS Selectors to use...**  
+
 ```scss
 
+// Shop cover block
 .wp-block-cover {
 
     .wp-block-cover__gradient-background {
@@ -138,11 +140,16 @@ e.g.
 
     .wp-block-cover__inner-container {
 
+       
         .has-text-color {
 
-            // has text colour seems to be the neutral class to target
+            // has text colour seems to be the general class to target
 
         }
+        
+        //.has-text-align-left
+        //.has-text-align-right
+        //.has-text-align-center        
 
         .wp-block-button {
 
@@ -156,14 +163,12 @@ e.g.
 
 }
 
-
-/* Section: New Products  Level 2 Heading Element */
+// Section: New Products (Level 2 Heading Element)   .has-text-align-left  .has-text-align-right
 .has-text-align-center {
 
 }
 
-
-/* New Products Section Selectors - wc-block-grid */
+// New Products Section Selectors - wc-block-grid 
 .wc-block-grid 
 .wp-block-product-new {
 
@@ -186,27 +191,24 @@ e.g.
                 }
                 
             }
-
             
             // Note: product sale icon
             .wc-block-grid__product-onsale {
 
             }
 
-            // Note: product price selectors
+            // Note: "New products" product price selectors
             .wc-block-grid__product-price {
 
-                // Selectors - standard pricing
                 .woocommerce-Price-amount {
 
                     .woocommerce-Price-currencySymbol {
 
                     }  
 
-                }            
+                }
 
-
-                // Selectors for sale and strikethrough full pricing
+                // Selectors for sale and strikethrough (full) pricing
                 del {
 
                     .woocommerce-Price-amount {
@@ -214,11 +216,11 @@ e.g.
                         .woocommerce-Price-currentSymbol {
 
                         }
+
                     }
 
                 }
 
-                // Selectors for sale and strikethrough full pricing
                 ins {
 
                     .woocommerce-Price-amount {
@@ -239,13 +241,11 @@ e.g.
 
 }
 
-
-/* Media Text Block classes */
+// Media Text Block classes
 .wp-block-media-text {
 
     .wp-block-media-text__media {
 
-        img,
         .size-full {
 
         }
@@ -254,29 +254,27 @@ e.g.
 
     .wp-block-media-text__content {
 
-        p {
-
-        }
-
     }
 
 }
 
-
-/* Block Media Text: WooCommerce */
+// Block Media Text: WooCommerce 
 .wc-block-media-text {
 
     .wp-block-media-text__media {
 
-        img {
+        img,
+        .size-full {
 
-            // Note: .size-full class is available for this element
+            // Note: <figure> .size-full class is available for this element
 
         }
 
         .wp-block-media-text__content {
 
             p {
+
+                // uses an element selector rather than any of the supplied classes
 
             }
 
@@ -285,9 +283,8 @@ e.g.
     }
 
 }
-
                         
-/* Featured Product Wrapper */
+// Featured Product Wrapper 
 .wc-block-featured-product {
 
     .wc-block-featured-product__wrapper {
@@ -412,11 +409,10 @@ The 4 above may be contained inside a div with the ID of #page.
 
 ```scss
 
+// Containing element
 #page {
 
-    color: blue;
-
-    #header {
+    #header {        
 
         #headerimg {
 
@@ -439,11 +435,19 @@ The 4 above may be contained inside a div with the ID of #page.
 
     #primary {
 
-        #main {
+        #main {            
 
             .woocommerce-breadcrumb {
 
+                ::before {
+
+                }
+
                 a {
+                    
+                }
+
+                ::after {
 
                 }
 
@@ -453,9 +457,18 @@ The 4 above may be contained inside a div with the ID of #page.
 
                 .woocommerce-products-header__title, 
                 .page-title {
+                    
+
+                }
+
+                .page-description {
+
+                    p {
+
+                    }
+
                 }
                 
-
             }
 
             .woocommerce-notices-wrapper {
@@ -465,20 +478,34 @@ The 4 above may be contained inside a div with the ID of #page.
             .woocommerce-result-count {
 
                 // paragraph element - e.g. center text alignment
+                color: $color-primary;
 
             }
 
-            .woocommerce-ordering {
+            .woocommerce-ordering {                
 
                 .orderby {
 
+                    background: yellow;
+                    padding: 10px 0;
+
+
+                    // TODO: Default Sort
+
                     option {
+
+                        background: #ed9141;
+
+                        outline: green;
 
                         &.selected {
 
                             // Note: Adds the selected class to option element on orderby selection
+                            background: yellow;
 
                         }
+
+                    
 
                     } 
 
@@ -488,13 +515,14 @@ The 4 above may be contained inside a div with the ID of #page.
 
             .products {
 
-                // products archive page - product list container element
+                // individual product listing container
                 .type-product {
 
                     .woocommerce-LoopProduct-link {
 
                         // Note: Style selector for the sale icon when product has a sale price
                         .onsale {
+                            
 
                         }
 
@@ -503,17 +531,20 @@ The 4 above may be contained inside a div with the ID of #page.
                         }
 
                         .woocommerce-loop-product__title {
+                            
 
                         }
 
                         .price {
+                            
 
                             // Selectors for standard pricing - no sale/discount price
                             .woocommerce-Price-amount {
 
-                                bdi {
+                                bdi {  
 
                                     .woocommerce-Price-currencySymbol {
+                                        
                                         
                                     }
 
@@ -526,9 +557,10 @@ The 4 above may be contained inside a div with the ID of #page.
                                 
                                 .woocommerce-Price-amount {
 
-                                    bdi {
+                                    bdi {                                        
 
                                         .woocommerce-Price-currencySymbol {
+                                            
 
                                         }
 
@@ -539,13 +571,15 @@ The 4 above may be contained inside a div with the ID of #page.
                             }
 
                             // Selectors for discounted/sale price
-                            ins {
+                            ins {                           
 
                                 .woocommerce-Price-amount {
 
-                                    bdi {
+                                    bdi {           
+                                        
 
                                         .woocommerce-Price-currencySymbol {
+                                            
 
                                         }
 
@@ -562,6 +596,7 @@ The 4 above may be contained inside a div with the ID of #page.
                     .product_type_simple {
 
                         // Note: Add to basket button selector as an anchor element
+                        
 
                     }
 
@@ -571,31 +606,33 @@ The 4 above may be contained inside a div with the ID of #page.
 
         }
 
-    }
+    }   
 
     #sidebar {
 
+        /*  
+            WooCommerce Sidebar Section 
 
-        /* WooCommerce Sidebar Section 
+            Contains Three Child <ul> elements
 
-        Three Child <ul> elements
+            1. Search Text Box and Button
+            2. Site Pages List - role=navigation
+            3. Third Child - Blank <ul> Element by default            
+            
+            + You can also try using a first-child CSS selector for ul elements
+            + that are children for the div element with an ID of #sidebar       
+        */        
 
-        1. Search Text Box and Button
-        2. Site Pages List - role=navigation
-        3. Third Child - Blank <ul> Element by default
-        */
-
-        
-        // Author information and Search Form - You can also try using a first-child CSS 
-        // selector for ul elements that are children for the div element with an ID of #sidebar        
+        ul:first-child {
+                
+        }
+ 
         ul {
 
             li {
 
-                // 
+                // form conntainer element
                 #searchform {
-
-                    // Note: <form> element
 
                     div {
 
@@ -640,7 +677,7 @@ The 4 above may be contained inside a div with the ID of #page.
 
             }
 
-            // Note: WooCommerce outputs no class selector for second list item; that is meant for the Sidebar archives list
+            // Note: WooCommerce outputs no class selector for second list item; that is meant for the Achives list sidebar
             li {
 
                 h2 {
@@ -689,15 +726,19 @@ The 4 above may be contained inside a div with the ID of #page.
 
     }
 
-    #footer {
+    hr {
 
-        // Note: #footer is a div element  with id of footer (WooCommerce default state)
+    }
+
+    // #footer is a div element with id of footer (WooCommerce default state)
+    #footer {
+        
         p {
 
             a {
-
+                
                 &:hover {
-
+                    
                 }
 
             }
@@ -719,9 +760,11 @@ The 4 above may be contained inside a div with the ID of #page.
 The Basket page is the first part of the shopping onboard process where items currently added to the basket will appear.
 
 ```scss
+// Containing element
+.woocommerce {    
 
-.woocommerce {
 
+    // The Main Basket
     a {
 
         .woocommerce-notices-wrapper {
@@ -731,7 +774,7 @@ The Basket page is the first part of the shopping onboard process where items cu
         .woocommerce-cart-form {
 
             .shop_table {
-                
+
                 thead {
 
                     tr {
@@ -755,7 +798,7 @@ The Basket page is the first part of the shopping onboard process where items cu
                         // td table cell classes    
                         .product-remove {
 
-                            a {
+                            a.remove  {
 
                                 &:hover {
 
@@ -763,14 +806,6 @@ The Basket page is the first part of the shopping onboard process where items cu
                                     // You can use a transition for background on hover state
                                 }
 
-
-                            }
-
-                            a.remove {
-
-                                &:hover {
-
-                                }
 
                             }
 
@@ -820,7 +855,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                                 .screen-reader-text {
 
-                                }                                
+                                }
 
                                 .input-text,
                                 .qty {
@@ -848,7 +883,7 @@ The Basket page is the first part of the shopping onboard process where items cu
                         } 
                         
 
-                        // Note: Form Basket Buttons Row  tr ---> td
+                        // Note: New Row in the basket (tr ---> td)
                         .actions {
 
                             // Note: coupon text box and button element
@@ -880,15 +915,16 @@ The Basket page is the first part of the shopping onboard process where items cu
                         }
 
                     }
-            
-                }  
-                 
+
+                }
+
             }
 
-        }   
+        }
 
     }
 
+    // The Basket Totals
     p {
 
     }
@@ -896,10 +932,6 @@ The Basket page is the first part of the shopping onboard process where items cu
     .cart-collaterals {
 
         &::before {
-
-        }
-
-        &::after {
 
         }
 
@@ -922,8 +954,8 @@ The Basket page is the first part of the shopping onboard process where items cu
                     tbody {
 
 
-                        // tr element
-                        // Table Rows for Subtotal and Total Amounts
+
+                        // Table Row <tr> for order total
                         .cart-subtotal {
 
                             th {
@@ -949,6 +981,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                         }
 
+                        // Table Row <tr> for Subtotal
                         .order-total {
 
                             th {
@@ -958,9 +991,9 @@ The Basket page is the first part of the shopping onboard process where items cu
                             }
 
                             td {
-                                // data-title="Total"
 
-                                .strong
+                                // data-title="Total"
+                                strong {
 
                                     .woocommerce-Price-amount {
                                         // Note: span element
@@ -971,7 +1004,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                                             }
 
-                                        }                                        
+                                        }
 
                                     }
 
@@ -995,11 +1028,15 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                 .checkout-button {
 
-                    // wc-forward
+                    // .wc-forward
 
                 }
 
             }
+
+        }        
+
+        &::after {
 
         }
 
@@ -1017,19 +1054,20 @@ The Basket page is the first part of the shopping onboard process where items cu
 
 ```scss
 
+// Containing element
 .woocommerce {
 
-    .woocommerce-MyAccount-navigation {     
+    .woocommerce-MyAccount-navigation { 
 
         ul {
 
-            li {          
+            li {                
 
                 // Note: CSS/Sass selector for the active tab
                 & .is-active {
-
-
-                }  
+        
+        
+                }            
 
             }
 
@@ -1071,7 +1109,7 @@ The Basket page is the first part of the shopping onboard process where items cu
     }
 
     // Note: This is the content area for WooCommerce MyAccount pages
-    // according to the sub tab clicked
+    // according to sub tab clicked
     .woocommerce-MyAccount-content {
 
         .woocommerce-notices-wrapper {
@@ -1092,7 +1130,7 @@ The Basket page is the first part of the shopping onboard process where items cu
         }
 
         p {
-            // The following addresses will be used on the checkout page by default
+            // "The following addresses will be used on the checkout page by default"
         }
         
 
@@ -1111,7 +1149,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
             }
 
-        }       
+        }        
 
 
         /* 
@@ -1134,8 +1172,8 @@ The Basket page is the first part of the shopping onboard process where items cu
 
             }
 
-            // Orders tab button - "browse products"
-            .woocommerce-Button button {
+            // Orders Tab Button - "browse products"
+            .woocommerce-Button {
 
 
             }
@@ -1182,76 +1220,76 @@ The Basket page is the first part of the shopping onboard process where items cu
         */
         .woocommerce-Addresses {     
 
-            // Address Tab - Addresses - /my-account/edit-address/billing/
-            // Address Tab - Addresses - /my-account/edit-address/shipping/
-
             &::before {
 
-            }
+            } 
 
-            .col-1 {
+            .woocommerce-Address {                
 
-                .woocommerce-Address-title {
+                .col-1 {
 
-                    h3 {
+                    .woocommerce-Address-title {
+
+                        h3 {
+
+                        }
+
+                        .edit {
+
+                            // add/edit address <a> hyperlink
+
+                        }
 
                     }
 
-                    .edit {
+                    address {
 
-                        // add/edit address <a> hyperlink
+                        // 2 page states - 
+                        // Address not yet set. "You have not set up this type of address yet"
+                        // lists the address as a series of line breaks when address is saved
 
                     }
 
                 }
+            
 
-                address {
+                .col-2 {
 
-                    // 2 page states - 
-                       // Address not yet set. "You have not set up this type of address yet"
-                       // lists the address as a series of line breaks when address is saved
+                    &::after {
+
+                        // clear: both;
+
+                    }
+
+                    .woocommerce-Address-title {
+
+                        h3 {
+
+                        }
+
+                        .edit {
+
+                        }
+
+                    }
+
+                    address {
+
+                        // 2 States - 
+                        // Address not yet set. "You have not set up this type of address yet"
+                        // lists the address as a series of line breaks when address is saved
+
+                    }
 
                 }
 
             }
             
+        }        
+           
 
-            .col-2 {
-
-                &::after {
-
-                    // clear: both;
-
-                }
-
-                .woocommerce-Address-title {
-
-                    h3 {
-
-                    }
-
-                    .edit {
-
-                    }
-
-                }
-
-                address {
-
-                    // 2 States - 
-                      // Address not yet set. "You have not set up this type of address yet"
-                      // lists the address as a series of line breaks when address saved
-
-                }
-
-            }
-
-        }
-
-
-        // Address Tab - Addresses - /my-account/billing/
-        // Address Tab - Addresses - /my-account/shipping/
-
+        // Address Tab - Addresses - /my-account/edit-address/billing/
+        // Address Tab - Addresses - /my-account/edit-address/shipping/
         form {
 
             h3 {
@@ -1264,11 +1302,18 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                 .woocommerce-address-fields__field-wrapper {
 
+
+                    // form first name
                     p.form-row-last {
 
                     }
 
+                    // form last name
                     .form-row-first {
+
+                    }
+
+                    .form-row-wide {
 
                     }
 
@@ -1293,7 +1338,64 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                             }
 
+                            // for the country/region select box
                             .country_select {
+
+                            }
+
+                            // Form field ID's
+                            #billing_first_name,
+                            #shipping_first_name {
+
+                            }
+
+                            #shipping_first_name,
+                            #shipping_first_name {
+
+                            }
+
+                            #billing_country,
+                            #shipping_country {
+
+                            }
+
+                            #billing_country,
+                            #shipping_country {
+
+                            }
+
+                            #billing_address_1,
+                            #shipping_address_1 {
+
+                            }
+
+                            #billing_address_2,
+                            #shipping_address_2 {
+
+                            }
+
+                            #billing_city,
+                            #shipping_city {
+
+                            }
+
+                            #billing_state,
+                            #shipping_state {
+
+                            }
+
+                            #billing_postcode,
+                            #shipping_postcode {
+
+                                //zipcode for US
+
+                            }
+
+                            #billing_phone {
+
+                            }
+
+                            #billing_email {
 
                             }
 
@@ -1303,6 +1405,8 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                 }
 
+
+                // Save Address Button
                 p {
 
                     .button,
@@ -1312,14 +1416,14 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                 }
 
-            }
+            }   
 
-            // edit-address/shipping/                 
-            .woocommerce-address-fields { 
+            // edit-address/shipping
+            /* .woocommerce-address-fields {
 
                 // Editor Note:  As Billing Address Selectors - Cut for brevity
 
-            }
+            }  */        
 
         }
         
@@ -1334,15 +1438,14 @@ The Basket page is the first part of the shopping onboard process where items cu
             // woocommerce-form-row
             // form-row-first
             // form-row-last
-
             .form-row {
 
                 // <p>
 
                 &::before {
 
-                }
-
+                } 
+                
             }
 
             .woocommerce-form-row {
@@ -1363,6 +1466,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                 }
 
+                // selector that instructs on display name edit
                 span {
 
                     em {
@@ -1383,6 +1487,18 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                 }
 
+                .form-row {
+
+                    &::after {
+                        
+                    }
+
+                }
+
+                .form-row-wide {
+
+                }
+
                 .woocommerce-form-row {
 
                     &::before {
@@ -1399,15 +1515,21 @@ The Basket page is the first part of the shopping onboard process where items cu
                         .woocommerce-Input--password,
                         input[type="password"] {
 
+                        }                        
+
+                        input[type="text"] {
+                            
                         }
+
 
                         .show-password-input {
 
-                            &::after {
+                            // password toggle class
+                            & .display-password {          
 
                             }
 
-                            & .display-password {
+                            &::after {
 
                             }
 
@@ -1421,18 +1543,6 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                 }
 
-                .form-row {
-
-                    &::after {
-                        
-                    }
-
-                }
-
-                .form-row-wide {
-
-                }
-
             }
 
             .clear {
@@ -1442,7 +1552,7 @@ The Basket page is the first part of the shopping onboard process where items cu
             p {
 
                 button[type="submit"],
-                .wooCommerce-Button {
+                .woocommerce-Button {
 
                 }
 
@@ -1465,6 +1575,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
 ```scss
 
+// Containing element
 .woocommerce {
 
     .woocommerce-notices-wrapper {
@@ -1475,17 +1586,19 @@ The Basket page is the first part of the shopping onboard process where items cu
 
         .woocommerce-info {
 
+            //<div>
+
             &::before {
-
-            }
-
-            &::after {
 
             }
 
             // coupon toggle link
             .showcoupon {
                     
+            }
+
+            &::after {
+
             }
 
         }
@@ -1509,7 +1622,7 @@ The Basket page is the first part of the shopping onboard process where items cu
                 
             }
 
-            // contains coupon code text box
+            // Contains the coupon code text box
             .input-text {
 
             }
@@ -1540,7 +1653,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                 .woocommerce-billing-fields {
 
-                    // 
+                    // Billing Fields
 
                     h3 {
 
@@ -1551,6 +1664,10 @@ The Basket page is the first part of the shopping onboard process where items cu
                         .form-row {
 
                             label {
+
+                                .required {
+
+                                }
 
                             }
 
@@ -1568,7 +1685,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                                 }
 
-                                // select2  select1? select3?
+                                // select2  Note: select1-? select3-?
                                 .select2-container {
 
                                     .selection {
@@ -1598,7 +1715,6 @@ The Basket page is the first part of the shopping onboard process where items cu
                         }
 
                     }
-
                 }
 
             }
@@ -1643,9 +1759,8 @@ The Basket page is the first part of the shopping onboard process where items cu
 
     }
 
-    #order_review_heading {
+    .order_review_heading {
 
-        
     }
 
     .woocommerce-checkout-review-order {
@@ -1771,11 +1886,39 @@ The Basket page is the first part of the shopping onboard process where items cu
 
         #payment {
 
+            // Note: List of available payment methods - Containing element
             .wc_payment_methods {
+
+                
+                ::before {
+                        
+                }
+
+                .woocommerce-notice--info {
+
+                    ::before {
+                        
+                    }
+
+
+                    ::after {
+                            
+                    }
+
+                }
+
+                ::after {
+                    
+                }
 
             }
 
+            // Cotaining element for placing checkout order
             .place-order {
+
+                noscript {
+
+                }
 
                 .woocommerce-terms-and-conditions-wrapper {
 
@@ -1793,7 +1936,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
                 }
 
-                .woocommerce_checkout_place_order {
+                #place_order {
 
                 }
 
@@ -1803,7 +1946,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 
     }
 
-}     
+}  
 
 ```
 
