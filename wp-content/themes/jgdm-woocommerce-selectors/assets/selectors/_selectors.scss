@@ -1216,7 +1216,7 @@
 }
 
 
-/* WooCommerce Basket Page - Selectors Rechecked: 14-06-2022 - 11:06 */
+/* WooCommerce Basket Page - Selectors Recheck: 14-06-2022 - 11:06 */
 
 // Containing element
 .woocommerce {    
@@ -1503,7 +1503,7 @@
 }
 
 
-/* WooCommerce Checkout Page - Selectors Checked: 04-06-2022 - 16:11 */
+/* WooCommerce Checkout Page - Selectors Rechecked: 14-06-2022 - 13:44 */
 
 // Containing element
 .woocommerce {
@@ -1516,17 +1516,19 @@
 
         .woocommerce-info {
 
+            //<div>
+
             &::before {
-
-            }
-
-            &::after {
 
             }
 
             // coupon toggle link
             .showcoupon {
                     
+            }
+
+            &::after {
+
             }
 
         }
@@ -1550,7 +1552,7 @@
                 
             }
 
-            // contains coupon code text box
+            // Contains the coupon code text box
             .input-text {
 
             }
@@ -1581,7 +1583,7 @@
 
                 .woocommerce-billing-fields {
 
-                    // 
+                    // Billing Fields
 
                     h3 {
 
@@ -1592,6 +1594,10 @@
                         .form-row {
 
                             label {
+
+                                .required {
+
+                                }
 
                             }
 
@@ -1609,7 +1615,7 @@
 
                                 }
 
-                                // select2  select1? select3?
+                                // select2  Note: select1-? select3-?
                                 .select2-container {
 
                                     .selection {
@@ -1810,11 +1816,39 @@
 
         #payment {
 
+            // Note: List of available payment methods - Containing element
             .wc_payment_methods {
+
+                
+                ::before {
+                        
+                }
+
+                .woocommerce-notice--info {
+
+                    ::before {
+                        
+                    }
+
+
+                    ::after {
+                            
+                    }
+
+                }
+
+                ::after {
+                    
+                }
 
             }
 
+            // Cotaining element for placing checkout order
             .place-order {
+
+                noscript {
+
+                }
 
                 .woocommerce-terms-and-conditions-wrapper {
 
@@ -1832,7 +1866,7 @@
 
                 }
 
-                .woocommerce_checkout_place_order {
+                #place_order {
 
                 }
 
