@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 14-06-2022 15:15)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 14-06-2022 15:19)
 
 ## WooCommerce Pages 
 
@@ -25,7 +25,7 @@ So for now, If any of these selectors don't work or if you notice anything I mig
 
 Jump to the pages to view the selectors you need for that page.
 
- [Setup](#setup) | [Shop Home](#shop-homepage) | [Shop Archive](#shop-archive-page) | [Basket](#woocommerce-basket-page) | [MyAccount](#woocommerce-myaccount-page) | [Checkout](#woocommerce-checkout-page) | [Single Product Page](#woocommerce-product-single) | [Returns](#returns) | [Privacy](#privacy)
+ [Setup](#setup) | [Shop Home](#shop-homepage) | [Shop Archive](#shop-archive-page) | [Basket](#woocommerce-basket-page) | [MyAccount](#woocommerce-myaccount-page) | [Checkout](#woocommerce-checkout-page) | [Single Product Page](#woocommerce-product-single) | [Returns](#returns) | [Privacy](#privacy) | [Notes](#notes)
 
 
 <a name="setup"></a>
@@ -2819,6 +2819,15 @@ div#page {
 
 }
 ```
+
+
+[Top](#document-navigation)
+
+
+<a id="#notes"></a>
+### Notes
+
++ #sidebar selector for Shop Archive and product page shou;d be built to match. For now I've left a note on the #sidebar element for ```/product```.
 
 
 [Top](#document-navigation)
