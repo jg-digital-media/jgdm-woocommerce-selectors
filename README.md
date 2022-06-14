@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 13-06-2022 14:58)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 14-06-2022 14:58)
 
 ## WooCommerce Pages 
 
@@ -25,7 +25,7 @@ So for now, If any of these selectors don't work or if you notice anything I mig
 
 Jump to the pages to view the selectors you need for that page.
 
- [Setup](#setup) | [Shop Home](#shop-homepage) | [Shop Archive](#shop-archive-page) | [Basket](#woocommerce-basket-page) | [MyAccount](#woocommerce-myaccount-page) | [Checkout](#woocommerce-checkout-page) | [Single Product Page](#woocommerce-product-single)
+ [Setup](#setup) | [Shop Home](#shop-homepage) | [Shop Archive](#shop-archive-page) | [Basket](#woocommerce-basket-page) | [MyAccount](#woocommerce-myaccount-page) | [Checkout](#woocommerce-checkout-page) | [Single Product Page](#woocommerce-product-single) | [Returns](#returns) | [Privacy](#privacy)
 
 
 <a name="setup"></a>
@@ -2599,6 +2599,84 @@ div#page {
 }
 
 ```
+
+[Top](#document-navigation)
+
+
+
+<a id="#returns"></a>
+### Returns
+
+```scss
+// Containing element
+.side-one > article {
+
+    h1, h2, h3, h4, h5, h6 {
+
+    }
+
+    p {
+
+        strong, b,
+        em, i {
+
+        }
+    }
+
+    ul, ol {
+
+        li {
+
+        }
+
+    }
+
+}
+
+
+
+
+
+```
+
+
+[Top](#document-navigation)
+
+<a id="#privacy"></a>
+### Privacy
+
+```scss
+
+// Containing element
+.side-one > article {
+
+    h1, h2, h3, h4, h5, h6 {
+
+    }
+
+    p {
+
+        a {
+
+        }
+
+        strong, b {
+
+        }
+
+        em, i {
+
+        }
+
+        .privacy-policy-tutorial {
+
+        }
+
+    }
+
+}
+```
+
 
 [Top](#document-navigation)
 
