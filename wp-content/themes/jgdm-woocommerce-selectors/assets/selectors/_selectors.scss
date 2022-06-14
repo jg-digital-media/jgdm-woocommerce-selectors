@@ -1216,11 +1216,13 @@
 }
 
 
-/* WooCommerce Basket Page - Selectors Rechecked: 09-06-2022 - 14:39 */
+/* WooCommerce Basket Page - Selectors Rechecked: 14-06-2022 - 11:06 */
 
 // Containing element
 .woocommerce {    
 
+
+    // The Main Basket
     a {
 
         .woocommerce-notices-wrapper {
@@ -1254,7 +1256,7 @@
                         // td table cell classes    
                         .product-remove {
 
-                            a {
+                            a.remove  {
 
                                 &:hover {
 
@@ -1262,14 +1264,6 @@
                                     // You can use a transition for background on hover state
                                 }
 
-
-                            }
-
-                            a.remove {
-
-                                &:hover {
-
-                                }
 
                             }
 
@@ -1347,7 +1341,7 @@
                         } 
                         
 
-                        // Note: Form Basket Buttons Row  tr ---> td
+                        // Note: New Row in the basket (tr ---> td)
                         .actions {
 
                             // Note: coupon text box and button element
@@ -1388,6 +1382,7 @@
 
     }
 
+    // The Basket Totals
     p {
 
     }
@@ -1395,10 +1390,6 @@
     .cart-collaterals {
 
         &::before {
-
-        }
-
-        &::after {
 
         }
 
@@ -1421,8 +1412,8 @@
                     tbody {
 
 
-                        // tr element
-                        // Table Rows for Subtotal and Total Amounts
+
+                        // Table Row <tr> for order total
                         .cart-subtotal {
 
                             th {
@@ -1448,6 +1439,7 @@
 
                         }
 
+                        // Table Row <tr> for Subtotal
                         .order-total {
 
                             th {
@@ -1457,26 +1449,23 @@
                             }
 
                             td {
-                                // data-title="Total"
 
-                                .strong {
+                                // data-title="Total"
+                                strong {
 
                                     .woocommerce-Price-amount {
                                         // Note: span element
 
-                                        strong {
+                                        bdi {
 
-                                            bdi {
-
-                                                .woocommerce-Price-currencySymbol {
-
-                                                }
+                                            .woocommerce-Price-currencySymbol {
 
                                             }
 
                                         }
 
                                     }
+
                                 }
 
                             }
@@ -1497,11 +1486,15 @@
 
                 .checkout-button {
 
-                    // wc-forward
+                    // .wc-forward
 
                 }
 
             }
+
+        }        
+
+        &::after {
 
         }
 
