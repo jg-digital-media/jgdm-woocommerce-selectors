@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 14-06-2022 15:19)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 14-07-2022 11:59)
 
 ## WooCommerce Pages 
 
@@ -15,7 +15,7 @@ Each page in WordPress has a user defined `slug`, an identifier for the page tha
 + `/privacy/` - WooCommerce Privacy Page
 + `/refund_returns/` - Refund and Returns Page.
 
-This document contains the out of the box ID, Class and other CSS selectors that I've identified should be used to customise the appearance of your WooCommerce Shop.  Unfortunately for the moment they're not theme agnostic which means right now they work only for a customised theme. More work is required.
+This document contains the out of the box ID, Class and other CSS selectors that I've identified should be used to customise the appearance of your WooCommerce Shop.  Unfortunately for the moment they're not theme agnostic which means right now they work only for a custom theme that you make yourself. More work is required.
 
 So for now, If any of these selectors don't work or if you notice anything I might have missed, let me know via a pull request and I'll look at the problem.  :)
 
@@ -68,27 +68,28 @@ You will need
 
 ### How it Works
 
-Every file in the repo is untracked other than the contents of `wp-content/themes/jgdm-woocommerce-selectors`. Obviously you can choose to rename the theme directory and make your own theme customisations.
+This is a set of theme files that is designed to be used with a WordPress installation. Therefore, every file/directory is untracked, other than the contents of `wp-content/themes/jgdm-woocommerce-selectors`. Obviously you can choose to rename the theme directory and make your own theme customisations.
 
-Simply copy the groups of selectors from the specified pages below and add them to your theme.
+Simply copy the groups of selectors from the specified pages below and add them to your theme, which should include WooCommerce.
 
-+ First, find a local server space such as DesktopServer or XAMPP for Windows. 
++ First, find a local server as DesktopServer or XAMPP for Windows and add WordPress to that space. 
 
-+ Go to the root folder and clone the directory.  `https://github.com/jg-digital-media/jgdm-woocommerce-selectors`.
++ Go to the directory you need to be your project root and clone the repositoty.  `git clone https://github.com/jg-digital-media/jgdm-woocommerce-selectors`.
 
-+ Download the latest version of WordPress and add files to the root folder. `jgdm-woocommerce-selectors`.
++ Download the latest version of WordPress and add files to the root folder. e.g. `jgdm-woocommerce-selectors`.
 
-+ When you have entered your WordPress and Database credentials, you can add and activate the WooCommerce plugin.
++ When you have entered your WordPress and Database credentials, you can add and activate the `WooCommerce` plugin.
 
-+ From this point you can either add your files to the staging area with the ```-f``` flag via git or remove version control altogether.  If you need to, you can also clone a fresh project using `https://github.com/jg-digital-media/jgdm-woocommerce-selectors`.
++ From this point, you can either add your files to the staging area with the ```-f``` flag via git or remove version control altogether.  If you need to, you can also clone a fresh project using `https://github.com/jg-digital-media/jgdm-woocommerce-selectors` as your git clone url.
 
-+ In Settings, in the Admin area, set the *Permalinks* to `post-name`. This allows you to set page slugs for all the pages, including WooCommerce pages to your sites
++ In Settings, in the Admin area, set the *Permalinks* to `post-name`. This allows you to set page slugs for all the pages, including WooCommerce pages to your sites.
 
-+ Set a product base slug for your shops products  e.g. a slug called "shop"
++ Set a product base slug for your shops products  e.g. a slug called "shop".
 
-+ Since I use SASS to generate the CSS Selectors this is where you'll need to write your CSS.  Use a RubySass watch command to precompile CSS in the theme directory of your project.  ```sass --watch style.scss:style.css`` 
++ Since I use SASS to generate the CSS Selectors this is where you'll need to write your CSS.  Use a RubySass watch command to precompile CSS in the theme directory of your project.  ```sass --watch style.scss:style.css``.
 
 + If for any reason the following files do not show up on git clone you can add them with touch `style.css` etc. Or add them by your systems GUI in the usual way.
+
     + style.css
     + style.scss
     + functions.php
