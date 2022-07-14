@@ -1,6 +1,6 @@
 # jgdm-woocommerce-selectors
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 14-07-2022 11:59)
+## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 14-07-2022 13:10)
 
 ## WooCommerce Pages 
 
@@ -56,6 +56,8 @@ You will need
 + `functions.php`
 + `index.php`
 + `screenshot.png` - The Theme directory image
+
+By default, Sass does not compile selectors with no styles in them which complicates the purpoose of this repository slightly. You can access every selector you need via the `assets/sass/_selectors.scss` file or `assets/woocommerce/wc-pages/` partials.
 
 ### Paths
 
