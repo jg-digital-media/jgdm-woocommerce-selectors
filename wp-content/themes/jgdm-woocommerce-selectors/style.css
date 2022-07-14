@@ -1,8 +1,8 @@
 /*
 *
 * Note:
-* Path to Theme:  wp-content/themes/jgdm-woocommerce-selectors 
-* Last Update: 13-06-2022: 14:41
+* Path to Theme: wp-content/themes/jgdm-woocommerce-selectors 
+* Last Update: 14-07-2022: 12:58
 */
 /*
 Theme Name: JGDM WooCommerce Selectors
@@ -10,7 +10,7 @@ Theme URI: https://wordpress.org/themes/jgdm-woocommerce-selectors/
 Author: @jg_digitalMedia
 Author URI: https://www.jonniegrieve.co.uk
 Description: Change the details of this style header to suit your needs.
-Tags: tagsy
+Tags: woocommerce, selectors, starter theme, jgdm
 Version: 1.0
 Requires at least: 5.0
 Tested up to: 5.4
@@ -20,7 +20,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: jgdm_woocommerce
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
+
 */
+/* Theme Styles */
 * {
   /* CSS Selectors to go here! */
   margin: 0;
@@ -84,7 +86,8 @@ p.filestamp {
   font-weight: bold;
   margin-top: 10pt; }
 
-/* Shop Archive Page Sass Partial */
+/* WooCommerce Styles */
+/* Shop Archive Page Sass Partial - slug: /shop */
 #page #primary #main .woocommerce-result-count {
   color: black; }
 #page #primary #main .woocommerce-ordering .orderby {
@@ -96,30 +99,35 @@ p.filestamp {
     #page #primary #main .woocommerce-ordering .orderby option.selected {
       background: yellow; }
 #page #sidebar {
-            /* WooCommerce Sidebar Section 
+        /*  
+            WooCommerce Sidebar Section 
 
-            Three Child <ul> elements
+            Contains Three Child <ul> elements
 
             1. Search Text Box and Button
             2. Site Pages List - role=navigation
-            3. Third Child - Blank <ul> Element by default
-            */ }
+            3. Third Child - Blank <ul> Element by default            
+            
+            + You can also try using a first-child CSS selector for ul elements
+            + that are children for the div element with an ID of #sidebar       
+        */ }
 
-/* Shop Homepage Sass Partial
+/* Shop Homepage Sass Partial - slug: /homepage
 
-Selectors from .wp-block-cover to ... */
-/* Section: New Products  Level 2 Heading Element */
-/* New Products Section Selectors - wc-block-grid */
-/* Media Text Block classes */
-/* Block Media Text: WooCommerce */
-/* Featured Product Wrapper */
-div#page #primary #main .type-product .entry-summary .price {
-  /* STANDARD PRICE */
-  /* SALE PRICE */ }
-div#page #primary #main .type-product .wc-tabs-wrapper {
-                    /* Note:  
-
-                        3 Tabs
+Selectors from .wp-block-cover to .wc-block-featured-product via the WordPress Loop */
+/* Selectors for single product page as clicked through from shop archive page
+   slug:- /product/product_name 
+*/
+#page #primary #main .type-product {
+  /*                  
+      Note: onsale span element for inclusion when a product is a sale product
+  */
+  /* Side 1 - product gallery image */
+  /* Side 2 - Product Entry Summary for the product details 
+     and basket customisations 
+  */ }
+  #page #primary #main .type-product .wc-tabs-wrapper .wc-tabs {
+                        /* Note: 3 Tabs
 
                         -> Description 
                         -> Additional information 
@@ -127,10 +135,11 @@ div#page #primary #main .type-product .wc-tabs-wrapper {
 
                     */ }
 
-/* Basket Page Sass Partial */
-/* Checkout Page Sass Partial */
+/* Basket Page Sass Partial - slug: /basket */
+/* Checkout Page Sass Partial - slug: /checkout */
+/* WooCommerce MyAccount Page - slug: /checkout */
 .woocommerce .woocommerce-MyAccount-navigation ul {
-  /* WooCommerce Navigation Classes */ }
+  /* WooCommerce Navigation Tab Classes */ }
 .woocommerce .woocommerce-MyAccount-content {
   /* 
   * 
@@ -159,112 +168,13 @@ div#page #primary #main .type-product .wc-tabs-wrapper {
       /* content: "\e015\" */ }
     .woocommerce .woocommerce-MyAccount-content .woocommerce-info .woocommerce-message::after {
       /* clear: both; */ }
+  .woocommerce .woocommerce-MyAccount-content form {
+            /* .woocommerce-address-fields {
 
-/* Privacy Page Sass Partial */
-#page #header {
-  background: yellow; }
-  #page #header #headerimg {
-    height: 100px; }
-    #page #header #headerimg h1 {
-      color: green; }
-      #page #header #headerimg h1 a {
-        color: red;
-        text-decoration: none; }
-    #page #header #headerimg .description {
-      text-align: center;
-      margin-top: 10px;
-      font-weight: bold; }
-#page #primary #main .woocommerce-breadcrumb {
-  margin: 10px 0;
-  width: 100%;
-  text-align: center;
-  color: black; }
-  #page #primary #main .woocommerce-breadcrumb a {
-    color: green; }
-#page #primary #main .woocommerce-products-header .woocommerce-products-header__title,
-#page #primary #main .woocommerce-products-header .page-title {
-  color: black; }
-#page #primary #main .woocommerce-result-count {
-  color: black; }
-#page #primary #main .woocommerce-ordering .orderby {
-  background: yellow;
-  padding: 10px 0; }
-  #page #primary #main .woocommerce-ordering .orderby option {
-    background: #ed9141;
-    outline: green; }
-    #page #primary #main .woocommerce-ordering .orderby option.selected {
-      background: yellow; }
-#page #primary #main .products .type-product .woocommerce-LoopProduct-link .onsale {
-  margin: -10px 0 0 0;
-  border: white solid 3px; }
-#page #primary #main .products .type-product .woocommerce-LoopProduct-link .woocommerce-loop-product__title {
-  color: red; }
-#page #primary #main .products .type-product .woocommerce-LoopProduct-link .price .woocommerce-Price-amount bdi {
-  color: black; }
-  #page #primary #main .products .type-product .woocommerce-LoopProduct-link .price .woocommerce-Price-amount bdi .woocommerce-Price-currencySymbol {
-    color: black; }
-#page #primary #main .products .type-product .woocommerce-LoopProduct-link .price del .woocommerce-Price-amount bdi {
-  color: red; }
-  #page #primary #main .products .type-product .woocommerce-LoopProduct-link .price del .woocommerce-Price-amount bdi .woocommerce-Price-currencySymbol {
-    color: red; }
-#page #primary #main .products .type-product .woocommerce-LoopProduct-link .price ins .woocommerce-Price-amount bdi {
-  color: black; }
-  #page #primary #main .products .type-product .woocommerce-LoopProduct-link .price ins .woocommerce-Price-amount bdi .woocommerce-Price-currencySymbol {
-    color: black; }
-#page #primary #main .products .type-product .product_type_simple {
-  background: lightyellow; }
-#page #sidebar {
-        /* WooCommerce Sidebar Section 
+                // Editor Note:  As Billing Address Selectors - Cut for brevity
 
-        Three Child <ul> elements
+            }  */ }
 
-        1. Search Text Box and Button
-        2. Site Pages List - role=navigation
-        3. Third Child - Blank <ul> Element by default
-        */
-  background: yellow; }
-  #page #sidebar ul {
-    display: inline-block;
-    vertical-align: top;
-    width: 45%;
-    text-align: center; }
-    #page #sidebar ul li {
-      list-style: none; }
-      #page #sidebar ul li #searchform div #s {
-        padding: 5px;
-        background: lightyellow; }
-      #page #sidebar ul li #searchform div #searchsubmit {
-        background: lightblue;
-        margin: 20px 0; }
-    #page #sidebar ul li.pagenav ul {
-      text-align: left; }
-      #page #sidebar ul li.pagenav ul .page-item a {
-        color: red; }
-        #page #sidebar ul li.pagenav ul .page-item a:hover {
-          text-decoration: none; }
-    #page #sidebar ul li {
-      padding: 2px 0; }
-      #page #sidebar ul li ul li {
-        text-align: left; }
-        #page #sidebar ul li ul li a {
-          color: red; }
-          #page #sidebar ul li ul li a:hover {
-            text-decoration: none; }
-    #page #sidebar ul li.categories ul li.cat-item {
-      text-align: left; }
-      #page #sidebar ul li.categories ul li.cat-item a {
-        color: red; }
-        #page #sidebar ul li.categories ul li.cat-item a:hover {
-          text-decoration: none; }
-#page #footer {
-  background: yellow;
-  height: 75px; }
-  #page #footer p {
-    text-align: center;
-    padding-top: 20px; }
-    #page #footer p a {
-      color: blue; }
-      #page #footer p a:hover {
-        text-decoration: none; }
+/* Privacy Page Sass Partial - slug: /privacy */
 
 /*# sourceMappingURL=style.css.map */
