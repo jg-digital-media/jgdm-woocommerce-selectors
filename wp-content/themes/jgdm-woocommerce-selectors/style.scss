@@ -1,28 +1,28 @@
 @import "assets/sass/head";
 
+/* Theme Styles */
+
 // config
 @import "assets/sass/config/colours";
 @import "assets/sass/config/fonts";
 
 
+// Main theme styles
 @import "assets/sass/inc/header";
 
-
 @import "assets/sass/main";
-
 
 @import "assets/sass/inc/footer";
 
 
+/* WooCommerce Styles */
 
-// WooCommerce Styles 
-
+// config
 @import "assets/sass/woocommerce/wc-config/wc-colours";
 @import "assets/sass/woocommerce/wc-config/wc-fonts";
 
 
-// Shop pages
-
+// WooCommerce Shop pages
 @import "assets/sass/woocommerce/wc-pages/wc-shoparchive";
 @import "assets/sass/woocommerce/wc-pages/wc-home";
 @import "assets/sass/woocommerce/wc-pages/wc-product";
@@ -31,5 +31,6 @@
 @import "assets/sass/woocommerce/wc-pages/wc-myaccount";
 @import "assets/sass/woocommerce/wc-pages/wc-privacy";
 
+
 // Main WooCommerce Partial
-@import "assets/sass/woocommerce/woocommerce";
+// @import "assets/sass/woocommerce/woocommerce";
