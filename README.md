@@ -117,7 +117,7 @@ Simply copy the groups of selectors from the specified pages below and add them 
 [Back to Top](#sections)
 
 
-### Jump to the pages to view the selectors you need for that page.
+### Selectors Navigation -  Jump to the pages to view the selectors you need for that page.
 
  [Shop Home](#shop-homepage) | [Shop Archive](#shop-archive-page) | [Basket](#woocommerce-basket-page) | [MyAccount](#woocommerce-myaccount-page) | [Checkout](#woocommerce-checkout-page) | [Single Product Page](#woocommerce-product-single) | [Returns](#returns) | [Privacy](#privacy)
 
@@ -362,8 +362,8 @@ e.g.
 
 
 <a id="#shop-archive-page"></a>
-### Shop Archive Page
-+ **/shop/** (Product Archive Page) [Top](#document-navigation) - **Selectors last checked:** 31-05-2022 - 20:30
+### Shop Archive Page [Top](#selectors)
++ **/shop/** (Product Archive Page) [Top](#selectors) - **Selectors last checked:** 31-05-2022 - 20:30
 
 As far as the shop archive page goes, the page is divided into 4 main structures each with a specific ID.
 
@@ -778,7 +778,7 @@ The 4 above may be contained inside a div with the ID of #page.
 
 <a id="woocommerce-basket-page"></a>
 ### WooCommerce Basket
-+ **/basket/** (Shop Basket Page) [Top](#document-navigation)
++ **/basket/** (Shop Basket Page) [Top](#selectors)
 
 The Basket page is the first part of the shopping onboard process where items currently added to the basket will appear.
 
@@ -1072,7 +1072,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 <a id="woocommerce-myaccount-page"></a>
 
 ### WooCommerce MyAccount Page
-+ **/my-account/** My Account Page ([Top](#document-navigation))  
++ **/my-account/** My Account Page ([Top](#selectors))  
 
 
 ```scss
@@ -1594,7 +1594,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 <a id="woocommerce-checkout-page"></a>
 ### WooCommerce Checkout Page   
 
-+ **/checkout/** - Checkout Page ([Top](#document-navigation))
++ **/checkout/** - Checkout Page ([Top](#selectors))
 
 ```scss
 
@@ -2766,7 +2766,7 @@ div#page {
 
 ```
 
-[Top](#document-navigation)
+[Top](#selectors)
 
 
 
@@ -2806,7 +2806,7 @@ div#page {
 ```
 
 
-[Top](#document-navigation)
+[Top](#selectors)
 
 <a id="#privacy"></a>
 ### Privacy
@@ -2844,7 +2844,7 @@ div#page {
 ```
 
 
-[Top](#document-navigation)
+[Top](#selectors)
 
 
 <a id="#notes"></a>
