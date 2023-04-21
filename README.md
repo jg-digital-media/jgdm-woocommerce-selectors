@@ -117,15 +117,13 @@ Simply copy the groups of selectors from the specified pages below and add them 
 [Back to Top](#sections)
 
 
-### Selectors Navigation -  Jump to the pages to view the selectors you need for that page.
+### Selectors Navigation - Jump to the pages to view the selectors you need for that page.
 
  [Shop Home](#shop-homepage) | [Shop Archive](#shop-archive-page) | [Basket](#woocommerce-basket-page) | [MyAccount](#woocommerce-myaccount-page) | [Checkout](#woocommerce-checkout-page) | [Single Product Page](#woocommerce-product-single) | [Returns](#returns) | [Privacy](#privacy)
 
-
-
 <a id="shop-homepage"></a>
 ### Shop Homepage
-+ **/homepage/** (Home)  [Top](#document-navigation)  **Selectors last checked:** 13-06-2022 - 11:48
++ **/homepage/** (Home)  [Top](#selectors)  **Selectors last checked:** 13-06-2022 - 11:48
 
    + First, Look for the loop in your WordPress Template file.
 
