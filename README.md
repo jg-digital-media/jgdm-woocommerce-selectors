@@ -1,8 +1,19 @@
-# jgdm-woocommerce-selectors
+# jgdm-woocommerce-selectors (**Last Update:** 21-04-2024 08:55)
 
-## Taking the legwork out of finding the CSS Selectors to style your shop (**Last Update:** 14-07-2022 13:10)
+## Taking the legwork out of finding the CSS Selectors to style your shop
+
+
+## **Sections**
+
+  + [WooCommerce Pages](#woocommerce-pages)
+  + [Document Navigation](#document-navigation)
+  + [Setup](#setup)
+  + [Selectors](#selectors)
+  + [Notes](#notes)
+
 
 ## WooCommerce Pages 
+[Back to Top](#sections)
 
 Each page in WordPress has a user defined `slug`, an identifier for the page that defines the URL for a WooCommerce page. Examples below...
 
@@ -21,6 +32,7 @@ So for now, If any of these selectors don't work or if you notice anything I mig
 
 
 <a id="#document-navigation"></a>
+
 ## Document Navigation
 
 Jump to the pages to view the selectors you need for that page.
@@ -29,7 +41,10 @@ Jump to the pages to view the selectors you need for that page.
 
 
 <a name="setup"></a>
+[Back to Top](#sections)
+
 ## Setup
+[Back to Top](#sections)
 
 ### **Instructions and Requirements**
 
@@ -88,7 +103,7 @@ Simply copy the groups of selectors from the specified pages below and add them 
 
 + Set a product base slug for your shops products  e.g. a slug called "shop".
 
-+ Since I use SASS to generate the CSS Selectors this is where you'll need to write your CSS.  Use a RubySass watch command to precompile CSS in the theme directory of your project.  ```sass --watch style.scss:style.css``.
++ Since I use SASS to generate the CSS Selectors this is where you'll need to write your CSS.  Use a RubySass watch command to precompile CSS in the theme directory of your project.  `sass --watch style.scss:style.css`.
 
 + If for any reason the following files do not show up on git clone you can add them with touch `style.css` etc. Or add them by your systems GUI in the usual way.
 
@@ -102,6 +117,9 @@ Simply copy the groups of selectors from the specified pages below and add them 
 [Top](#document-navigation)
 
 
+
+## Selectors
+[Back to Top](#sections)
 
 <a id="shop-homepage"></a>
 ### Shop Homepage
@@ -2828,11 +2846,8 @@ div#page {
 
 
 <a id="#notes"></a>
-### Notes
+
+## Notes
 
 + #sidebar selector for Shop Archive and product page shou;d be built to match. For now I've left a note on the #sidebar element for ```/product```.
-
-
-[Top](#document-navigation)
-
-
+[Back to Top](#sections)
