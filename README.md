@@ -1,4 +1,4 @@
-# jgdm-woocommerce-selectors (**Last Update:** 21-04-2023 09:20)
+# jgdm-woocommerce-selectors (**Last Update:** 21-04-2023 09:23)
 
 ## Taking the legwork out of finding the CSS Selectors to style your shop
 
@@ -2798,16 +2798,13 @@ div#page {
 
 }
 
-
-
-
-
 ```
 
 
 [Top](#selectors)
 
 <a id="#privacy"></a>
+
 ### Privacy
 ([Top](#selectors)) 
 ```scss
@@ -2849,6 +2846,6 @@ div#page {
 <a id="#notes"></a>
 
 ## Notes
-
+[Top](#sections)
 + #sidebar selector for Shop Archive and product page shou;d be built to match. For now I've left a note on the #sidebar element for ```/product```.
-[Back to Top](#sections)
+
