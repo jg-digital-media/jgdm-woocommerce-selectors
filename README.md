@@ -1,4 +1,4 @@
-# jgdm-woocommerce-selectors (**Last Update:** 21-04-2023 09:01)
+# jgdm-woocommerce-selectors (**Last Update:** 21-04-2023 09:15)
 
 ## Taking the legwork out of finding the CSS Selectors to style your shop
 
@@ -30,7 +30,7 @@ This document contains the out of the box ID, Class and other CSS selectors that
 So for now, If any of these selectors don't work or if you notice anything I might have missed, let me know via a pull request and I'll look at the problem.  :)
 
 
-<a id="#document-navigation"></a>
+<a id="#selectors"></a>
 
 
 ## Setup
@@ -104,7 +104,7 @@ Simply copy the groups of selectors from the specified pages below and add them 
     + screenshot.php
 
 
-[Top](#document-navigation)
+[Top](#selectors)
 
 
 
@@ -1974,7 +1974,7 @@ The Basket page is the first part of the shopping onboard process where items cu
 <a id="woocommerce-product-single"></a>
 
 ### WooCommerce Single Product
-+ **/product/** - Product Page  ([Top](#document-navigation)) 
++ **/product/** - Product Page  ([Top](#selectors)) 
 
 
 ```scss
