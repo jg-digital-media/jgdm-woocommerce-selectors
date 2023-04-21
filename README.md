@@ -1,4 +1,4 @@
-# jgdm-woocommerce-selectors (**Last Update:** 21-04-2024 08:55)
+# jgdm-woocommerce-selectors (**Last Update:** 21-04-2023 09:01)
 
 ## Taking the legwork out of finding the CSS Selectors to style your shop
 
@@ -6,7 +6,6 @@
 ## **Sections**
 
   + [WooCommerce Pages](#woocommerce-pages)
-  + [Document Navigation](#document-navigation)
   + [Setup](#setup)
   + [Selectors](#selectors)
   + [Notes](#notes)
@@ -33,15 +32,6 @@ So for now, If any of these selectors don't work or if you notice anything I mig
 
 <a id="#document-navigation"></a>
 
-## Document Navigation
-
-Jump to the pages to view the selectors you need for that page.
-
- [Setup](#setup) | [Shop Home](#shop-homepage) | [Shop Archive](#shop-archive-page) | [Basket](#woocommerce-basket-page) | [MyAccount](#woocommerce-myaccount-page) | [Checkout](#woocommerce-checkout-page) | [Single Product Page](#woocommerce-product-single) | [Returns](#returns) | [Privacy](#privacy) | [Notes](#notes)
-
-
-<a name="setup"></a>
-[Back to Top](#sections)
 
 ## Setup
 [Back to Top](#sections)
@@ -118,8 +108,20 @@ Simply copy the groups of selectors from the specified pages below and add them 
 
 
 
+
+
+<a name="setup"></a>
+[Back to Top](#sections)
+
 ## Selectors
 [Back to Top](#sections)
+
+
+### Jump to the pages to view the selectors you need for that page.
+
+ [Shop Home](#shop-homepage) | [Shop Archive](#shop-archive-page) | [Basket](#woocommerce-basket-page) | [MyAccount](#woocommerce-myaccount-page) | [Checkout](#woocommerce-checkout-page) | [Single Product Page](#woocommerce-product-single) | [Returns](#returns) | [Privacy](#privacy)
+
+
 
 <a id="shop-homepage"></a>
 ### Shop Homepage
